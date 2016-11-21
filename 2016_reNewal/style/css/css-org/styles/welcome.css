@@ -1,0 +1,74 @@
+/* welcome 페이지 */
+.n-welcome-wrap{
+    width: 100%;
+    padding:30px 0;
+    margin-top: 60px;
+}
+.n-welcome-wrap .n-welcome{
+    width: 980px;
+    min-height: 360px;
+    margin: 0 auto;
+    padding:50px 30px 32px 30px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    background: #ffffff;
+    border:1px solid #cccccc;
+    display: block;
+    overflow: hidden;
+    text-align:center
+}
+.n-welcome h2{
+    padding:25px 0 10px 0;
+    font-size: 24px;
+}
+.n-welcome h2 .welcome_gr{
+    color: #333;
+}
+.welcome_org{
+    color: #ff8000;
+}
+.n-welcome h5{
+    font-size: 17px;
+    color: #999;
+    line-height: 24px;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+/**/
+.n-welcome-wrap.withdraw {
+    min-height:630px;
+}
+.n-welcome-wrap.withdraw .n-welcome{
+    text-align:center;
+    margin-bottom:150px;
+    overflow:auto;
+    height:auto;
+    min-height:360px;
+}
+.n-welcome-wrap.withdraw .n-welcome div img{
+    padding:30px 0 0 0;
+    margin:0;
+}
+
+.n-welcome-wrap.withdraw .n-welcome h2 {
+    width:100%;
+    line-height:1.5;
+    text-align:center;
+    font-size:24px;
+    color:#333;
+}
+.n-welcome-wrap.withdraw .n-welcome  h5 {
+    width: 100%;
+    text-align: center;
+    color: #999;
+    word-break: break-all;
+}
+.n-welcome-wrap.withdraw .n-welcome  h5 span{
+    display:inline-block;
+}
+.n-welcome-wrap.withdraw .n-welcome  a.btn-primary{
+    margin:5px 0 30px 0;
+}
+/*withraw*/

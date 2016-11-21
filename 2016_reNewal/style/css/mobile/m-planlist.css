@@ -1,0 +1,211 @@
+@CHARSET "UTF-8";
+.plan-list {
+  width:100%;
+  /*margin:44px auto 0;*/
+}
+.plan-list ul{
+  width:100%;
+  margin:0 0 20px 0 ;
+}
+.plan-list li {
+  width:100%;
+  min-width:310px;
+  margin-bottom:10px;
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+}
+.plan-list .plan-list-top {
+  position: relative;
+  width:100%;
+  background: #ffffff;
+}
+.plan-list .list-title {
+  width:100%;
+  height:50px;
+}
+.plan-list .list-title h3 {
+  line-height: 50px;
+  text-align: center;
+  font-size:15px;
+  color: #333;
+}
+.plan-list .cover-img {
+  position: relative;
+  width:100%;
+  height:140px;
+  overflow: hidden;
+}
+.plan-list .cover-img img {
+  width: 100%;
+  min-height: 150px;
+}
+.plan-list .cover-img .bg{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.2)!important
+}
+.plan-list .list-author-info {
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  min-height:40px;
+  padding:10px;
+  z-index: 100;
+  overflow: hidden;
+}
+.plan-list .list-author-info div{
+  float:left;
+  font-size:10px;
+  color: #ffffff;
+  padding-left:5px;
+  line-height:2;
+}
+.plan-list .list-author-info .user-img {
+  width:25px;
+  padding:0;
+}
+.plan-list .list-author-info .user-img img{
+  width:22px;
+  height:22px;
+  border-radius: 40px;
+}
+.plan-list .list-author-info .user-name {
+  font-size:12px;
+  font-weight:bold;
+}
+.plan-list .list-author-info .user-type {
+  float:right;
+}
+.plan-list .plan-tit {
+  position: absolute;
+  top:15%;
+  left:0;
+  width:100%;
+  padding:10px 10px;
+  text-align: center;
+}
+.plan-list .plan-tit h3 {
+  line-height: 1.4;
+  font-size:20px;
+  font-weight: bold;
+  color: #ffffff;
+  padding:0;
+  margin:0 0 5px 0;
+  text-align: center;
+  /*text-shadow: 2px 2px 2px rgba(0,0,0,0.3);*/
+}
+.plan-list .plan-tit .countries-day-term {
+  text-align: center;
+  overflow: hidden;
+  /*text-shadow: 2px 2px 2px rgba(0,0,0,0.3);*/
+}
+.plan-list .plan-tit .countries-day-term span{
+  display: inline-block;
+  position: relative;
+  padding:0 5px 0 6px;
+  font-size:12px;
+  color: #ffffff;
+  font-weight: normal;
+}
+.plan-list .plan-tit .countries-day-term span:first-child::before{
+  display: none;
+}
+.plan-list .plan-tit .countries-day-term span::before {
+  position: absolute;
+  top:6px;;
+  left:-1px;
+  display: block;
+  content:"";
+  width:2px;
+  height:2px;
+  background:#fff;
+}
+.plan-list .list-contents {
+  padding: 10px;
+  border-bottom:1px solid #eee;
+}
+.plan-list .list-contents .tit {
+  line-height:1.5;
+  padding-bottom:5px;
+  font-size:15px;
+  font-weight: bold;
+  color: #333;
+  overflow: hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+}
+.plan-list .list-contents .desc {
+  max-height: 40px;
+  line-height:1.4;
+  padding-bottom:5px;
+  font-size:14px;
+  color:#666666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp:2; /* 라인수 */
+  -webkit-box-orient: vertical;
+  word-wrap:break-word;
+}
+.plan-list .response {
+  position: relative;
+  overflow: hidden;
+  padding:0 10px;
+}
+.plan-list .response .tour-time {
+  float:left;
+  height:30px;
+  line-height: 30px;;
+  color: #bbbbbb;
+  font-size:12px;
+}
+.plan-list .response .count {
+  float:right;
+  height:30px;
+}
+.plan-list .response .count div{
+  float:left;
+  padding-left:25px;
+  line-height: 30px;
+  color: #bbbbbb;
+}
+.plan-list .response .count div span{
+  padding-right:2px;
+  font-weight: bold;;
+  color: #999999;
+}
+.plan-list .response .count .post {
+  background: url(../../../images/m-icon-post2.png) no-repeat 0 center;
+  background-size:15px 15px;
+}
+.plan-list .response .count .spot {
+  background: url(../../../images/m-icon-spot.png) no-repeat 6px center;
+  background-size:15px 15px;
+}
+
+a.see-more:hover {
+  text-decoration: none;
+}
+
+/* plan search list count {*/
+.total-plan-count h3.search-ttl {
+  height: 50px;
+  line-height: 50px;
+  font-size:15px;
+  color: #666;
+  margin:0;
+  padding:0;
+  width:100%;
+  text-align: center;
+  font-weight: normal;
+}
+.total-plan-count h3.search-ttl span {
+  color: #ff8000;
+  font-weight: 600;
+}
+/* plan search list count }*/

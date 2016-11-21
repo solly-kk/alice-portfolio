@@ -1,0 +1,49 @@
+@CHARSET "UTF-8";
+.note-page-body {
+  /*padding-top:55px;*/
+}
+/* 커뮤니티 뷰  {*/
+.m-community-box {
+  overflow: hidden;
+  position: relative;
+}
+.m-community-box .m-post-wrap {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin:0 auto 10px ;
+  background: #fff;
+  z-index: 5;
+}
+.m-post-wrap.m-post .right-info{
+  top: 10px;
+}
+.m-post-wrap.m-post .right-info p {
+  width: 100%;
+  line-height: 17px;
+  padding:0;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.m-post-wrap.m-post .right-info span {
+  display: block;
+  width: 100%;
+  line-height: 17px;
+  padding:0;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.m-community-box .m-post-wrap .m-post {
+  width: 100%;
+  margin:0;
+  background:none;
+  border:none;
+}
+
+/* 커뮤니티 뷰  }*/
+
+.note-page-body .contents-container .curation-list {
+  margin:0 auto 10px
+}

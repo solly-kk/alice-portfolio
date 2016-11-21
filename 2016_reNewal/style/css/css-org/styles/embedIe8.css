@@ -1,0 +1,9 @@
+.weekcalendar tbody td.axis {
+  background-color: #ffffff;
+}
+.weekcalendar tbody tr{
+  border-bottom: 1px solid #eeeeee;
+}
+.weekcalendar tbody td.cell {
+  background-color: #f8f8f8;
+}

@@ -1,0 +1,70 @@
+/* slider directive에서 사용함.*/
+.day-slider {
+  width: 190px;
+  height: 85px;
+  background: #fff;
+  padding:19px 10px;
+}
+
+.day-slider ul {
+  list-style-type: none;
+  padding:0;
+  height: 25px;
+  display: block;
+}
+
+.day-slider .label {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  color: #999;
+  padding: 0 7px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: bold;
+  background-color: #f1f0ee;
+}
+
+.day-slider .label.slider_day_min {
+  float: left;
+  text-align: left;
+}
+
+.day-slider .label.slider_day_max {
+  float: right;
+  text-align: right;
+}
+
+#slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 18px;
+  height: 19px;
+  cursor: pointer;
+  background: url('../images/main_side_slider_handle.png') no-repeat 50% 50%;
+  font-weight: bold;
+  color: #1C94C4;
+  outline: none;
+  top: -7px;
+  margin-left: -12px;
+  border:none;
+}
+#slider .ui-slider-range {
+  border-color: #eb7600 #f37d06 #f77c00 #f77c00;
+  background: #fe7f00;
+  position: absolute;
+  border: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 25px;
+}
+
+.new-spot-one #slider {
+  width: 360px;
+}
+
+.new-spot-one .day-slider {
+  width: 365px;
+}

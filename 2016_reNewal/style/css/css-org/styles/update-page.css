@@ -1,0 +1,46 @@
+.sns-links {
+  padding-top: 10px;
+  display: block;
+  height: 48px;
+  clear: left;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.sns-links a,
+.sns-links .kakao-id-img {
+  display: block;
+  width: 48px;
+  height: 48px;
+  float: left;
+  margin-right: 10px;
+}
+
+.sns-links a:last-child {
+  margin-right: 0;
+}
+
+.sns-links a:hover {
+  text-decoration: none;
+}
+
+.sns-links.kr {
+  width: 490px;
+}
+
+.sns-links.kr .kakao-id,
+.sns-links.kr .kakao-id-img {
+  display: block;
+  float: left;
+}
+
+.sns-links.kr .kakao-id {
+  padding-left: 10px;
+  border-left: 1px solid #ccc;
+  width: 180px;
+}
+
+.sns-links.kr .kakao-id span {
+  margin-top: 3px;
+  display: block;
+}

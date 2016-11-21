@@ -1,0 +1,14 @@
+.list-middle .list-r {
+  display: inline-block;
+  vertical-align: top;
+  width: 330px;
+  height: 116px;
+  position: relative;
+  overflow:hidden;
+}
+.list-middle .list-r img {
+  position: absolute;
+  display: block;
+  min-height: 116px;
+  max-width: 330px;
+}

@@ -1,0 +1,260 @@
+@CHARSET "UTF-8";
+
+/* Spot-Detail page Start } */
+.spot-detail-top {
+  position: relative;
+  overflow: hidden;
+  width:100%;
+  height: 22.5em;
+}
+.spot-detail-top .tit-img {
+  position: relative;
+  width:100%;
+  height:100%;
+
+}
+.spot-detail-top .tit-img img{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  min-height: 22.5em;
+}
+.spot-detail-top .plan-title {
+  position: absolute;
+  top:0;
+  left:0;
+  padding:15px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.15)!important;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+}
+.spot-detail-top .plan-title h2 {
+  line-height: 20px;
+  font-size: 17px;
+  color: #fff;
+}
+.spot-detail-top .plan-title .tit-desc {
+  padding-top:5px;
+  font-size: 11px;
+  color: #fff;
+}
+.spot-detail-top .plan-title .img-count {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  color: #fff;
+  font-size: 11px;
+}
+
+.plan-title a.btn-pakage {
+  position: absolute;
+  bottom: 5%;
+  right: 2%;
+  z-index: 5;
+  border-radius: 0;
+}
+.spot-note-box {
+  position: relative;
+  width: 96%;
+  margin: -10px auto 0;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius:4px;
+  z-index: 6;
+}
+.spot-note-box .note-title {
+  line-height: 1.4;
+  padding: 10px;
+  color: #333;
+  font-size: 14px;
+  border-bottom:1px solid #eeeeee;
+}
+.spot-note-box .note-list {
+  position: relative;
+}
+.spot-note-box .note-list dl {
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+}
+.spot-note-box .note-list dt {
+  display: block;
+  float:left;
+  width:22%;
+  line-height: 18px;
+  padding-bottom:3px;
+  color: #666666;
+}
+.spot-note-box .note-list dd {
+  display: block;
+  float:left;
+  width: 78%;
+  line-height: 18px;
+  padding-bottom:3px;
+  color: #999999;
+}
+.spot-note-box .note-list dd pre {
+  padding:2px 0 0 0;
+  margin:0;
+  line-height: 18px;
+  color: #999999;
+  border:none;
+  background:none;
+  border-radius: 0;
+}
+.spot-note-box .note-list dd a{
+  text-decoration: none;
+  color: #999999;
+}
+.spot-note-box .note-list .note-map {
+  overflow: hidden;
+  height: 10em;
+  border-top:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+  z-index: 10;
+}
+.spot-note-box .note-list .note-map .map{
+  height: 10em;
+}
+.spot-note-box .btn-box {
+  overflow: hidden;
+}
+.spot-note-box .btn-box a{
+  display: block;
+  float:left;
+  width:33.33%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #999;
+  text-decoration: none;
+}
+.spot-note-box .btn-box a:first-child {
+  border-right:1px solid #eeeeee;
+}
+.spot-note-box .btn-box a:last-child{
+  border-left:1px solid #eeeeee;
+
+}
+.spot-note-box .btn-box a span {
+  display: inline-block;
+  height: 40px;
+  padding:0 0 0 25px;
+  font-size: 12px;
+  background:url(../../../images/m-bg-search-spot.png) no-repeat -10px center;
+  background-size: 40px 40px;
+}
+.spot-note-box .btn-box a:first-child span {
+  background:url(../../../images/m-bg-find.png) no-repeat -10px center;
+  background-size: 40px 40px;
+}
+
+.spot-note-box .btn-box a:last-child span {
+  background:url(../../../images/m-bg-search-htl.png) no-repeat -10px center;
+  background-size: 40px 40px;
+}
+.founder-info {
+  width: 96%;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.founder-info .author-box {
+  overflow: hidden;
+}
+.founder-info .author-box .author-img {
+  overflow: hidden;
+  float: left;
+  width: 25px;
+  margin: 0 5px 0 0;
+  height: 25px;
+  border-radius: 15px;
+}
+.founder-info .author-box .author-img a{
+  width: 100%;
+  height: 100%;
+}
+.founder-info .author-box .author-img img{
+  width: 100%;
+  height: 100%;
+}
+.founder-info .author-name {
+  float: left;
+  max-width: 39%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.founder-info .author-name h3{
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  color:#666
+}
+.founder-info .author-name h4{
+  font-size: 10px;
+  color:#999;
+}
+.founder-info .desc {
+  float:right;
+  max-width: 50%;
+  line-height: 25px;
+  text-align: right;
+  color:#999;
+
+}
+.m-spot-deatil h3.title-post {
+  width: 96%;
+  line-height: 20px;
+  margin: 20px auto 0;
+  padding-left:2px;
+  font-size: 14px;
+  color: #333;
+}
+
+.m-container a.see-more {
+  top:0;
+}
+.m-container .see-more.all-post {
+  margin:10px auto 15px;
+  border-radius: 4px;
+}
+/* Spot-Detail page End } */
+
+/* Spot Coupon {*/
+.m-container .coupon-box {
+  position: absolute;
+  bottom:15px;
+  left:0;
+  width: 100%;
+}
+.m-container .coupon-box a{
+  display: block;
+  width: 96%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin:0 auto;
+  padding:0;
+  font-size:15px;
+  color: #fff;
+  border-radius: 4px;
+}
+.m-container .coupon-box a.btn-m-coupon {
+  background:#00959e;
+}
+.m-container .coupon-box a.btn-m-ticket{
+  background:#ec5765;
+}
+.m-container .coupon-box a img{
+  width: 18px;
+  height: 15px;
+  vertical-align: top;
+  margin-top: 17px;
+}
+/* Spot Coupon }*/

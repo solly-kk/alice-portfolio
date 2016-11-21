@@ -1,0 +1,350 @@
+@CHARSET "UTF-8";
+.spot-page-body {
+  /*padding-top:44px;*/
+}
+/* Spot-Detail page Start } */
+.spot-page-body .spot-detail-view.active {
+  display: block;
+  margin-top: -1px;
+}
+.spot-page-body .spot-detail-view {
+  display: none;
+}
+.spot-page-body .mw {
+  display: none;
+}
+.spot-detail-top {
+  position: relative;
+  overflow: hidden;
+  width:100%;
+  height: 18em;
+}
+.spot-detail-top .tit-img {
+  position: relative;
+  width:100%;
+  height:100%;
+
+}
+.spot-detail-top .tit-img img{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  min-height: 18em;
+}
+.spot-detail-top .plan-title {
+  position: absolute;
+  top:0;
+  left:0;
+  padding:15px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.15)!important;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+}
+.spot-detail-top .plan-title h2 {
+  line-height: 20px;
+  font-size: 17px;
+  color: #fff;
+}
+.spot-detail-top .plan-title .tit-desc {
+  padding-top:5px;
+  font-size: 11px;
+  color: #fff;
+}
+.spot-detail-top .plan-title .img-count {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  color: #fff;
+  font-size: 11px;
+}
+
+.plan-title a.btn-pakage {
+  position: absolute;
+  bottom: 5%;
+  right: 2%;
+  z-index: 5;
+  border-radius: 0;
+}
+.m-spot-deatil .tit-box {
+  background:#ffffff;
+  padding:15px 10px;
+  margin-bottom:5px;
+}
+.m-spot-deatil .note-title {
+  width:100%;
+  line-height: 1.4;
+  text-align: center;
+  margin-bottom:5px;
+  color: #333;
+  font-size: 17px;
+  word-break: break-all;
+}
+.m-spot-deatil p.desc {
+  width: 100%;
+  text-align: center;
+  font-size:16px;
+  word-break: break-all;
+}
+.spot-note-box {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  z-index: 6;
+}
+.spot-note-box .spot-response {
+  position: relative;
+  padding:15px 10px 10px 10px;
+}
+.spot-note-box .spot-response p{
+  line-height:22px;
+  padding:0 0 5px 25px;
+  font-size:16px;
+  color: #999999;
+}
+.spot-note-box .spot-response p span{
+  font-weight: bold;
+}
+.spot-note-box .spot-response p.wish {
+  background: url(../../../images/m-icon-spot-wish.png) no-repeat 5px 5px;
+  background-size: 13px 13px;
+}
+.spot-note-box .spot-response .wish span {
+  color: #d65f4c;
+}
+.spot-note-box .spot-response p.been{
+  background:url(../../../images/m-icon-spot-been.png) no-repeat 5px 5px;
+  background-size:13px 13px;
+}
+.spot-note-box .spot-response .been span {
+  color: #f2a531;
+}
+.spot-note-box .spot-response p.post{
+  background:url(../../../images/m-icon-spot-post.png) no-repeat 5px 5px;
+  background-size:13px 13px;
+}
+.spot-note-box .spot-response .post span {
+  color: #333333;
+}
+.spot-note-box .note-list {
+  position: relative;
+}
+.spot-note-box .note-list dl {
+  position: relative;
+  overflow: hidden;
+  padding: 0 10px 0 10px;
+}
+.spot-note-box .note-list dt {
+  display: block;
+  width:100%;
+  line-height: 18px;
+  padding:10px 0 5px 0;
+  font-size: 14px;
+  color: #bbbbbb;
+  font-weight: 400;
+}
+.spot-note-box .note-list dd {
+  display: block;
+  width:100%;
+  line-height: 1.4;
+  padding-bottom:10px;
+  color: #666666;
+  font-size: 16px;
+  border-bottom:1px solid #eeeeee;
+}
+.spot-note-box .note-list dt:first-child{
+  border-top:1px solid #eeeeee;
+}
+.spot-note-box .note-list dd:last-child{
+  border-bottom:none;
+}
+.spot-note-box .note-list dd p {
+  color: #666666;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: normal;
+}
+.spot-note-box .note-list dd pre {
+  padding:2px 0 0 0;
+  margin:0;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #666666;
+  border:none;
+  background:none;
+  border-radius: 0;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+.spot-note-box .note-list dd a{
+  line-height: 1.4;
+  color: #999999;
+  font-size: 16px;
+  text-decoration: none;
+}
+.spot-note-box .note-list .note-map {
+  overflow: hidden;
+  height: 10em;
+  z-index: 10;
+  background:#ff8000;
+}
+.spot-note-box .note-list .note-map .map{
+  height: 10em;
+}
+.spot-note-box .btn-box {
+  overflow: hidden;
+}
+.spot-note-box .btn-box a{
+  display: block;
+  float:left;
+  width:33.33%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #999;
+  text-decoration: none;
+}
+.spot-note-box .btn-box a span {
+  display: inline-block;
+  height: 40px;
+  padding:0 0 0 20px;
+  font-size: 12px;
+  background:url(../../../images/m-bg-search-spot.png) no-repeat 0px center;
+  background-size: 15px 15px;
+}
+.spot-note-box .btn-box a:first-child span {
+  background:url(../../../images/m-bg-find.png) no-repeat 0px center;
+  background-size: 15px 15px;
+}
+.spot-note-box .btn-box a:last-child span {
+  background:url(../../../images/m-bg-search-htl.png) no-repeat 0px center;
+  background-size: 15px 15px;
+}
+.founder-info {
+  width: 96%;
+  margin: 10px auto;
+  padding: 0 0 7px 0;
+  border-bottom: 1px solid #dddddd;
+}
+.founder-info .author-box {
+  overflow: hidden;
+}
+.founder-info .author-box .author-img {
+  overflow: hidden;
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px 0 0;
+  border-radius: 15px;
+  border:1px solid #ffffff;
+}
+.founder-info .author-box .author-img a{
+  width: 100%;
+  height: 100%;
+}
+.founder-info .author-box .author-img img{
+  width: 100%;
+  height: 100%;
+}
+.founder-info .author-box p.desc{
+  display: none;
+}
+.founder-info .author-name {
+  float: left;
+  max-width:70%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.founder-info .author-name h3{
+  float: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 20px;
+  font-size: 14px;
+  color:#333
+}
+.founder-info .author-name h4{
+  float: left;
+  margin-left:5px;
+  margin-top:5px;
+  font-weight: normal;
+  font-size: 12px;
+  color:#333;
+}
+.m-spot-deatil h3.title-post {
+  width: 96%;
+  line-height: 20px;
+  margin: 30px auto 0;
+  padding-left:2px;
+  font-size: 14px;
+  color: #333;
+}
+
+.m-container a.see-more {
+  top:0;
+}
+.m-container .see-more.all-post {
+  width:96%;
+  margin:10px auto 15px;
+  border-radius: 4px;
+}
+.m-spot-deatil .more-post {
+  display: block;
+  width:100%;
+  height:50px;
+  line-height:50px;
+  font-size:12px;
+  color: #999999;
+  text-align: center;
+}
+.m-spot-deatil .more-post span{
+  color: #ff8000;
+}
+/* Spot-Detail page End } */
+
+/* Spot Coupon {*/
+.m-container .coupon-box {
+  position: absolute;
+  bottom:15px;
+  left:0;
+  width: 100%;
+}
+.m-container .coupon-box a{
+  display: block;
+  width: 96%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin:0 auto;
+  padding:0;
+  font-size:15px;
+  color: #fff;
+  border-radius: 4px;
+}
+.m-container .coupon-box a.btn-m-coupon {
+  background:#00959e;
+}
+.m-container .coupon-box a.btn-m-ticket{
+  background:#ec5765;
+}
+.m-container .coupon-box a img{
+  width: 18px;
+  height: 15px;
+  vertical-align: top;
+  margin-top: 17px;
+}
+/* Spot Coupon }*/
+
+.spot-page-body .contents-container h3 {
+  margin-top: 15px;
+}
+.spot-page-body .contents-container .curation-list {
+  margin:0 auto 10px
+}

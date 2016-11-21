@@ -1,0 +1,496 @@
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 100;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'),
+  url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'),
+  url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'),
+  url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'),
+  url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'),
+  url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'),
+  url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'),
+  url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'),
+  url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format('woff2'),
+  url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format('woff'),
+  url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 900;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'),
+  url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'),
+  url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');
+}
+/*　bootstrap color change */
+html, body, .page-container {
+  width: 100%;
+  font-family: 'Noto Sans KR',"Helvetica Neue","Apple SD Gothic Neo",Helvetica,Arial,"Apple Gothic","돋움",Dotum,sans-serif!important;
+}
+pre {
+  font-family: 'Noto Sans KR',"Helvetica Neue","Apple SD Gothic Neo",Helvetica,Arial,"Apple Gothic","돋움",Dotum,sans-serif!important;
+}
+body {
+  position: relative;
+}
+/* mobile app */
+.mobile-popup {
+  width: 100%;
+  background: rgba(0,59,124,0.9);
+  height: 100%;
+  position: fixed;
+  top : 0;left: 0;
+  z-index: 2000;
+  display: none;
+}
+
+.mobile-popup .top-con {
+  height: 626px;
+}
+
+.mobile-popup .phone-img {
+  width: 536px;
+  height: 626px;
+  display: block;
+  margin:90px auto 0;
+}
+
+.mobile-popup .close-x {
+  width: 57px;
+  height: 57px;
+  background: url('../images/mobileweb_close.png') no-repeat 0 0;
+  position: absolute;
+  right:30px;
+  top:30px;
+  cursor: pointer;
+}
+
+.mobile-popup .bottom-con {
+  background: #ffffff;
+  height:420px;
+}
+
+.mobile-popup .bottom-text {
+  margin: 0 auto;
+  width: 640px;
+}
+
+.mobile-popup .app-btns {
+  width: 550px;
+  margin: 0 auto;
+  height: 90px;
+  display: block;
+}
+/* 위시빈 소개 {*/
+.n-company {
+  width:910px;
+}
+.n-company .comapnay-img {
+  margin-bottom:20px;
+}
+.n-company .tit {
+  padding:20px 0 10px 0;
+}
+.n-company .tit h3 {
+  position: relative;
+  line-height: 100%;
+  padding: 15px 0 0 0;
+  font-size: 50px;
+  color: #333;
+  font-weight: 200;
+}
+.n-company .tit h3:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 3px;
+  background: #333333;
+}
+.n-company .about-box {
+  padding-top:25px;
+}
+.n-company .about-box p {
+  line-height:24px;
+  margin:0 0 20px 0;
+  font-size:14px;
+  font-weight: 300;
+  color: #666666;
+}
+.n-company .about-box p.tit {
+  padding:0 0 5px 0;
+  margin:0;
+  font-size:18px;
+  font-weight: 500;
+  color: #333333;
+}
+.n-company .about-box p.tit span.impact{
+  color: #ff8000;
+}
+.about-box.bottom {
+  padding:85px 0;
+}
+.about-box.bottom .company-img {
+  margin-bottom:35px;
+}
+.about-box.bottom .tit {
+  margin:0 0 15px 0;
+}
+/* 위시빈 소개 }*/
+/* 이용문의 Start*/
+.inquiry h2 {
+  position: relative;
+  line-height: 100%;
+  padding: 15px 0 25px 0;
+  font-size: 50px;
+  color: #333;
+  font-weight: 200;
+}
+.inquiry h2:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 3px;
+  background: #333333;
+}
+.inquiry h3 span,
+.inquiry h3 strong,
+.inquiry h3 a {
+  font-size:14px;
+  color:#666;
+}
+.inquiry h3 span {
+  font-weight: 300;
+}
+.inquiry h3 strong,
+.inquiry h3 a {
+  font-weight: 500;
+}
+.inquiry h3 a:hover {
+  color: #666;
+}
+.inquiry h3 .first-txt {
+  font-weight: 500;
+  font-size:18px;
+  color: #333333;
+}
+#faq  {
+  width:100%;
+  margin:20px auto 0;
+  border-top:1px solid #eee;
+}
+#faq .faq-list {
+}
+.faq-list ul{
+  width:100%;
+  margin:0;
+  padding:0;
+}
+.faq-list li{
+  list-style: none;
+  text-align: left;
+  display: block;
+}
+.faq-list li .que-box {
+  position: relative;
+  border-bottom:1px solid #eee;
+}
+.faq-list li .que-box .tit {
+  line-height:28px;
+  padding:15px 0 15px 40px;
+  font-weight: 600;
+  font-size:14px;
+  color: #333;
+  background:url(/images/icon-faq-open.png) no-repeat 0px 14px;
+  cursor: pointer;
+}
+.faq-list li .que-box.open .tit{
+  background:url(/images/icon-faq-open.png) no-repeat 0px 14px;
+}
+.faq-list li .que-box .conts {
+  overflow: hidden;
+  display: none;
+  position: relative;
+  padding:0 0 15px 40px;
+}
+.faq-list li .que-box.open .conts {
+  display: block;
+  overflow: visible;
+  position: relative;
+  padding:0 0 15px 40px;
+  background:url(../../images/icon-faq-a.png) no-repeat 0 0;
+}
+.faq-list li .que-box .conts p {
+  line-height:1.5;
+  font-size:14px;
+  font-weight: 300;
+  color: #666;
+  margin:0;
+}
+.info-faq-box {
+  width:100%;
+  margin:25px auto;
+  padding:30px 0;
+}
+.info-faq-box p strong{
+  line-height: 1.5;
+  font-size:18px;
+  font-weight: 500;
+  color:#333333;
+  margin:0 0 5px 0;
+}
+.info-faq-box p {
+  line-height: 1.5;
+  font-size:18px;
+  font-weight: 500;
+}
+.info-faq-box p span {
+  display: inline-block;
+  word-break: break-all;
+}
+.faq-list li .que-box p a {
+  color:#666;
+}
+.info-faq-box a.btn-request {
+  display: inline-block;
+  position: relative;
+  height:59px;
+  line-height:60px;
+  margin:25px auto 0;
+  padding:0 90px 0 90px;
+  font-size: 18px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  background:#ffffff;
+  border:1px solid #ff8000;
+  color: #ff8000;
+}
+.info-faq-box a.btn-requests span{
+  display: inline-block;
+}
+.info-faq-box a.btn-request img {
+  display: inline-block;
+  margin:20px 0 0 10px;
+}
+.info-faq-box .faq-box-info-txt {
+  width:100%;
+  line-height:1.5;
+  padding: 10px 0 25px 0;
+  text-align: left;
+  color: #777;
+}
+.info-faq-box .faq-box-info-txt .depth2 {
+  padding-left:15px;
+}
+/* 이용문의 End */
+/* 약관 및 개인정보 {*/
+.wishbeen-provision {
+  margin:0 0 25px 0;
+}
+.m-container .wishbeen-provision {
+  background: #fff;
+  padding:20px;
+  border:1px solid #ccc;
+}
+.wishbeen-provision h2{
+  position: relative;
+  line-height:100%;
+  padding:15px 0 20px 0;
+  font-size:50px;
+  color: #333;
+  font-weight: 200;
+}
+.wishbeen-provision h2:before {
+  content:"";
+  display: block;
+  position: absolute;
+  top:0;
+  left:0;
+  width:100px;
+  height:3px;
+  background:#333333;
+}
+.wishbeen-provision h3 {
+  min-height: 40px;
+  line-height: 1.5;
+  font-size:18px;
+  color: #333;
+}
+.wishbeen-provision h3 {
+  padding-bottom:10px;
+}
+.wishbeen-provision p,
+.wishbeen-provision li {
+  min-height:24px;
+  line-height: 1.5;
+  font-size:14px;
+  color: #666;
+  word-break: break-word;
+}
+.wishbeen-provision .wrap {
+  width: 100%;
+  padding: 25px 0 0 0;
+  margin-top: 25px;
+  border-bottom: 1px solid #eee;
+}
+.wishbeen-provision .wrap:first-child {
+  margin:0;
+  padding:0;
+  border-top:none;
+}
+.wishbeen-provision .wrap p {
+  margin:0 0 10px;
+  min-height:30px;
+  line-height: 1.5;
+}
+/* list-type */
+.wishbeen-provision .list-type {
+  margin-bottom:15px;
+}
+
+.wishbeen-provision .list-type li {
+  min-height:30px;
+  line-height: 1.5;
+  position: relative;
+  padding:0 0 5px 0;
+}
+/* list-type1 */
+.wishbeen-provision .list-type1 {
+  margin-bottom:15px;
+}
+.wishbeen-provision .list-type1 p {
+  margin:0;
+}
+.wishbeen-provision .list-type1 li {
+  position: relative;
+  padding:0 0 5px 10px;
+}
+.wishbeen-provision .list-type1 li::after {
+  display: block;
+  position: absolute;
+  top:0;
+  left:0;
+  content:"-";
+}
+.wishbeen-provision .list-type1 li ul li {
+  padding: 0 0 0 10px;;
+}
+.wishbeen-provision .list-type1 li ul li:after {
+  display: none;
+}
+/* list-type2 */
+.wishbeen-provision .list-type2 {
+  margin-bottom:15px;
+}
+.wishbeen-provision .list-type2 p {
+  min-height:30px;
+  line-height: 1.5;
+  margin:0;
+}
+.wishbeen-provision .list-type2 li {
+  min-height:30px;
+  line-height: 1.5;
+  padding:0 0 5px 5px;
+}
+.wishbeen-provision .box-type {
+  float:left;
+  width: 25%;
+  margin-left:-1px;
+  margin-bottom:15px;
+}
+.wishbeen-provision .box-type:first-child {
+  margin:0 !important;
+}
+.wishbeen-provision .box-type > div {
+  border:1px solid #eee;
+}
+.wishbeen-provision .box-type > div p {
+  margin:0;
+}
+.wishbeen-provision .box-type p.title {
+  min-height: 60px;
+  line-height: 1.4;
+  padding:10px 15px;
+  text-align: center;
+  border-bottom:1px solid #eee;
+  background:#f6f6f6;
+}
+.wishbeen-provision .box-type p.txt {
+  text-align: center;
+  min-height:180px;
+  padding:15px;
+  line-height: 1.5;
+}
+@media only screen
+and (max-width : 880px) {
+  .wishbeen-provision .box-type p.title {
+    min-height: auto;
+  }
+  .wishbeen-provision .box-type {
+    float:left;
+    width: 50%;
+    margin-bottom:15px;
+  }
+
+  .wishbeen-provision .box-type p.txt {
+    text-align: center;
+    min-height:75px;
+    padding:15px;
+  }
+}
+@media only screen
+and (max-width : 585px) {
+  .wishbeen-provision .wishbeen-provision {
+    padding:10px;
+    border:1px solid #ccc;
+  }
+  .wishbeen-provision .box-type p.txt {
+    text-align: center;
+    min-height: 95px;
+    padding: 15px;
+  }
+}
+@media only screen
+and (max-width : 540px) {
+  .wishbeen-provision .box-type {
+    float:left;
+    width: 100%;
+    margin-bottom:15px;
+  }
+
+  .wishbeen-provision .box-type p.txt {
+    min-height:25px;
+  }
+}
+/* 약관 및 개인정보 }*/

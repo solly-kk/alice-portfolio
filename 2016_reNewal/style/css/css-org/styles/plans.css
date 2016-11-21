@@ -1,0 +1,560 @@
+/* continent main plan search */
+.plans-main-searches {
+  height: 60px;
+}
+
+.on-the-map-btn {
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+  line-height: 40px;
+  height: 40px;
+  padding-left: 40px;
+  background: #999999 url('../images/plans_side_map_open.png') no-repeat 0 0;
+  font-size: 14px;
+  width: 190px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  cursor: pointer;
+}
+.on-the-map-btn:hover {
+  /*background: #9C9EB3;*/
+}
+
+.plans-main-searches .search-plan {
+  margin:0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  width: 760px;
+  height: 40px;
+  position: relative;
+  margin-left: 25px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.plans-main-searches .search-plan select {
+  width: 190px;
+  height: 40px;
+  border:1px solid #ff8000;
+  color: #999999;
+  margin-bottom: 0;
+  float: left;
+  display: block;
+  position: absolute;
+}
+
+.plans-main-searches .search-plan input[type="text"].city {
+  padding-left: 36px;
+  width: 511px;
+  height: 40px;
+  margin-bottom: 0;
+  background: #fff url('../images/plans_search_input.png') no-repeat 0 0;
+  border:1px solid #ff8000;
+  border-right:0;
+  position: absolute;
+  margin-left: 205px;
+  border-radius: 5px 0 0 5px;
+  -webkit-border-radius: 5px 0 0 5px;
+  -moz-border-radius: 5px 0 0 5px;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+
+.plans-main-searches .search-plan .btn-default.city {
+  width: 49px;
+  border:1px solid #ff8000;
+  border-left:0;
+  position: absolute;
+  right: 0;
+  height: 40px;
+  padding: 0;
+  border-radius: 0 5px 5px 0;
+  -webkit-border-radius: 0 5px 5px 0;
+  -moz-border-radius: 0 5px 5px 0;
+}
+
+/* search on map */
+
+.search-on-map-wrap {
+  display: none;
+  background: #ffffff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  width: 980px;
+  height: 403px;
+  border: 1px solid #ccc;
+  position: relative;
+  margin-bottom: 38px;
+}
+
+.search-on-map-wrap .arrow-up {
+  width: 21px;
+  height: 18px;
+  background-image: url('../images/search_on_map_arrow.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  position: absolute;
+  left: 70px;
+  top: -11px;
+}
+
+.subnav {
+  width: 978px;
+  background: #FFF;
+  height: 50px;
+  border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+}
+
+.subnav ul.subnav-tabs {
+  height: 50px;
+  width:978px;
+  margin:0;
+  padding:0;
+  display: block;
+  list-style-type: none;
+  font-size: 14px;
+  color:#666666;
+}
+
+.subnav ul.subnav-tabs li {
+  min-width: 163px;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-right: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.subnav ul.subnav-tabs li:last-child {
+  border-right:none;
+}
+
+.subnav ul.subnav-tabs li:hover {
+  border-bottom: 4px solid #fff2e5;
+}
+
+.subnav ul.subnav-tabs li.active {
+  color: #ff8000;
+  border-bottom: 4px solid #ff8000;
+}
+
+.jqvmap-zoomin, .jqvmap-zoomout {
+  width: 16px!important;
+  height: 16px!important;
+  font-size: 10px!important;
+}
+
+.city-select {
+  height: 330px;
+  margin: 10px;
+}
+
+.con-map, .searches-by-name {
+  float: left;
+}
+
+.con-map {
+  position: relative;
+  height: 330px;
+  width:478px;
+  overflow: hidden;
+}
+
+.con-map .vmap {
+  position: relative;
+}
+
+.city-select .searches-by-name {
+  position: relative;
+  display: inline-block;
+  background: #7388A7;
+  height: 36px;
+  border-radius: 0 0 2px 2px;
+  -webkit-border-radius: 0 0 2px 2px;
+  -moz-border-radius: 0 0 2px 2px;
+  width: 480px;
+}
+
+.city-select .searches-by-name span.more {
+  float: right;
+  font-weight: normal;
+  margin-right: 8px;
+  line-height: 36px;
+  background: none;
+}
+
+.city-select .searches-by-name span.more a {
+  color: #fff;
+}
+
+.city-select ul.all-countries {
+  list-style-type: none;
+  padding:0;
+  margin: 0 0 0 10px;
+  z-index: 20;
+  width: 465px;
+  background: #FFF;
+  height:330px;
+  display: inline-block;
+}
+
+.city-select ul.all-countries li {
+  float: left;
+  font-size: 14px;
+  height: 20px;
+  line-height: 20px;
+  padding: 0 3px;
+  background: #eee;
+  color: #999;
+  display: block;
+  text-align: center;
+  margin: 0 6px 8px 0;
+  cursor: pointer;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+}
+
+.city-select ul.all-countries li.selected {
+  /*height: 18px;*/
+  line-height: 18px;
+  padding: 0 2px;
+  background: #fff2e5;
+  border: 1px solid #ff8000;
+  color: #ff8000;
+}
+
+/* main-sidebar  */
+
+.plans-main-contents {
+  width: 980px;
+  display: block;
+}
+
+.main-sidebar {
+  width: 190px;
+  height: 1185px;
+  margin-right: 30px;
+  float: left;
+  display: block;
+  position: relative;
+  background: #fff;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid #CCCCCC;
+}
+
+.main-sidebar h5 {
+  width: 190px;
+  padding: 0px 10px;
+  height: 40px;
+  line-height: 40px;
+  color: #ffffff;
+  background: #999999;
+  margin:0;
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.search-by-theme {
+  height: 1050px;
+  overflow: hidden;
+}
+
+.search-by-theme .theme {
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.search-by-theme ul {
+  list-style-type: none;
+  margin:0;
+  padding:0;
+}
+
+.search-by-theme ul li {
+  font-size: 14px;
+  display: block;
+  width: 190px;
+  padding:0 10px;
+  height: 39px;
+  line-height: 39px;
+  color: #666666;
+  cursor: pointer;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.search-by-theme ul li:last-child {
+  border-bottom: 0;
+}
+
+.search-by-theme ul li div {
+  display: inline-block;
+  vertical-align: middle;
+}
+.search-by-theme ul li .theme-checkbox {
+  background: #fff;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border: 1px solid #b9b9b9;
+  border-bottom-color: #999;
+  border-top-color: #ccc;
+  font-weight: bold;
+  line-height: 17px;
+  overflow: hidden;
+  text-align: center;
+  text-indent: 100%;
+  top: 0;
+  height: 18px;
+  width: 18px;
+  white-space: nowrap;
+  min-height: 0;
+  padding-left: 0;
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+.search-by-theme ul li:hover .theme-checkbox {
+  background-color:#ddd;
+  color:#999999;
+  cursor:pointer;
+  text-indent:0;
+}
+
+.search-by-theme ul li.selected .theme-checkbox {
+  background-color:#fff;
+  border:1px solid #777;
+  -webkit-box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: #ff8000;
+  font-weight: bold;
+  text-indent: 0;
+}
+
+.search-by-theme ul li.selected {
+  font-weight: bold;
+}
+.search-by-theme li.product {
+  background: #ffd8d8;
+}
+.search-by-theme li.product.selected {
+  background: #ff8fac;
+  font-weight: bold;
+}
+
+.search-by-theme .theme-more {
+  display: block;
+  padding:5px;
+
+}
+
+/* plan search list top sort and count */
+
+.plan-list-top {
+  clear: both;
+  display: block;
+  font-size: 14px;
+  height: 25px;
+  line-height: 15px;
+  padding: 0 0 10px 0;
+  margin: 0 0 15px 0;
+  border-bottom: 1px solid #ccc;
+  color: #666666;
+}
+
+.plan-list-top .list-order,
+.plan-list-top .admin-published {
+  float: left;
+}
+
+.plan-list-top .admin-published {
+  margin: 0 0 0 35px;
+  height: 20px;
+}
+
+.plan-list-top .admin-published label {
+  margin: 0;
+}
+
+.plan-list-top .list-order a {
+  color: #666666;
+}
+
+.plan-list-top .list-order a:hover {
+  color: #ff8000;
+  text-decoration: none;
+}
+
+.plan-list-top a.current {
+  color: #ff8000;
+  font-weight: bold;
+}
+
+.plan-list-top span.mid {
+  display: inline-block;
+  vertical-align: middle;
+  height: 14px;
+  width: 1px;
+  margin:0 10px;
+  background:#ccc;
+}
+
+.plan-list-top .total-plan-count {
+  float: right;
+}
+
+.plan-list-top span.count {
+  color: #ff8000;
+  font-weight: bold;
+}
+
+.list-l {
+  display: inline-block;
+  vertical-align: top;
+  width: 403px;
+}
+
+.list-l .author-img-res {
+  width:60px;
+  height: 60px;
+  background:#ffffff;
+  border:1px solid #ddd;
+  border-radius: 60px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  vertical-align: top;
+  display: inline-block;
+  margin-left: 4px;
+}
+
+.list-l .author-img {
+  margin: 3px;
+  width:52px;
+  height: 52px;
+  border-radius: 52px;
+  -webkit-border-radius: 52px;
+  -moz-border-radius: 52px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.list-l .author-img img {
+  height: 52px;
+  min-width: 52px;
+}
+
+.list-l .list-txt {
+  display: inline-block;
+  vertical-align: top;
+  width: 320px;
+  margin-left: 3px;
+}
+
+.list-l .list-txt .author-name {
+  display: block;
+  float: left;
+  margin-top: 10px;
+  color: #333333;
+}
+
+.list-l .list-txt .author-name .name {
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 3px;
+  color: #333333;
+}
+
+.list-l .list-txt .author-name .author {
+  font-size: 12px;
+  color: #999999;
+}
+
+.list-l .list-txt .short-de {
+  clear: both;
+  display: block;
+  width: 320px;
+  font-size: 16px;
+  color: #333333;
+  height: 28px;
+  line-height: 28px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.list-l .list-txt .long-de {
+  width: 320px;
+  font-size: 14px;
+  line-height: 19px;
+  height: 57px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  color: #999999;
+}
+
+/*--for long-de ellipsis--*/
+.list-l .pre-dots {
+  float: right;
+  height: 38px;  /* 3x line height (one less than visible lines) */
+}
+
+.list-l .dots {
+  float: right; /* to make the text wrap around the dots */
+  clear: right; /* to push us below (not next to) .pre-dots */
+}
+
+/* hides the dots if the text has *exactly* 3 lines */
+.list-l .hidedots1 {
+  background: white;
+  width: 340px;
+  height: 19px;       /* line height */
+  position: absolute; /* otherwise, because of the width, it'll be wrapped */
+}
+
+/* hides the dots if the text has *less than* 3 lines */
+.list-l .hidedots2 {
+  background: white;
+  width: 340px;
+  height: 57px;       /* 4x line height, to ensure hiding even if empty */
+  position: absolute; /* ensures we're above the dots */
+}
+
+.list-middle .list-r {
+  display: inline-block;
+  vertical-align: top;
+  width: 330px;
+  height: 116px;
+  position: relative;
+  overflow:hidden;
+}
+
+.list-middle .list-r img {
+  position: absolute;
+  display: block;
+  min-height: 116px;
+  max-width: 330px;
+}
+
+/* plan list */
+
+.continent-list {
+  width: 760px;
+  float: left;
+  display: block;
+  margin:0;
+}

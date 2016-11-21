@@ -1,0 +1,389 @@
+@CHARSET "UTF-8";
+/* reservation */
+html, body {
+  width:100%;
+  height:100%;
+  font-family: "맑은 고딕","Malgun Gothic","Helvetica Neue","Apple SD Gothic Neo",Helvetica,Arial,"Apple Gothic","돋움",Dotum,sans-serif!important;
+}
+html, body, div, p, span ,h1,h2,h3,h4, li, ul{
+  margin:0;
+  padding:0;
+}
+body {
+  position: relative;
+  min-height: 100%;
+}
+ul, ul li, ol , ol li {
+  list-style: none;
+}
+body {
+  -webkit-text-size-adjust:none
+}
+table {
+  border-collapse:collapse;
+  border-spacing:0
+}
+a {
+  cursor: pointer;
+}
+input[type='text'],
+input[type='password'],
+input[type='submit'],
+input[type='search'] {
+  -webkit-appearance:none;
+  border-radius:0
+}
+img {
+  vertical-align: top;
+}
+#pop-reservation {
+  width: 100%;
+  height:100%;
+  min-height: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+}
+#pop-reservation .inner-wrap {
+
+  background:#f6f6f6 url(/images/commerce/bg-body.png)no-repeat center top;
+}
+#pop-reservation .pop-wrap {
+  position: relative;
+  max-width:600px;
+  min-width:250px;
+  margin:0 auto;
+}
+#pop-reservation .pop-wrap .tit-box {
+  position: relative;
+  padding:25px 20px 17px 20px;
+}
+#pop-reservation .pop-wrap .tit-box h1 {
+  position: relative;
+  font-size:24px;
+  color: #fff;
+  font-weight: normal;
+  margin:0;
+  padding:0;
+  z-index: 5;
+}
+#pop-reservation .pop-wrap .tit-box p.sibeen {
+  display:none;
+  position: absolute;
+  top:40px;
+  right:20px;
+}
+#pop-reservation .pop-wrap .cont-box {
+  position: relative;
+  min-width:250px;
+  padding:20px 20px 25px 20px;
+  border-top:3px solid #ff8000;
+  border-bottom:3px solid #ff8000;
+  background:#ffffff;
+  z-index: 1;
+}
+#pop-reservation .pop-wrap .cont-box .info-txt-box {
+  /* border-bottom:1px solid #dddddd;*/
+}
+#pop-reservation .pop-wrap .cont-box .info-txt-box h2 {
+  font-size:20px;
+  color: #333;
+  font-weight: 600;
+  line-height: 1.4;
+  padding-bottom:5px
+}
+#pop-reservation .pop-wrap .cont-box .info-txt-box .desc {
+  font-size:14px;
+  color: #999999;
+  padding-bottom:20px
+}
+#pop-reservation .pop-wrap .cont-box .tbl-box {
+  padding-top:20px;
+}
+#pop-reservation .pop-wrap .cont-box .tbl-box table{
+  position: relative;
+  overflow: hidden;
+  width:100%;
+  min-width:250px;
+}
+#pop-reservation .pop-wrap .cont-box .tbl-box th {
+  width:100%;
+  height:40px;
+  line-height: 41px;
+  font-size: 16px;
+  color:#666;
+  text-align: left;
+  font-weight: normal;
+  padding:0;
+  margin:0;
+}
+#pop-reservation .pop-wrap .cont-box .tbl-box td{
+  width:100%;
+  height:40px;
+  line-height: 41px;
+  margin:0;
+  padding:0;
+  font-weight: normal;
+}
+#pop-reservation .pop-wrap .cont-box .tbl-box td input {
+  width:96%;
+  height:40px;
+  line-height: 41px;
+  padding:0 0 0 3%;
+  margin:0;
+  color: #999;
+  font-size: 14px;
+  border:1px solid #dddddd;
+  background:#f6f6f6;
+  font-weight: normal;
+}
+#pop-reservation .pop-wrap .cont-box .tbl-box td textarea {
+  width: 97%;
+  min-height: 100px;
+  max-height:130px;
+  line-height: 1.5;
+  font-size: 14px;
+  font-weight: normal;
+}
+#pop-reservation .pop-wrap .cont-box .inq-box {
+
+}
+#pop-reservation .pop-wrap .cont-box .inq-box .tit {
+  width: 100%;
+  font-size:16px;
+  color: #666;
+  margin:0;
+  padding:5px 0 15px 0;
+}
+#pop-reservation .pop-wrap .cont-box .agreebox {
+  position: relative;
+  width: 100%;
+  line-height: 20px;
+  margin-top:20px;
+  padding:0 0 20px 0;
+  color: #666;
+  border-bottom:1px solid #dddddd;
+}
+#pop-reservation .pop-wrap .cont-box .agreebox input {
+  position: absolute;
+  top:0;
+  left:0;
+  width:20px;
+  height:20px;
+  padding:0;
+  margin:0;
+  vertical-align: middle;
+}
+#pop-reservation .pop-wrap .cont-box .agreebox label {
+  display: block;
+  position: relative;
+  padding-left:30px;
+  font-size:16px;
+  color: #999999;
+  font-weight: normal;
+}
+#pop-reservation .pop-wrap .cont-box .agreebox label strong a{
+  color: #666;
+  text-decoration: none;
+}
+#pop-reservation .pop-wrap .cont-box .btn-box {
+  width:100%;
+  height:50px;
+  margin:0 auto;
+  text-align: center;
+}
+#pop-reservation .pop-wrap .cont-box .btn-box .btn-reservation {
+  display: block;
+  width: 200px;
+  height:50px;
+  margin:25px auto 0;
+  line-height: 51px;
+  color:#fff;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  border:none;
+  text-decoration: none;
+  background:#ff8000;
+  cursor: pointer;
+  -webkit-appearance:none;
+  border-radius:0
+}
+#pop-reservation .footer {
+  position: relative;
+  text-align: center;
+}
+
+/* 이용약관 동의하기 {*/
+#pop-reservation .pop-wrap  .provision {
+  position: relative;
+  width: 100%;
+}
+#pop-reservation .pop-wrap  .provision p , .provision label{
+  margin:0;
+  padding:0;
+}
+#pop-reservation .pop-wrap .provision .agreebox {
+  padding:0;
+  margin:0;
+}
+#pop-reservation .pop-wrap .provision .agreebox.open {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+  min-height: 50px;
+  border-bottom:1px solid #eee;
+}
+#pop-reservation .pop-wrap .provision .agreebox .agree-txt {
+  display: none;
+}
+#pop-reservation .pop-wrap .provision .agreebox.open .agree-txt {
+  display: block;
+  overflow: hidden;
+  padding:15px 0;
+  background:#f6f6f6;
+  border-top:1px solid #eee;
+}
+#pop-reservation .pop-wrap .provision .agreebox .agree-txt:first-child{
+  border-top:none;
+}
+#pop-reservation .pop-wrap .provision .agreebox .agree-txt .ag-box {
+  overflow-x:hidden;
+  overflow-y: auto;
+  height: 150px;
+  padding:0 20px;
+}
+#pop-reservation .pop-wrap .provision .agreebox .agree-txt .ag-box h2  {
+  font-size:16px;
+  min-height: 30px;
+  line-height: 1.5;
+  margin-bottom:10px;
+}
+#pop-reservation .pop-wrap .provision .agreebox .agree-txt .ag-box h3 {
+  font-size:14px;
+  font-weight: normal;
+}
+#pop-reservation .pop-wrap .provision .agreebox .agree-txt ul {
+  padding-bottom:10px;
+}
+#pop-reservation .pop-wrap .provision .agreebox .agree-txt p,
+#pop-reservation .pop-wrap .provision .agreebox .agree-txt li {
+  font-size:14px;
+  min-height: 18px;
+  line-height: 1.5;
+  margin:0;
+  padding:0 0 3px 0;
+  color: #999;
+}
+#pop-reservation .pop-wrap .provision .agreebox .agree-txt li {
+  text-indent:-10px;
+  padding-left:10px;
+}
+#pop-reservation .pop-wrap .provision .agreebox p{
+  position: relative;
+  line-height: 1.5;
+  padding:15px 20px 15px 45px;
+  font-size: 14px;
+}
+#pop-reservation .pop-wrap .provision .agreebox p input {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  margin: 0 0 0 -100px;
+  padding: 0;
+  vertical-align: middle;
+  visibility: hidden;
+}
+#pop-reservation .pop-wrap .provision .agreebox p label {
+  width: 75%;
+  padding:0 !important;
+  text-align: left;
+  color: #666666;
+  font-weight: 400 ;
+}
+#pop-reservation .pop-wrap .provision .agreebox p  label::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: -32px;
+  width: 20px;
+  height: 20px;
+  background:url(/images/bg-checkbox-s-list.png) no-repeat 0 100%;
+}
+#pop-reservation .pop-wrap .provision .agreebox p  input:checked + label::after {
+  background:url(/images/bg-checkbox-s-list.png) no-repeat 0 0%;
+}
+#pop-reservation .pop-wrap .provision .agreebox p  span input + label::after {
+  background:url(/images/bg-checkbox-s-list.png) no-repeat 0 0%;
+}
+#pop-reservation .pop-wrap .provision .agreebox #btn-see ,
+#pop-reservation .pop-wrap .provision .agreebox .terms-view-all {
+  display: block;
+  position:absolute;
+  top:2px;
+  right:20px;
+  padding-right:15px;
+  height: 51px;
+  line-height: 51px;;
+  color: #333333;
+  background:url(/images/bg-agree-on-off.png) no-repeat 100% 0;
+  text-decoration: none;
+}
+#pop-reservation .pop-wrap .provision .agreebox.open{
+  height: 100%;;
+}
+#pop-reservation .pop-wrap .provision .agreebox.open #btn-see ,
+#pop-reservation .pop-wrap .provision .agreebox.open .terms-view-all {
+  background:url(/images/bg-agree-on-off.png) no-repeat 100% 100%;
+}
+
+/* 이용약관 동의하기 }*/
+/* 커머스 신청완료 {*/
+#pop-reservation .cont-box.fin .txt-area{
+  padding:50px 0;
+}
+#pop-reservation .cont-box.fin .txt-area p {
+  text-align: center;
+  font-size:28px;
+  color: #333333;
+  font-weight: bold;
+}
+#pop-reservation .go-app {
+  width:100%;
+  text-align: center;
+  padding:25px 0;
+  border-top:1px solid #dddddd;
+}
+#pop-reservation .go-app p {
+  line-height:1.4;
+  padding-bottom:10px;
+  text-align: center;
+  font-size:20px;
+  font-weight: bold;
+  color: #333333;
+}
+#pop-reservation .go-app  a{
+  display: inline-block;
+  width:32%;
+  padding:0 3px;
+  text-decoration: none;
+}
+#pop-reservation .go-app  a:hover,
+#pop-reservation .go-app  a:active{
+  text-decoration: none;
+}
+#pop-reservation .go-app  a img{
+  width:100%;
+}
+/* 커머스 신청완료 }*/
+
+@media only screen
+and (max-width : 360px) {
+  #pop-reservation .pop-wrap .provision .agreebox p label {
+    width:70%
+  }
+}

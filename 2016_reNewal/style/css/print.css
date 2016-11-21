@@ -1,0 +1,2199 @@
+@page {
+  size: A4;
+  margin: 1cm;
+}
+body {
+  -webkit-print-color-adjust:exact;
+}
+
+@media print {
+  body {
+    -webkit-print-color-adjust:exact;
+  }
+
+
+  body .navbar,
+  body #uvTab,
+  body .footer {
+    display: none;
+  }
+
+  .print-btns {
+    display: none!important;
+    visibility: hidden;
+  }
+
+  p.download-pdf-ex {
+    display: none!important;
+  }
+
+  .page-new {
+    margin: 0;
+    border: 0!important;
+    border-radius: 0;
+    width: inherit;
+    height: auto;
+    box-shadow: none;
+    background: transparent;
+    page-break-after: always;
+    clear: both;
+    overflow: visible;
+    padding: 34px 40px 40px 40px;
+    font-size: 12pt;
+    font-family: 'Noto Sans KR',"Helvetica Neue","Apple SD Gothic Neo",Helvetica,Arial,"Apple Gothic","돋움",Dotum,sans-serif!important;
+    position: relative;
+  }
+
+  /* first page */
+
+
+  .page-new .print-title-new {
+    display: block;
+    position: relative;
+    margin:280px auto 0;
+    min-width:200px;
+    text-align: center;
+  }
+
+  .page-new .print-author {
+    display: block;
+    position:absolute;
+    left:0;
+    bottom:-50px;
+    width:100%;
+    height:104px;
+    text-align:center;
+  }
+
+  .page-new .print-author-img {
+    width: 105px;
+    height: 105px;
+    border-radius: 105px;
+    -webkit-border-radius: 105px;
+    -moz-border-radius: 105px;
+    overflow: hidden;
+    margin:0 auto;
+    z-index: 11;
+  }
+
+  .page-new .print-author-img img {
+    width: 105px;
+    min-height: 105px;
+  }
+
+  .page-new .print-author h4.author {
+    color: #555555!important;
+    padding: 5px 0px;
+    z-index: 10;
+  }
+
+  .page-new .print-author h4.author span{
+    display: block;
+    color:#777;
+    line-height:1.5;
+  }
+
+  .page-new .print-title-new hr.top-line {
+    border-top:1px solid #ccc;
+    margin-top:0;
+    margin-bottom: 20px;
+    height:1px;
+  }
+
+  .page-new .print-title-new hr.bottom-line {
+    margin-top: 20px;
+    margin-bottom:0;
+    border-top:1px solid #ccc;
+    height: 1px;
+  }
+
+  .page-new .print-title-new h3.nickname {
+    display: none;
+    color: #ff8000;
+  }
+
+  .page-new .print-title-new h1 {
+
+    overflow: hidden;
+    display: block;
+    max-width: 960px;
+    padding:0;
+    margin:60px 0 40px 0;
+    font-size: 50px;
+    text-align: center;
+    color: #333333;
+    font-weight: 700;
+  }
+
+  .page-new .print-title-new h2.day {
+    margin:0 0 100px 0;
+    color:#777;
+  }
+
+  .page-new img.print-first-logo {
+    display: block;
+    position: absolute;
+    bottom: 55px;
+    left: 50%;
+    margin:0 0 0 -497px;
+    width:995px;
+    height:165px;
+  }
+
+  /*top and bottom*/
+
+  .page-new .top {
+    padding:0;
+    height: 54px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .page-new .top h3 {
+    float: left;
+    display: block;
+    margin: 10px 0 0 0;
+  }
+
+  .page-new .top img.print-logo-small-bottom {
+    float: right;
+    width: 130px;
+    display: block;
+  }
+
+  .page-new .bottom {
+    position: absolute;
+    bottom: 0px;
+    left:50px;
+    padding: 10px 10px 20px 10px;
+    border-top: 1px solid #ccc;
+    height: 60px;
+    width: 940px;
+    line-height: 30px;
+  }
+
+  .page-new .bottom span.bottom-url {
+    float: left;
+  }
+
+  .page-new .bottom span.page-number {
+    float: right;
+  }
+
+
+  /* last page */
+
+  .page-new .print-last {
+    text-align: center;
+  }
+
+  .page-new .last-logo {
+    width: 762px;
+    height: 629px;
+    margin-top: 70px;
+  }
+
+  .page-new .print-last-ex {
+    line-height: 40px;
+    font-size: 30px;
+  }
+
+  .page-new p.last-bottom {
+    text-align: center;
+    margin-top:390px;
+    font-size: 14px;
+  }
+
+  /* */
+  .page-new .plan-detail-view {
+    margin-top: 10px;
+    padding: 0;
+  }
+
+  .page-new .plan-view-new {
+    width: 960px;
+    margin: 20px auto 0;
+    border:0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+  }
+  .page-new .plan-view-new .plan-title {
+    width:100%;
+  }
+  .plan-view-new  .plan-title .title-img {
+    width:100%;
+  }
+  .plan-view-new  .plan-title .title-img img {
+    width:100%;
+  }
+  .page-new .plan-view-new .plan-name {
+    width:100%;
+    color: #fff!important;
+  }
+  .page-new .plan-view-new .plan-name span {
+    color: #fff!important;
+  }
+  .page-new .plan-view-new .plan-name h1 {
+    width:100%;
+    height:auto;
+    max-height:104px;
+    overflow: hidden;
+  }
+  .page-new .plan-and-author-info {
+    width:740px;
+    margin:20px 0 0 0;
+  }
+  .page-new .plan-and-author-info h4.plan-short-message {
+    margin:0 0 15px 0;
+  }
+  .page-new .plan-and-author-info .plan-detail-de pre {
+    overflow: hidden;
+    width:100%;
+    height:834px;
+  }
+  .page-new .plan-detail-de pre {
+    font-size: 16px;
+    line-height: 22px;
+    height: 860px;
+    overflow: hidden;
+    color: #333333;
+  }
+  .print-chart {
+    width: 940px;
+    margin:50px auto 0;
+  }
+
+  .page-new .highcharts-container {
+    width: 940px;
+    overflow: visible;
+  }
+
+  .page-new .checklist .task {
+    padding:0px;
+    font-size: 22px;
+    cursor: default;
+  }
+
+  .page-new .day-one-left {
+    margin-top: 30px;
+    float: left;
+    display: block;
+    width: 580px;
+  }
+
+  .page-new .day-one-left h2.per-day {
+    background: #45A3C8!important;
+    color: #fff!important;
+    padding:10px;
+    margin:0;
+  }
+
+  .page-new .day-one-contents {
+    padding:20px;
+  }
+
+  .page-new .day-one-contents h2 {
+    color: #4189F2!important;
+    margin: 2px 0 10px 0;
+  }
+
+  .page-new .day-one-contents h3 {
+    margin-bottom: 0;
+  }
+
+  .page-new .day-one-contents hr {
+    margin:20px 0;
+    border-bottom: 0;
+    border-top: 0;
+    height: 1px;
+  }
+
+  .page-new .day-one-contents ul {
+    list-style: decimal;
+    font-size: 18px;
+    padding-left: 31px;
+    margin-top: 10px;
+  }
+
+  .page-new .day-one-contents ul li {
+    margin-bottom: 10px;
+    line-height: 25px;
+  }
+
+  .page-new .day-one-right-table {
+    margin-top: 2px;
+    float: right;
+    height: 1256px;
+    overflow: hidden;
+    border: 1px solid #999999;
+  }
+
+  .page-new .print-map img.loading {
+    margin:0 auto;
+    display: block;
+    top:50%;
+    left:50%;
+    margin-top:-16px;
+    margin-left:-16px;
+    z-index: 2;
+    position: absolute;
+  }
+
+  .page-new .print-map {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 954px;
+    height: 954px;
+    border: 2px solid #666;
+    margin: 10px 0;
+    padding:0;
+    top:0;
+    left:0;
+  }
+
+  .page-new .print-map-edit {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height:100%;
+  }
+  .page-new .print-map-edit .map {
+    width:100%;
+    height:100%;
+  }
+
+  .page-new .print-map .btn.edit-map {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 17px;
+    padding: 10px 15px;
+    z-index: 1;
+  }
+
+  .page-new .print-map img.loading {
+    margin:0 auto;
+    display: block;
+    top:50%;
+    left:50%;
+    margin-top:-16px;
+    margin-left:-16px;
+    z-index: 2;
+    position: absolute;
+  }
+
+  .page-new .print-map img.plan-map-loaded {
+    width:100%;
+    height:100%;
+  }
+
+  .page-new .btn.edit-map {
+    display: none;
+    visibility: hidden;
+  }
+  .page-new .map-route {
+    line-height: 30px;
+    font-size: 14pt;
+  }
+
+  .page-new .vertical-box {
+    width: 455px;
+    margin: 10px 10px;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    font-size: 17px;
+    line-height: 22px;
+    max-height: 1230px;
+  }
+
+  .page-new h3.print-spot-title {
+    line-height: 32px;
+    max-height: 64px;
+    width: 455px;
+    overflow: hidden;
+    display: block;
+    color: #5488DB;
+  }
+
+  .page-new .print-spot-img {
+    width: 455px;
+    height: 335px;
+    overflow: hidden;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .page-new .print-spot-map {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: 451px;
+    height: 300px;
+    border: 2px solid #666;
+    padding:0;
+  }
+
+  .page-new .print-spot-map img {
+    margin:0 auto;
+    display: block;
+  }
+
+  .page-new .print-spot-map img.loading {
+    margin:0 auto;
+    display: block;
+    top:50%;
+    left:50%;
+    margin-top:-16px;
+    margin-left:-16px;
+    z-index: 2;
+    position: absolute;
+  }
+
+  .page-new .print-spot-map .btn.edit-map {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    font-size: 17px;
+    padding: 10px 15px;
+    z-index: 1;
+  }
+
+  .page-new .print-spot-map:hover .btn.edit-map {
+    visibility: visible;
+  }
+
+  .page-new .print-spot-img img {
+    width: 455px;
+  }
+
+  .page-new .vertical-box .print-spot-detail {
+    max-height: 850px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+
+  .page-new .print-spot-detail .d-label {
+    width: 100px;
+    overflow: hidden;
+    vertical-align: top;
+    display: inline-block;
+    font-weight: bold;
+  }
+
+  .page-new .print-spot-detail .d-contents {
+    vertical-align: top;
+    width: 348px;
+    display: inline-block;
+    max-height: 780px;
+    overflow: hidden;
+    white-space: pre-wrap;
+  }
+
+  .page-new .edit-height {
+    display: none;
+  }
+
+  .page-new .plan-route-detail {
+    font-size: 15px;
+    padding-top:50px;
+    background: url('../images/print_arrow.png') no-repeat 0 0!important;
+  }
+
+  .page-new .plan-route-detail ol {
+    overflow: hidden;
+    height: 1164px;
+    padding:0 0 0 30px;
+    list-style-type: decimal;
+  }
+
+  .page-new .plan-route-detail .distance-time {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .page-new ul.plan-route-stops {
+    width: 435px;
+  }
+
+  .page-new ul.plan-route-stops li {
+    width: 390px;
+  }
+  .page-new ul.plan-route-stops li h6 {
+    font-size: 13px;
+    width: 370px;
+    background: #f1f0ee!important;
+  }
+
+  .page-new .plan-route-detail .vehicle-name {
+    font-size: 14px;
+    width: 370px;
+  }
+
+  .page-new .weekcalendar {
+    margin:0;
+    min-width:345px;
+    border-right:1px solid #dddddd;
+  }
+
+  .page-new td.axis {
+    height: 62px;
+    font-size: 11pt!important;
+  }
+
+  .page-new td.axis,
+  .page-new th.axis{
+    width: 50px;
+  }
+
+  .page-new .weekcalendar td.cell {
+    width:302px;
+    height:31px;
+  }
+
+  .page-new .weekcalendar span.country-label {
+    width: 309px;
+  }
+
+  .page-new .oneday {
+    width: 355px;
+  }
+
+  .page-new .oneday .weekcalendar {
+    margin-top:0;
+    width: 355px;
+  }
+
+  .page-new .event .ev-name a.ev-spot-name {
+    max-width: 263px;
+    font-size: 16px;
+    height: 23px;
+    line-height: 23px;
+  }
+
+  .page-new .event .ev-more {
+    width: 278px;
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+
+  .page-new a.ev-trf-name,
+  .page-new .route {
+    font-size: 16px!important;
+  }
+
+  .page-new a.ev-trf-name {
+    max-width: 300px;
+    min-height: 30px;
+  }
+
+  .page-new .ev-trf-icon {
+    margin-top: 4px;
+  }
+
+  .page-new a.ev-trf-name .ev-trf-text {
+    line-height: 27px;
+  }
+
+  .page-new .event .ev-budget {
+    top:18px;
+  }
+
+  .page-new .event .ev-name .lower {
+    display: none;
+  }
+
+
+  /* plan print tuto */
+  .plan-edit-tuto.print .carousel-inner {
+    width: 830px;
+    margin: 0 auto;
+    height: 520px!important;
+    background: none;
+
+  }/* background: #fff; */
+
+  .plan-edit-tuto .carousel-control {
+    cursor: pointer;
+    font-size: 40px;
+    color: #ff8000;
+    background: transparent;
+  }
+
+  .plan-edit-tuto .carousel-control i {
+    margin-top: 260px;
+  }
+
+  .plan-edit-tuto .carousel-control.left i {
+    margin-right: 10px;
+  }
+
+  .plan-edit-tuto .carousel-control.right i {
+    margin-left: 10px;
+  }
+
+
+  .plan-edit-tuto h5 {
+    font-weight: normal;
+    color: #222;
+    text-align: center;
+    font-size: 17px;
+    margin: 10px 0 0 0;
+  }
+
+  .tip-contents h3,
+  .tip-contents p {
+    color:#222;
+  }
+
+  .tip-contents h3 {
+    text-align: center;
+    margin:20px 0;
+  }
+
+  .tip-contents p {
+    font-size: 16px;
+    padding:0 0 0 100px;
+    max-width: 750px;
+  }
+
+  .tip-contents p.ml {
+    padding-left: 110px;
+  }
+
+  .plan-edit-tuto .tip-image img {
+    margin:0 auto;
+    display: block;
+  }
+
+  .plan-edit-tuto span.red {
+    color: #d7513d;
+  }
+
+  .plan-edit-tuto .print-tip-logo {
+    float: right;
+    width: 120px;
+    margin-right: 10px;
+  }
+
+  .page-new .loading-image .load-01 {
+    position: absolute;
+    left:50%;
+    top:50%;
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin:-25px 0 0 -25px;
+    background: url('../images/load_02.png') no-repeat 0 0;
+  }
+
+  .page-new .loading-image .load-02 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: block;
+    top: 0;
+    left: 0;
+    background: url('../images/load_01.png') no-repeat 0 0;
+  }
+
+  .page-new .plan-statistic {
+    width:940px;
+    padding:0;
+  }
+
+  /* 프린트 되는 내용물 안에 테이블 색상 */
+  .event.event-category-0 .ev-budget {/*관광지*/
+    color: #001d56!important;
+  }
+
+  .event.event-category-1 .ev-budget {/*숙소*/
+    color: #0e5571!important;
+  }
+
+  .event.event-category-2 .ev-budget {/*음식 #3d290c!*/
+    color: #945e0c!important;
+  }
+
+  .event.event-category-3 .ev-budget {/*쇼핑 #0e5571*/
+    color: #3c0871!important;
+  }
+
+  .event.event-category-4 .ev-budget {/*ENT*/
+    color: #00403b!important;
+  }
+
+  .event.event-category-5 .ev-budget {/*액티비티*/
+    color: #2f4c00!important;
+  }
+
+  .event.event-category-6 .ev-budget {/*교통*/
+    color: #0f3d86!important;
+  }
+
+  .event.event-category-etc .ev-budget {/*기타*/
+    color: #700f00!important;
+  }
+
+  .event.event-category-0  .ev-info-edit{ /*sight*/
+    color:#597bbd!important;
+  }
+  .event.event-category-1  .ev-info-edit{ /*sleep*/
+    color: #45a3c8!important;
+  }
+  .event.event-category-2  .ev-info-edit{ /*food*/
+    color: #f2a531!important;
+  }
+  .event.event-category-3  .ev-info-edit{ /*shopping*/
+    color: #a373d4!important;
+  }
+  .event.event-category-4  .ev-info-edit{ /*ENT*/
+    color: #1ea196!important;
+  }
+  .event.event-category-5  .ev-info-edit{ /*Activity*/
+    color: #8ab349!important;
+  }
+  .event.event-category-6  .ev-info-edit{ /*traffic*/
+    color: #5488db!important;
+  }
+  .event.event-category-etc  .ev-info-edit,
+  .event.event-category- { /*etc*/
+    color: #d65f4c!important;
+  }
+
+  .page-new .plan-statistic ul.chart-container {
+    padding: 10px 10px;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  .page-new .plan-statistic .chart-row {
+    padding:0;
+  }
+  .page-new .plan-statistic .chart-row img {
+    width:35px;
+    height:35px;
+  }
+  .page-new .plan-statistic .chart-row .xaxis {
+    font-size: 13px;
+    color: #999999!important;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .page-new .plan-statistic .chart-stick-text {
+    display: block;
+    float: left;
+    width:88%;
+    line-height: 46px;
+    height: 46px;
+    border-bottom: 1px solid #dbdbdb;
+    border-left: 2px solid #bbbbbb;
+    border-right: 1px solid #dbdbdb;
+  }
+  .page-new .plan-statistic .chart-text {
+    display: inline-block;
+    color: #999999 !important;
+    font-size: 12px;
+  }
+  .print-chart  .plan-statistic .chart-stick {
+    display: inline-block;
+    height: 20px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    vertical-align: middle;
+    max-width: 86%;
+  }
+  /**/
+
+  #cost-chart .chart-stick.stick-color-07 {
+    background-color: #6AA1D2!important;
+  }
+
+  #cost-chart .chart-stick.stick-color-06 {
+    background-color: #5FA4C0!important;
+  }
+
+  #cost-chart .chart-stick.stick-color-01 {
+    background-color: #F2A22A!important;
+  }
+
+  #cost-chart .chart-stick.stick-color-03 {
+    background-color: #9C69D0!important;
+  }
+
+  #cost-chart .chart-stick.stick-color-02 {
+    background-color: #5087DD!important;
+  }
+
+  #cost-chart .chart-stick.stick-color-00 {
+    background-color: #5670A2!important;
+  }
+
+  #cost-chart .chart-stick.stick-color-04 {
+    background-color: #1FA89B!important;
+  }
+
+  #cost-chart .chart-stick.stick-color-05 {
+    background-color: #D65F4C!important;
+  }
+
+
+  /*var colors = ['#597BBD','#45A3C8','#F2A531','#A373D4','#1EA196','#8AB349','#5488DB'];*/
+  #spot-chart .chart-stick.stick-color-00 {
+    background-color: #597BBD!important;
+  }
+
+  #spot-chart .chart-stick.stick-color-01 {
+    background-color: #45A3C8!important;
+  }
+
+  #spot-chart .chart-stick.stick-color-02 {
+    background-color: #F2A531!important;
+  }
+
+  #spot-chart .chart-stick.stick-color-03 {
+    background-color: #A373D4!important;
+  }
+
+  #spot-chart .chart-stick.stick-color-04 {
+    background-color: #1EA196!important;
+  }
+
+  #spot-chart .chart-stick.stick-color-05 {
+    background-color: #8AB349!important;
+  }
+
+  #spot-chart .chart-stick.stick-color-06 {
+    background-color: #5488DB!important;
+  }
+
+  #day-chart .chart-stick {
+    background-color: #4572A7!important;
+  }
+  /* 여행가계부 End */
+
+  /** 150515 add Map edit {**/
+  /* Map Labels { */
+  /* Day labels { */
+  .map-labels {
+    display: block !important;
+    width: 30px!important;
+    height: 30px!important;
+    line-height: 27px!important;
+    color: #666666!important;
+    font-size: 12px!important;
+    font-weight: bold!important;
+    text-align: center!important;
+    white-space: nowrap!important;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    background: #fff;
+    z-index: 100!important;
+    cursor: pointer!important;
+    overflow: visible!important;
+  }
+  .map-labels.map-day-category-00 {
+    border: 2px solid #597bbd;
+    color: #597bbd;
+  }
+  .map-labels.map-day-category-01 {
+    border: 2px solid #45a3c8;
+    color: #45a3c8;
+  }
+  .map-labels.map-day-category-02 {
+    border: 2px solid #f2a531;
+    color: #f2a531;
+  }
+  .map-labels.map-day-category-03 {
+    border: 2px solid #a373d4;
+    color: #a373d4;
+  }
+  .map-labels.map-day-category-04 {
+    border: 2px solid #1ea196;
+    color: #1ea196;
+  }
+  .map-labels.map-day-category-05 {
+    border: 2px solid #8ab349;
+    color: #8ab349;
+  }
+  .map-labels.map-day-category-06 {
+    border: 2px solid #5488db;
+    color: #5488db;
+  }
+  .map-labels.map-day-category-etc {
+    border: 2px solid #d65f4c;
+    color: #597bbd;
+  }
+  .map-labels.map-day-category-deactivate {
+    color: #666666;
+  }
+  /* Day labels } */
+
+  /* map-spot-info { */
+  .map-spot-info {
+    box-shadow: 0 1px 1px rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 1px 1px rgba(0,0,0,.3);
+  }
+  .map-spot-info .spot-list-in-spots li {
+    border-bottom:none;
+  }
+  .map-spot-info .spot-list-in-spots li a {
+    width:268px;
+  }
+
+  #map .map-spot-info .map-spot-inner .spot-list-in-spots li .spot-img img {
+    width:100%;
+    height:100%;
+  }
+  #map .map-spot-info .map-spot-inner .spot-list-in-spots li .spot-img .count img{
+    width: 13px;
+    height: 12px;
+    vertical-align: middle;
+    margin-top: -2px;
+  }
+  /* map -spot } */
+
+  .round {
+    display: block;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border: 2px solid #999999;
+    border-radius: 10px;
+    overflow: visible!important;
+  }
+  .round.color00 {
+    border: 2px solid #ff0000;
+  }
+  .round.color01  {
+    border: 2px solid #ff8000;
+  }
+  .round.color02 {
+    border: 2px solid #39b54a
+  }
+  .round.color03 {
+    border: 2px solid #00aeef;
+  }
+  .round.color04{
+    border: 2px solid #92278f;
+  }
+  /* All labels }*/
+
+  /* Map Labels } */
+
+  /* Map inner Spot POPUP */
+  .spot-list-in-spots {
+    margin:0 !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 5;
+  }
+  .spot-list-in-spots li {
+    position: relative;
+    width:100%;
+    border-bottom:1px solid #ddd;
+  }
+  .spot-list-in-spots li a {
+    display: block;
+    width:100%;
+    height:85px;
+    background: #ffffff;
+  }
+  .spot-list-in-spots li a .spot-img {
+    float:left;
+    width:60px;
+    height:85px;
+    overflow: hidden;
+  }
+  .spot-list-in-spots li a .spot-img img.spot-top-img {
+    width: 100%;
+    min-height: 85px;
+  }
+  .spot-list-in-spots li .spot-img .count {
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:60px;
+    height:20px;
+    line-height: 20px;
+    font-size:12px;
+    text-align: center;
+    color:#999;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .spot-list-in-spots li .spot-img .count img{
+    vertical-align: middle;
+    margin-top:-2px;
+  }
+  .spot-list-in-spots li a .spot-info-box {
+    float:left;
+    width:188px;
+    height:85px;
+    padding:5px 0;
+    margin:0 10px;
+  }
+  .spot-list-in-spots li .spot-info-box .spot-name {
+    display: block;
+    width: 97%;
+    height: 20px;
+    line-height: 20px;
+    font-weight: 600;
+    color:#333;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .spot-list-in-spots li .spot-info-box .spot-state {
+    display: inline-block;
+    color:#999;
+    font-size: 12px;
+    margin-right:3px;
+  }
+  .spot-list-in-spots li .spot-info-box span {
+    font-size: 11px;
+  }
+  .spot-list-in-spots li .spot-info-box .spot-type01 {
+    color:#5488db; /*장소*/
+  }
+  .spot-list-in-spots li .spot-info-box .spot-type02 {
+    color:#45a3c8;/*유적지*/
+  }
+
+  .spot-list-in-spots li .spot-info-box .spot-type03 {
+    color:#a373d4;/**/
+  }
+  .spot-list-in-spots li .spot-info-box .spot-type04 {
+    color:#8ab349;/**/
+  }
+  .spot-list-in-spots li .spot-info-box .spot-type05 {
+    color:#1ea196;/**/
+  }
+  .spot-list-in-spots li .spot-info-box .spot-type06 {
+    color:#f2a531;/**/
+  }
+
+  .spot-list-in-spots li .spot-info-box .spot-short-disc {
+    height: 31px;
+    overflow: hidden;
+    font-size: 11px;
+    color:#999999;
+  }
+  .spot-list-in-spots li.add-spot-pop {
+    border-bottom: 0;
+  }
+
+  .spot-list-in-spots li.add-spot-pop a {
+    line-height: 16px;
+    color:#999999;
+    cursor: pointer;
+    height: 60px;
+  }
+  .spot-list-in-spots li.add-spot-pop .spot-img {
+    height: 60px;
+    background-color: #eeeeee;
+    background-image: none;
+  }
+
+  .spot-list-in-spots li.add-spot-pop .spot-info-box {
+    height:60px;
+    padding: 12px 0;
+  }
+
+  .spot-list-in-spots li.add-spot-pop p span.orange {
+    font-size: 12px;
+    color: #ff8000;
+    font-weight: bold;
+  }
+  .spot-list-in-spots li.loading-image {
+    border:0px;
+  }
+  .spot-list-in-spots .spot-draggable-info {
+    z-index: 100;
+    position: inherit;
+    border:none !important;
+  }
+  .map-spot-info {
+    box-shadow: 0 1px 1px rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 1px 1px rgba(0,0,0,.3);
+  }
+  .map-spot-info .spot-list-in-spots li {
+    border-bottom:none;
+  }
+  .map-spot-info .spot-list-in-spots li a {
+    width:268px;
+  }
+
+  #map .map-spot-info .map-spot-inner .spot-list-in-spots li .spot-img img {
+    width:100%;
+    height:100%;
+  }
+  #map .map-spot-info .map-spot-inner .spot-list-in-spots li .spot-img .count img{
+    width: 13px;
+    height: 12px;
+    vertical-align: middle;
+    margin-top: -2px;
+  }
+  /* Map inner Spot POPUP */
+  /** 150515 add Map edit }**/
+}
+
+.print-btns {
+  margin: 0 auto;
+  display: block;
+  width: 980px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+p.download-pdf-ex {
+  margin:10px 0;
+}
+
+.page-new {
+  clear: both;
+  padding: 34px 40px 40px 40px;
+  width: 1040px;
+  height: 1420px;
+  overflow: hidden;
+  margin: 1cm auto;
+  border: 1px #D3D3D3 solid;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  font-size: 12pt;
+  font-family: 'Noto Sans KR',"Helvetica Neue","Apple SD Gothic Neo",Helvetica,Arial,"Apple Gothic","돋움",Dotum,sans-serif!important;
+  position: relative;
+}
+
+/* first page */
+
+.page-new .print-title-new {
+  display: block;
+  position: relative;
+  margin:280px auto 0;
+  min-width:200px;
+  text-align: center;
+}
+
+.page-new .print-author {
+  display: block;
+  position:absolute;
+  left:0;
+  bottom:-50px;
+  width:100%;
+  height:104px;
+  text-align:center;
+}
+
+.page-new .print-author-img {
+  width: 105px;
+  height: 105px;
+  border-radius: 105px;
+  -webkit-border-radius: 105px;
+  -moz-border-radius: 105px;
+  overflow: hidden;
+  margin:0 auto;
+  z-index: 11;
+}
+
+.page-new .print-author-img img {
+  width: 105px;
+  min-height: 105px;
+}
+
+.page-new .print-author h4.author {
+  color: #555555!important;
+  padding: 5px 0px;
+  z-index: 10;
+}
+
+.page-new .print-author h4.author span{
+  display: block;
+  color:#777;
+  line-height:1.5;
+}
+
+.page-new .print-title-new hr.top-line {
+  border-top:1px solid #ccc;
+  margin-top:0;
+  margin-bottom: 20px;
+  height:1px;
+}
+
+.page-new .print-title-new hr.bottom-line {
+  margin-top: 20px;
+  margin-bottom:0;
+  border-top:1px solid #ccc;
+  height: 1px;
+}
+
+.page-new .print-title-new h3.nickname {
+  display: none;
+  color: #ff8000;
+}
+
+.page-new .print-title-new h1 {
+
+  overflow: hidden;
+  display: block;
+  max-width: 960px;
+  padding:0;
+  margin:60px 0 40px 0;
+  font-size: 50px;
+  text-align: center;
+  color: #333333;
+  font-weight: 700;
+}
+
+.page-new .print-title-new h2.day {
+  margin:0 0 100px 0;
+  color:#777;
+}
+
+.page-new img.print-first-logo {
+  display: block;
+  position: absolute;
+  bottom: 55px;
+  left: 50%;
+  margin:0 0 0 -497px;
+  width:995px;
+  height:165px;
+}
+
+/*top and bottom*/
+
+.page-new .top {
+  padding:0;
+  height: 54px;
+  border-bottom: 1px solid #ccc;
+}
+
+.page-new .top h3 {
+  float: left;
+  display: block;
+  margin: 10px 0 0 0;
+}
+
+.page-new .top img.print-logo-small-bottom {
+  float: right;
+  width: 130px;
+  display: block;
+}
+
+.page-new .bottom {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  padding: 10px 10px 20px 10px;
+  margin:0 0 0 -480px;
+  border-top: 1px solid #ccc;
+  height: 60px;
+  width: 958px;
+  line-height: 30px;
+}
+
+.page-new .bottom span.bottom-url {
+  float: left;
+}
+
+.page-new .bottom span.page-number {
+  float: right;
+}
+
+
+/* last page */
+
+.page-new .print-last {
+  text-align: center;
+}
+
+.page-new .last-logo {
+  width: 762px;
+  height: 629px;
+  margin-top: 70px;
+}
+
+.page-new .print-last-ex {
+  line-height: 40px;
+  font-size: 30px;
+}
+
+.page-new p.last-bottom {
+  text-align: center;
+  margin-top:390px;
+  font-size: 14px;
+}
+
+/* */
+.page-new .plan-detail-view {
+  margin-top: 10px;
+  padding: 0;
+}
+
+.page-new .plan-view-new {
+  width: 960px;
+  margin: 20px auto 0;
+  border:0;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
+.page-new .plan-view-new .plan-title {
+  width:100%;
+}
+.plan-view-new  .plan-title .title-img {
+  width:100%;
+}
+.plan-view-new  .plan-title .title-img img {
+  width:100%;
+}
+.page-new .plan-view-new .plan-name {
+  width:100%;
+}
+.page-new .plan-view-new .plan-name h1 {
+  width:100%;
+  height:auto;
+  max-height:104px;
+  overflow: hidden;
+}
+.page-new .plan-and-author-info {
+  width:740px;
+  margin:20px 0 0 0;
+}
+.page-new .plan-and-author-info h4.plan-short-message {
+  margin:0 0 15px 0;
+}
+.page-new .plan-and-author-info .plan-detail-de pre {
+  overflow: hidden;
+  width:100%;
+  height:834px;
+}
+.page-new .plan-detail-de pre {
+  font-size: 16px;
+  line-height: 22px;
+  height: 860px;
+  overflow: hidden;
+  color: #333333;
+}
+
+.print-chart {
+  width: 940px;
+  margin:50px auto 0;
+}
+
+.page-new .highcharts-container {
+  width: 940px;
+  overflow: visible;
+}
+
+.page-new .checklist .checklist-con ul {
+  width: 960px;
+  padding:10px;
+  margin:60px 0 0 0;
+}
+
+.page-new .checklist .checklist-con ul li {
+  cursor: default;
+  overflow: inherit;
+  display: block;
+  float: left;
+  width: 460px;
+  min-width: 210px;
+  height:100%;
+  line-height:31px;
+  min-height: 22px;
+  margin: 0 0 10px 10px;
+  padding:0;
+  border:none;
+  background:none;
+
+}
+
+.page-new .checklist .task {
+  padding:0px;
+  font-size: 22px;
+  cursor: default;
+}
+
+.page-new .checklist .task p {
+  height:100%;
+  background:none;
+}
+.page-new .day-one-left {
+  margin-top: 30px;
+  float: left;
+  display: block;
+  width: 580px;
+}
+
+.page-new .day-one-left h2.per-day {
+  background: #45A3C8!important;
+  color: #fff!important;
+  padding:10px;
+  margin:0;
+}
+
+.page-new .day-one-contents {
+  padding:20px;
+}
+
+.page-new .day-one-contents h2 {
+  color: #4189F2!important;
+  margin: 2px 0 10px 0;
+}
+
+.page-new .day-one-contents h3 {
+  margin-bottom: 0;
+}
+
+.page-new .day-one-contents hr {
+  margin:20px 0;
+  border-bottom: 0;
+  border-top: 0;
+  height: 1px;
+}
+
+.page-new .day-one-contents ul {
+  list-style: decimal;
+  font-size: 18px;
+  padding-left: 31px;
+  margin-top: 10px;
+}
+
+.page-new .day-one-contents ul li {
+  margin-bottom: 10px;
+  line-height: 25px;
+  list-style: decimal;/* 20150304hayan */
+}
+
+.page-new .day-one-right-table {
+  margin-top: 2px;
+  float: right;
+  height: 1256px;
+  overflow: hidden;
+  border: 1px solid #999999;
+}
+
+.page-new .print-map {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 954px;
+  height: 954px;
+  border: 2px solid #666;
+  margin: 10px 0;
+  padding:0;
+  top:0;
+  left:0;
+}
+
+.page-new .print-map-edit {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height:100%;
+}
+.page-new .print-map-edit .map {
+  width:100%;
+  height:100%;
+}
+
+.page-new .print-map .btn.edit-map {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-size: 17px;
+  padding: 10px 15px;
+  z-index: 100;
+}
+
+.page-new .print-map img.loading {
+  margin:0 auto;
+  display: block;
+  top:50%;
+  left:50%;
+  margin-top:-16px;
+  margin-left:-16px;
+  z-index: 2;
+  position: absolute;
+}
+
+.page-new .print-map img.plan-map-loaded {
+  width:100%;
+  height:100%;
+}
+
+.page-new .map-route {
+  line-height: 30px;
+  font-size: 14pt;
+}
+
+.page-new .vertical-box {
+  width: 455px;
+  margin: 10px 10px;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  font-size: 17px;
+  line-height: 22px;
+  max-height: 1222px;
+}
+
+.page-new h3.print-spot-title {
+  line-height: 32px;
+  max-height: 64px;
+  width: 455px;
+  overflow: hidden;
+  display: block;
+  color: #5488DB;
+}
+
+.page-new .print-spot-img {
+  width: 455px;
+  height: 335px;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.page-new .print-spot-map {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  width: 451px;
+  height: 300px;
+  border: 2px solid #666;
+  padding:0;
+  top:0;
+  left:0;
+  margin: 0;
+}
+
+.page-new .print-spot-map img {
+  margin:0 auto;
+  display: block;
+  position: relative;
+  top:0;
+  left:0;
+}
+
+.page-new .print-spot-map img.loading {
+  margin:0 auto;
+  display: block;
+  top:50%;
+  left:50%;
+  margin-top:-16px;
+  margin-left:-16px;
+  z-index: 2;
+  position: absolute;
+}
+
+.page-new .print-spot-map .btn.edit-map {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  font-size: 17px;
+  padding: 10px 15px;
+  z-index: 100;
+}
+
+.page-new .print-spot-map:hover .btn.edit-map {
+  visibility: visible;
+}
+
+.page-new .print-spot-img img {
+  width: 455px;
+}
+
+.page-new .vertical-box .print-spot-detail {
+  max-height: 850px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.page-new .print-spot-detail .d-label {
+  width: 100px;
+  overflow: hidden;
+  vertical-align: top;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.page-new .print-spot-detail .d-contents {
+  vertical-align: top;
+  width: 348px;
+  display: inline-block;
+  max-height: 780px;
+  overflow: hidden;
+  white-space: pre-wrap;
+}
+
+.page-new .edit-height {
+  display: none;
+}
+
+.page-new .plan-route-detail {
+  font-size: 15px;
+  padding-top:50px;
+  background: url('../images/print_arrow.png') no-repeat 0 0!important;
+}
+.page-new .plan-route-detail ol {
+  overflow: hidden;
+  height: 1164px;
+  padding:0 0 0 30px;
+  list-style-type: decimal;
+}
+.page-new .plan-route-detail .distance-time {
+  font-size: 20px;
+  text-align: center;
+}
+
+.page-new ul.plan-route-stops {
+  width: 435px;
+}
+
+.page-new ul.plan-route-stops li {
+  width: 390px;
+}
+.page-new ul.plan-route-stops li h6 {
+  font-size: 13px;
+  width: 370px;
+  background: #f1f0ee!important;
+}
+
+.page-new .plan-route-detail .vehicle-name {
+  font-size: 14px;
+  width: 370px;
+}
+
+.page-new .weekcalendar {
+  margin:0;
+  min-width:345px;
+  border-right:1px solid #dddddd;
+}
+
+.page-new .weekcalendar tbody {
+  border: 1px solid #ccc;
+}
+
+.page-new td.axis {
+  height: 62px;
+  font-size: 11pt!important;
+}
+
+.page-new td.axis,
+.page-new th.axis{
+  width: 50px;
+}
+
+.page-new .weekcalendar td.cell {
+  width:302px;
+  height:31px;
+}
+
+.page-new .weekcalendar span.country-label {
+  width: 309px;
+}
+
+.page-new .oneday {
+  width: 355px;
+}
+
+.page-new .oneday .weekcalendar {
+  margin-top:0;
+  width: 355px;
+}
+
+.page-new .event .ev-name span.ev-spot-name {
+  max-width: 263px;
+  font-size: 16px;
+  height: 23px;
+  line-height: 23px;
+}
+
+.page-new .event .ev-more {
+  width: 278px;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.page-new span.ev-trf-name,
+.page-new a.ev-trf-name,
+.page-new .route {
+  font-size: 16px!important;
+  background: #ffffff!important;
+}
+
+.page-new span.ev-trf-name,
+.page-new a.ev-trf-name {
+  max-width: 300px;
+  min-height: 30px;
+}
+
+.page-new .ev-trf-icon {
+  margin-top: 4px;
+}
+
+.page-new a.ev-trf-name .ev-trf-text {
+  line-height: 27px;
+}
+
+.page-new .event .ev-budget {
+  top:18px;
+}
+
+.page-new .event .ev-name .lower {
+  display: none;
+}
+
+
+
+
+/* plan print tuto */
+.plan-edit-tuto.print .carousel-inner {
+  width: 830px;
+  margin: 0 auto;
+  height: 520px!important;
+  background: none;
+
+}/* background: #fff; */
+
+.plan-edit-tuto .carousel-control {
+  cursor: pointer;
+  font-size: 40px;
+  color: #ff8000;
+  background: transparent;
+}
+
+.plan-edit-tuto .carousel-control i {
+  margin-top: 260px;
+}
+
+.plan-edit-tuto .carousel-control.left i {
+  margin-right: 10px;
+}
+
+.plan-edit-tuto .carousel-control.right i {
+  margin-left: 10px;
+}
+
+
+.plan-edit-tuto h5 {
+  font-weight: normal;
+  color: #222;
+  text-align: center;
+  font-size: 17px;
+  margin: 10px 0 0 0;
+}
+
+.tip-contents h3,
+.tip-contents p {
+  color:#222;
+}
+
+.tip-contents h3 {
+  text-align: center;
+  margin:20px 0;
+}
+
+.tip-contents p {
+  font-size: 16px;
+  padding:0 0 0 100px;
+  max-width: 750px;
+}
+
+.tip-contents p.ml {
+  padding-left: 110px;
+}
+
+.plan-edit-tuto .tip-image img {
+  margin:0 auto;
+  display: block;
+}
+
+.plan-edit-tuto span.red {
+  color: #d7513d;
+}
+
+.plan-edit-tuto .print-tip-logo {
+  float: right;
+  width: 120px;
+  margin-right: 10px;
+}
+
+.page-new .loading-image .load-01 {
+  position: absolute;
+  left:50%;
+  top:50%;
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin:-25px 0 0 -25px;
+  background: url('../images/load_02.png') no-repeat 0 0;
+  text-align: center;
+  color: #999;
+  font-size: 12px;
+  padding-top: 32px;
+  font-weight: bold;
+}
+
+.page-new .loading-image .load-02 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  display: block;
+  top: 0;
+  left: 0;
+  background: url('../images/load_01.png') no-repeat 0 0;
+}
+
+.page-new .plan-statistic {
+  width:940px;
+  padding:0;
+}
+
+.page-new .plan-statistic ul.chart-container {
+  padding: 10px 10px;
+  margin: 0;
+  list-style-type: none;
+}
+
+.page-new .plan-statistic .chart-row {
+  padding:0;
+}
+.page-new .plan-statistic .chart-row img {
+  width:35px;
+  height:35px;
+}
+.page-new .plan-statistic .chart-stick-text {
+  display: block;
+  float: left;
+  width:88%;
+  line-height: 46px;
+  height: 46px;
+  border-bottom: 1px solid #dbdbdb;
+  border-left: 2px solid #bbbbbb;
+  border-right: 1px solid #dbdbdb;
+}
+.page-new .plan-statistic .chart-text {
+  display: inline-block;
+  color: #999999;
+  font-size: 12px;
+}
+.print-chart  .plan-statistic .chart-stick {
+  display: inline-block;
+  height: 20px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  vertical-align: middle;
+  max-width: 86%;
+}
+/**/
+#cost-chart .chart-stick.stick-color-00 {
+  background-color: #597BBD;
+}
+
+#cost-chart .chart-stick.stick-color-01 {
+  background-color: #45A3C8;
+}
+
+#cost-chart .chart-stick.stick-color-02 {
+  background-color: #F2A531;
+}
+
+#cost-chart .chart-stick.stick-color-03 {
+  background-color: #A373D4;
+}
+
+#cost-chart .chart-stick.stick-color-04 {
+  background-color: #1EA196;
+}
+
+#cost-chart .chart-stick.stick-color-05 {
+  background-color: #8AB349;
+}
+
+#cost-chart .chart-stick.stick-color-06 {
+  background-color: #5488DB;
+}
+/** 150515 add Map edit {**/
+/* Map Labels { */
+/* Day labels { */
+.map-labels {
+  display: block !important;
+  width: 30px!important;
+  height: 30px!important;
+  line-height: 27px!important;
+  color: #666666!important;
+  font-size: 12px!important;
+  font-weight: bold!important;
+  text-align: center!important;
+  white-space: nowrap!important;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  background: #fff;
+  z-index: 100!important;
+  cursor: pointer!important;
+  overflow: visible!important;
+}
+.map-labels.map-day-category-00 {
+  border: 2px solid #597bbd;
+  color: #597bbd;
+}
+.map-labels.map-day-category-01 {
+  border: 2px solid #45a3c8;
+  color: #45a3c8;
+}
+.map-labels.map-day-category-02 {
+  border: 2px solid #f2a531;
+  color: #f2a531;
+}
+.map-labels.map-day-category-03 {
+  border: 2px solid #a373d4;
+  color: #a373d4;
+}
+.map-labels.map-day-category-04 {
+  border: 2px solid #1ea196;
+  color: #1ea196;
+}
+.map-labels.map-day-category-05 {
+  border: 2px solid #8ab349;
+  color: #8ab349;
+}
+.map-labels.map-day-category-06 {
+  border: 2px solid #5488db;
+  color: #5488db;
+}
+.map-labels.map-day-category-etc {
+  border: 2px solid #d65f4c;
+  color: #597bbd;
+}
+.map-labels.map-day-category-deactivate {
+  color: #666666;
+}
+/* Day labels } */
+
+/* map-spot-info { */
+.map-spot-info {
+  box-shadow: 0 1px 1px rgba(0,0,0,.3);
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.3);
+  -moz-box-shadow: 0 1px 1px rgba(0,0,0,.3);
+}
+.map-spot-info .spot-list-in-spots li {
+  border-bottom:none;
+}
+.map-spot-info .spot-list-in-spots li a {
+  width:268px;
+}
+
+#map .map-spot-info .map-spot-inner .spot-list-in-spots li .spot-img img {
+  width:100%;
+  height:100%;
+}
+#map .map-spot-info .map-spot-inner .spot-list-in-spots li .spot-img .count img{
+  width: 13px;
+  height: 12px;
+  vertical-align: middle;
+  margin-top: -2px;
+}
+/* map -spot } */
+
+.round {
+  display: block;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border: 2px solid #999999;
+  border-radius: 10px;
+  overflow: visible!important;
+}
+.round.color00 {
+  border: 2px solid #ff0000;
+}
+.round.color01  {
+  border: 2px solid #ff8000;
+}
+.round.color02 {
+  border: 2px solid #39b54a
+}
+.round.color03 {
+  border: 2px solid #00aeef;
+}
+.round.color04{
+  border: 2px solid #92278f;
+}
+/* All labels }*/
+
+/* Map Labels } */
+
+/* Map inner Spot POPUP */
+.spot-list-in-spots {
+  margin:0 !important;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 5;
+}
+.spot-list-in-spots li {
+  position: relative;
+  width:100%;
+  border-bottom:1px solid #ddd;
+}
+.spot-list-in-spots li a {
+  display: block;
+  width:100%;
+  height:85px;
+  background: #ffffff;
+}
+.spot-list-in-spots li a .spot-img {
+  float:left;
+  width:60px;
+  height:85px;
+  overflow: hidden;
+}
+.spot-list-in-spots li a .spot-img img.spot-top-img {
+  width: 100%;
+  min-height: 85px;
+}
+.spot-list-in-spots li .spot-img .count {
+  position: absolute;
+  bottom:0;
+  left:0;
+  width:60px;
+  height:20px;
+  line-height: 20px;
+  font-size:12px;
+  text-align: center;
+  color:#999;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.spot-list-in-spots li .spot-img .count img{
+  vertical-align: middle;
+  margin-top:-2px;
+}
+.spot-list-in-spots li a .spot-info-box {
+  float:left;
+  width:188px;
+  height:85px;
+  padding:5px 0;
+  margin:0 10px;
+}
+.spot-list-in-spots li .spot-info-box .spot-name {
+  display: block;
+  width: 97%;
+  height: 20px;
+  line-height: 20px;
+  font-weight: 600;
+  color:#333;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.spot-list-in-spots li .spot-info-box .spot-state {
+  display: inline-block;
+  color:#999;
+  font-size: 12px;
+  margin-right:3px;
+}
+.spot-list-in-spots li .spot-info-box span {
+  font-size: 11px;
+}
+.spot-list-in-spots li .spot-info-box .spot-type01 {
+  color:#5488db; /*장소*/
+}
+.spot-list-in-spots li .spot-info-box .spot-type02 {
+  color:#45a3c8;/*유적지*/
+}
+
+.spot-list-in-spots li .spot-info-box .spot-type03 {
+  color:#a373d4;/**/
+}
+.spot-list-in-spots li .spot-info-box .spot-type04 {
+  color:#8ab349;/**/
+}
+.spot-list-in-spots li .spot-info-box .spot-type05 {
+  color:#1ea196;/**/
+}
+.spot-list-in-spots li .spot-info-box .spot-type06 {
+  color:#f2a531;/**/
+}
+
+.spot-list-in-spots li .spot-info-box .spot-short-disc {
+  height: 31px;
+  overflow: hidden;
+  font-size: 11px;
+  color:#999999;
+}
+.spot-list-in-spots li.add-spot-pop {
+  border-bottom: 0;
+}
+
+.spot-list-in-spots li.add-spot-pop a {
+  line-height: 16px;
+  color:#999999;
+  cursor: pointer;
+  height: 60px;
+}
+.spot-list-in-spots li.add-spot-pop .spot-img {
+  height: 60px;
+  background-color: #eeeeee;
+  background-image: none;
+}
+
+.spot-list-in-spots li.add-spot-pop .spot-info-box {
+  height:60px;
+  padding: 12px 0;
+}
+
+.spot-list-in-spots li.add-spot-pop p span.orange {
+  font-size: 12px;
+  color: #ff8000;
+  font-weight: bold;
+}
+.spot-list-in-spots li.loading-image {
+  border:0px;
+}
+.spot-list-in-spots .spot-draggable-info {
+  z-index: 100;
+  position: inherit;
+  border:none !important;
+}
+.map-spot-info {
+  box-shadow: 0 1px 1px rgba(0,0,0,.3);
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.3);
+  -moz-box-shadow: 0 1px 1px rgba(0,0,0,.3);
+}
+.map-spot-info .spot-list-in-spots li {
+  border-bottom:none;
+}
+.map-spot-info .spot-list-in-spots li a {
+  width:268px;
+}
+
+#map .map-spot-info .map-spot-inner .spot-list-in-spots li .spot-img img {
+  width:100%;
+  height:100%;
+}
+#map .map-spot-info .map-spot-inner .spot-list-in-spots li .spot-img .count img{
+  width: 13px;
+  height: 12px;
+  vertical-align: middle;
+  margin-top: -2px;
+}
+.btn-white {
+
+}
+/* Map inner Spot POPUP */
+/** 150515 add Map edit }**/

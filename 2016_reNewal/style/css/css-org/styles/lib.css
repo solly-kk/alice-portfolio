@@ -1,0 +1,26 @@
+/* Mypage :: WishliST :: SpotPop (Gallery) */
+.galleria-theme-classic .galleria-info {
+    width: 90%!important;
+    position: absolute;
+    top:305px !important;
+    left:80px !important;
+    z-index:50!important;
+}
+.galleria-theme-classic .galleria-info .galleria-info-link {
+    top:5px !important;
+    right:7px!important;
+
+}
+.galleria-theme-classic .galleria-info-text {
+    background-color: rgba(0, 0, 0, 0.0);
+    padding: 12px;
+    display: none;
+    /* IE7 */ zoom:1;
+}
+.galleria-theme-classic .galleria-info-title {
+    text-align: right;
+    padding-right: 20px;
+}
+.galleria-theme-classic .galleria-info-title a{
+    color:#fff;
+}

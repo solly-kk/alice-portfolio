@@ -1,0 +1,102 @@
+@CHARSET "UTF-8";
+
+.city-container .city .weather-box .wd01d{
+  background:url(../../../images/wb_01d.png) no-repeat center 0;
+  background-size:30px 40px;
+}/* 맑음 */
+.city-container .city .weather-box .wd01n{
+  background:url(../../../images/wb_01n.png) no-repeat center 0;
+  background-size:30px 40px;
+}/* 저녁 */
+.city-container .city .weather-box .wd02d{
+  background:url(../../../images/wb_02d.png) no-repeat center 0;
+  background-size:30px 40px;
+}/* 구름조금  */
+.city-container .city .weather-box .wd02n{
+  background:url(../../../images/wb_02n.png) no-repeat center 0;
+  background-size:30px 40px;
+}/* 구름조금  */
+.city-container .city .weather-box .wd03d{
+  background:url(../../../images/wb_03d.png) no-repeat center 0;
+  background-size:30px 40px;
+}/* 구름  */
+.city-container .city .weather-box .wd03n{
+  background:url(../../../images/wb_03n.png) no-repeat center 0;
+  background-size:30px 40px;
+}/* 구름  */
+.city-container .city .weather-box .wd04d{
+  background:url(../../../images/wb_04d.png) no-repeat center 0;
+  background-size:30px 40px;
+}/* 흐림  */
+.city-container .city .weather-box .wd04n{
+  background:url(../../../images/wb_04n.png) no-repeat center 0;
+  background-size:30px 40px;
+}/* 흐림  */
+.city-container .city .weather-box .wd09d{
+  background:url(../../../images/wb_09d.png) no-repeat center 0;
+  background-size:30px 40px;
+}/* 비 */
+.city-container .city .weather-box .wd09n{
+  background:url(../../../images/wb_09n.png) no-repeat center 0;
+  background-size:30px 40px;
+}/* 비 */
+.city-container .city .weather-box .wd10d{
+  background:url(../../../images/wb_10d.png) no-repeat center 0;
+  background-size:30px 40px;
+}/*  */
+.city-container .city .weather-box .wd10n{
+  background:url(../../../images/wb_10n.png) no-repeat center 0;
+  background-size:30px 40px;
+}/* 비온뒤  */
+.city-container .city .weather-box .wd11d{
+  background:url(../../../images/wb_11d.png) no-repeat center 0;
+  background-size:30px 40px;
+}/*  천둥 */
+.city-container .city .weather-box .wd11n{
+  background:url(../../../images/wb_11n.png) no-repeat center 0;
+  background-size:30px 40px;
+}/* 천 */
+.city-container .city .weather-box .wd13d{
+  background:url(../../../images/wb_13d.png) no-repeat center 0;
+  background-size:30px 40px;
+}/* 눈 */
+.city-container .city .weather-box .wd13n{
+  background:url(../../../images/wb_13n.png) no-repeat center 0;
+  background-size:30px 40px;
+}/* 눈 */
+.city-container .city .weather-box .wd50d{
+  background:url(../../../images/wb_50d.png) no-repeat center 0;
+  background-size:30px 40px;
+}/* 안개  */
+.city-container .city .weather-box .wd50n{
+  background:url(../../../images/wb_50n.png) no-repeat center 0;
+  background-size:30px 40px;
+}/* 밤안개 */
+/* 로딩 이미지 { */
+.loading-image {
+  /* display: none;*/
+  position: relative;
+  width:100%;
+  height:50px;
+  padding: 0;
+  color: #ff8000;
+  font-size: 30px!important;
+  z-index: 27;
+}
+.loading-image .load-01 {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+  background: url(../../../images/load_02.png) no-repeat;
+}
+.loading-image .load-02 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  display: block;
+  top: 0;
+  left: 0;
+  background: url(../../../images/load_01.png) no-repeat;
+}

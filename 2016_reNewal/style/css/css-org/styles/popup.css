@@ -1,0 +1,330 @@
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Bold.eot);
+  src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'),
+       url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Bold.woff2) format('woff2'),
+       url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Bold.woff) format('woff'),
+       url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Bold.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Nanum Gothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.eot);
+    src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+         url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.woff2) format('woff2'),
+         url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.woff) format('woff'),
+         url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Nanum Gothic';
+    font-style: normal;
+    font-weight: 800;
+    src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-ExtraBold.eot);
+    src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-ExtraBold.eot?#iefix) format('embedded-opentype'),
+         url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-ExtraBold.woff2) format('woff2'),
+         url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-ExtraBold.woff) format('woff'),
+         url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-ExtraBold.ttf) format('truetype');
+  }
+  
+body {
+  min-width: 0!important;
+  font-family: 'Nanum Gothic', 'NanumGothic', Helvetica, sans-serif!important;  
+}
+
+form {
+  margin:0 0 0 0;
+}
+
+.sign-up-01 {
+    width:100%;
+}
+
+.confirm-pass {
+    font-size: 16px;
+    height: auto;
+    margin-bottom: 15px;
+    padding: 7px 9px;
+}
+
+.modal-footer {
+  border-radius: 0 0 0 0;
+  -moz-border-radius: 0 0 0 0;
+  -webkit-border-radius: 0 0 0 0;
+  background-color: #ffffff!important;
+}
+
+.alert.pass-error {
+  display: block;
+}
+
+.reset-password {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "맑은 고딕","Malgun Gothic","Helvetica Neue","Apple SD Gothic Neo",Helvetica,Arial,"Apple Gothic","돋움",Dotum,sans-serif!important;
+}
+
+.reset-password .reset-l {
+  width: 199px;
+  float: left;
+  padding-top:20px;
+  height: 360px;
+  border-right:1px solid #ccc;
+}
+
+.reset-password .reset-l h2 {
+  padding-left: 20px;
+}
+
+.reset-password .reset-r {
+  padding-top:20px;
+  width: 400px;
+  float: left;
+  height: 360px;
+}
+
+.reset-password .reset-r .btn {
+  margin: 0 auto;
+  display: block;
+}
+
+.form-findpass {
+  display: block;
+  width: 400px;
+  margin-bottom: 0;
+}
+
+.form-findpass-contents {
+  width: 356px;
+  margin:0 auto;
+}
+/* 이메 */
+.n-reset-l{
+  width: 100%;
+  margin-top: 90px;
+}
+.n-reset-l-in{
+    width: 500px!important;
+    height: auto!important;
+    margin: 0 auto;
+    padding:30px!important;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    padding-bottom: 0px;
+    background: #ffffff;
+    border:1px solid #cccccc!important;
+    display: block!important;
+    overflow: hidden!important;
+}
+.n-reset-l-in h2{
+  height: 38px;
+  line-height: 38px;
+  font-weight: normal;
+  font-size: 24px;
+  color: #666;
+  margin-bottom: 22px;
+}
+.n-reset-in{
+  height: 40px;
+  line-height: 40px;
+}
+.n-reset-in h4{
+  display: inline;
+}
+.n-reset-in02{
+  
+  vertical-align: middle;
+}/* height: 40px; */
+.n-reset-tit{
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  color: #999;
+}
+.n-email{
+  width: 300px;
+  font-size: 16px;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  color: #ff8000;
+  font-weight: none;
+}
+.n-reset-l-in .btn-primary {
+  width: 100px;
+  height: 40px;
+  padding-top: 9px;
+  background:#ff8000!important;
+  border:1px solid #e97500!important;
+}
+.n-reset-l-in input{
+  width: 300px!important;
+  height: 35px!important;
+  margin: 0!important; 
+}
+.n-reset-l-in .t-center{
+  text-align: center!important;
+
+  margin: 20px 0 0 170px;
+}
+.email-logo{
+  width: 300px;
+  margin: 0 auto;
+}
+.email-logo img{
+
+  margin-bottom: 30px;
+}
+.mt-10{
+  margin-top: 10px;
+}
+
+.btn-primary {
+  background:#ff8000!important;
+  border:1px solid #e97500!important;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: #fff;
+  background:#ff4200!important;
+  border:1px solid #de3900!important;
+}
+
+.btn-success {
+  background: #003b7c!important;
+  border:1px solid #000066!important;
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.open > .dropdown-toggle.btn-success {
+  color: #fff;
+  background: #0c257c !important;
+  border:1px solid #00004d!important;
+}
+
+.btn-white {
+  background: #ffffff;
+  border:1px solid #ff8000!important;
+  color: #ff8000;
+}
+
+.btn-white:hover,
+.btn-white:focus,
+.btn-white:active,
+.btn-white.active,
+.open > .dropdown-toggle.btn-white {
+  background: #FF8000;
+  border:1px solid #ff8000!important;
+  color: #ffffff!important;
+}
+.nav-notice-con{
+    width: 1100px;
+    text-align: center;
+    height: 120px;
+    margin: 0 auto;
+    display: block;
+    overflow: hidden;
+}
+/* 회원탈퇴 마지막 {*/
+.withdraw-last-step {
+  position: relative;
+  width:520px;
+  height:auto;
+  padding:15px 20px 30px 20px;;
+  margin: 0 auto 150px;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+}
+.withdraw-last-step h2 {
+  width:100%;
+  height:30px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #666;
+  padding:0;
+  margin:0;
+}
+.withdraw-last-step p.txt {
+  margin:0;
+  padding:15px 0;
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  border-bottom:1px solid #eee;
+}
+.withdraw-last-step .mail-add-check{
+  width: 100%;
+  height: 40px;
+  line-height: 41px;
+  text-align: center;
+  font-weight: bold;
+  font-size:16px;
+  margin:10px 0;
+  background: #f1f1f1;
+  border: 1px solid #ccc;
+  color: #777;
+  border-radius: 4px;
+}
+.withdraw-last-step form {
+  text-align: center;
+}
+.withdraw-last-step ul {
+  padding:0;
+  margin:0;
+}
+.withdraw-last-step ul li{
+  list-style: none;
+  text-align: left;
+  font-size:14px;
+  color: #666;
+  line-height: 1.4;
+}
+.withdraw-last-step ul li:last-child {
+  padding-left:8px;
+}
+.withdraw-last-step .agree_ment_box {
+  text-align: left;
+  margin: 20px 0;
+  font-size:14px;
+  color: #999;
+}
+.withdraw-last-step .txt-box {
+  width: 100%;;
+  height: 100px;
+  text-align: left;
+  border: 1px solid #ccc;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 4px;
+  margin: 0 0 20px;
+}
+.withdraw-last-step .txt-box textarea {
+  width: 100%;
+  height: 98px;
+  padding:10px;
+  font-size:14px;
+  text-align: left;
+  color: #999;
+  border:none;
+  background:none;
+}
+.withdraw-last-step button.btn{
+  text-align: center;
+  margin:0 auto;
+}
+/* 회원탈퇴 마지막 }*/

@@ -1,0 +1,160 @@
+/* planEdit */
+/* top plan info*/
+
+.plan-view-new .plan-name.edit {
+  background: none!important;
+  min-height: 0;
+  width:auto;
+}
+
+/* cover img change */
+.cover-img {
+  width: 1100px;
+  height: 351px;
+  display: block;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+.cover-img img {
+  position: absolute;
+  z-index: 10;
+  width: 1100px;
+  min-height: 351px;
+  display: block;
+}
+.cover-img .cover-change {
+  visibility: visible;
+  z-index: 11;
+  bottom: 20px;
+  left: 217px;
+  position: absolute;
+  display: block;
+}
+.cover-img .cover-change a.cover-change {
+  color: #fff;
+  padding-top: 10px;
+  margin-right: 20px;
+  text-align: right;
+  display: block;
+}
+.cover-img .cover-change a.cover-change h3,
+.cover-img .cover-change a.cover-change h5 {
+  margin:5px 0;
+}
+.cover-img .cover-change a.cover-change i {
+  font-size: 25px;
+}
+
+.cover-img .loading-image {
+  top: 150px;
+  left: 525px;
+  position: absolute;
+  z-index: 27;
+  padding: 5px 0;
+  color: #ff8000;
+  font-size: 30px!important;
+}
+.cover-img .edit-page-dim {
+  display: block;
+  position: absolute;
+  z-index: 11;
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,0.15)!important;
+}
+
+.coverex {
+  position: absolute;
+  top: 140px;
+  margin-left: -120px;
+  z-index: 12;
+  width: 260px;
+  padding: 5px;
+  left: 50%;
+  background: rgba(255,255,255,.5);
+  font-weight: 700;
+}
+/* add personal event */
+
+.add-personal-button {
+  visibility: hidden;
+  width: 18px;
+  /*width: 100%;*/
+  height: 22px;
+  line-height: 22px;
+  margin:0 auto;
+  text-align: center;
+  font-size: 20px;
+  color: #CCCCCC;
+  cursor: pointer;
+}
+
+.add-personal-button:hover {
+  color: #D65F4C;
+}
+
+.insert-event:hover .add-personal-button {
+  visibility: visible;
+}
+
+.event {
+  margin-left: 5px;
+  z-index:1;
+}
+
+.ev-info-wrap {
+  margin-left: 0px;
+}
+
+.route {
+  margin-left: 5px;
+}
+/**** *****/
+
+.events.personal {
+  position: absolute;
+  border: 0px;
+  top: -50px;
+  left: 12px;
+}
+
+td.cell .insert-event {
+  position: relative;
+}
+
+ul.marker-list li .distance a.route {
+  width: 75px;
+  text-align: center;
+  margin-left: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+ul.marker-list li .distance a.route span.find-route-bg {
+  background: #ff8000 url('../images/find_route_bg.png') no-repeat 0 0 ;
+  height: 25px;
+  width: 25px;
+  border:1px solid #ff8000;
+  border-radius: 2px 0 0 2px;
+  -webkit-border-radius: 2px 0 0 2px;
+  -moz-border-radius: 2px 0 0 2px;
+  float: left;
+  display: block;
+}
+
+ul.marker-list li .distance a.route span.find-route-text {
+  color:#999999;
+  float: left;
+  display: block;
+  width: 50px;
+  height: 25px;
+  line-height: 25px;
+  background: #ffffff;
+  border:1px solid #dddddd;
+  border-left: 0;
+  border-radius: 0 2px 2px 0;
+  -webkit-border-radius: 0 2px 2px 0;
+  -moz-border-radius: 0 2px 2px 0;
+}

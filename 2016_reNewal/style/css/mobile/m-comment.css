@@ -1,0 +1,572 @@
+@CHARSET "UTF-8";
+
+/* 코멘트 작업 Start */
+.plan-comment {
+  overflow: hidden;
+  padding:0;
+  font-size: 0;
+}
+.plan-comment .comment-write {
+  overflow: hidden;
+  padding:10px 7px;
+  border-top:1px solid #ddd;
+  background: #ffffff;
+}
+.plan-comment .my-p {
+  width: 30px;
+  float: left;
+  display: block;
+  margin-right:10px;
+}
+.plan-comment .my-p span {
+  width: 50px;
+  height: 20px;
+  overflow: hidden;
+  display: block;
+  line-height: 20px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.plan-comment .comment-write .my-p-img {
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  display: block;
+  margin-top:2px;
+}
+
+.plan-comment .comment-write .my-p-img img {
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+}
+
+.plan-comment .comment-write form {
+  display: block;
+  float: left;
+  height: 50px;
+  margin: 0;
+}
+.plan-comment .comment-write textarea {
+  width:86%;
+  resize: vertical;;
+  height: 35px;
+  float: left;
+  display: block;
+  font-weight: normal;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.plan-comment .comment-write textarea:focus {
+  border:1px solid #ccc;
+}
+.plan-comment .comment-write textarea.form-control02 {
+  width: 882px !important;
+}
+.plan-comment .comment-write .comment-edit-btns {
+  float:right;
+}
+/* 코멘트 작업 End*/
+
+/* 코멘트 List Start*/
+.spot-comment-list {
+  font-size: 1em;
+  padding:10px 10px 0 10px;
+  background:#fff;
+  border-bottom:1px solid #ccc;
+}
+.plan-comment ul.comment-list {
+  list-style-type: none;
+  /*margin:5px 0 0 0;
+   padding:10px 10px 0 10px;*/
+  display: block;
+}
+.plan-comment ul.comment-list li {
+  padding: 10px;
+  display: block;
+  border-bottom: 1px solid #eeeeee;
+  clear: both;
+}
+.plan-comment ul.comment-list li:first-child {
+  border-top:1px solid #eeeeee;
+  padding:10px;
+}
+.plan-comment ul.comment-list .root-modify{
+  border-top:1px solid #eeeeee;
+  margin-top:-1px;
+}
+.plan-comment ul.comment-list li > div {
+  overflow: hidden;
+}
+.plan-comment ul.comment-list li:last-child {
+  border-bottom:none;
+}
+.plan-comment ul.comment-list div.c-to-c-li {
+  padding: 9px 0;
+  display: block;
+  clear: both;
+  border-top:1px solid #ddd;
+}
+/* 리플 이미지 */
+.plan-comment ul.comment-list li .reply-image {
+  width: 5%;
+  display:block;
+  float:left;
+}
+.plan-comment ul.comment-list li .reply-image img{
+  width:35px;
+  height:35px;
+}
+/* 프로필 이미지 */
+.plan-comment ul.comment-list li div.profile-img,
+.plan-comment ul.comment-list li div.comment-contents {
+  display: inline-block;
+  vertical-align: top;
+}
+.plan-comment ul.comment-list li div.profile-img {
+  display:block;
+  float:left;
+  width: 5%;
+  height: 35px;
+  vertical-align: top;
+}
+
+.plan-comment ul.comment-list li div.profile-img a.user {
+  width: 30px;
+  height: 35px;
+  display: block;
+  overflow: hidden;
+}
+
+.plan-comment ul.comment-list li div.profile-img a img {
+  width: 30px;
+  height: 30px;
+  margin-top:5px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+}
+/* 코멘트 컨텐츠 */
+.plan-comment ul.comment-list .comment-contents {
+  float:left;
+  width: 94%;
+  margin-left:1%;
+  color: #666666;
+}
+.plan-comment ul.comment-list .comment-info .name-date {
+  float: left;
+  width: 55%;
+  height: 18px;
+  line-height: 18px;
+}
+.plan-comment ul.comment-list  .comment-contents a.user {
+  display: block;
+  float:left;
+  width: 99%;
+  margin-right: 5px;
+  font-size: 14px;
+  font-weight: normal;
+}
+.plan-comment ul.comment-list .comment-reply  .comment-contents a.user {
+  width:90%;
+}
+.plan-comment ul.comment-list .comment-contents a.user .username {
+  font-weight: 500;
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: bold;
+}
+.plan-comment ul.comment-list .comment-contents .name-date .update-date {
+  display: block;
+  float:left;
+  font-size: 12px;
+  color: #999;
+  margin:0 0 0 3px;
+}
+
+.plan-comment ul.comment-list .comment-author-info-links a {
+  display: inline-block;
+  vertical-align: top;
+  width: 18px;
+  height: 20px;
+}
+
+.plan-comment ul.comment-list .comment-author-info-links a img {
+  width: 18px;
+  height: 18px;
+}
+.plan-comment ul.comment-list .comment-txt {
+  clear: both;
+}
+
+.plan-comment ul.comment-list .comment-txt p {
+  overflow: hidden;
+  line-height: 18px;
+  padding: 0 5% 0 0;
+  margin: 0;
+  color: #999;
+  font-size: 16px;
+  word-break: break-all;
+  white-space: pre-wrap;
+}
+
+/* 코멘트 리플 */
+.plan-comment ul.comment-list .comment-reply ,
+.plan-comment ul.comment-list .comment-edit {
+  position: relative;
+  width:100%;
+  min-height:50px;
+}
+.plan-comment ul.comment-list .comment-edit .comment-edit-mode {
+  width: 90%;
+  float:left;
+  padding:0;
+  margin:0;
+}
+.plan-comment ul.comment-list .comment-edit.root-modify .comment-edit-mode {
+  width: 95%;
+}
+.plan-comment ul.comment-list .comment-edit .comment-edit-mode textarea {
+  width: 83%;
+  float:left;
+  resize:none;
+  height:35px;
+  border:1px solid #ccc;
+  margin:0
+}
+.plan-comment ul.comment-list .comment-reply  .profile-img a img{
+  margin-top:2px;
+}
+
+.plan-comment ul.comment-list .comment-reply .comment-contents {
+  width: 89%;
+}
+/* 댓글 수정 , 삭제버튼 */
+.plan-comment ul.comment-list .comment-contents .btn-box {
+  float:right;
+}
+.plan-comment ul.comment-list .comment-contents .btn-box a,
+.plan-comment ul.comment-list .comment-contents .btn-box button {
+  display: inline-block;
+}
+.plan-comment ul.comment-list .comment-contents .btn-box a.btn-edit img,
+.plan-comment ul.comment-list .comment-contents .btn-box button.btn-edit img {
+  margin-top:-1px;
+}
+
+.plan-comment ul.comment-list .reply .comment-edit-mode textarea {
+  width: 83%;
+}
+.plan-comment ul.comment-list .comment-edit-mode textarea,
+.plan-comment ul.comment-list .comment-edit-mode button {
+  vertical-align: top;
+}
+/* 댓글 저장, 취소 버튼 {*/
+.plan-comment ul.comment-list .comment-edit-mode .comment-edit-btns {
+  float:right;
+  text-align: right;
+}
+.plan-comment .comment-edit-btns button,
+.plan-comment  .comment-edit-btns a{
+  float:left;
+  display: block;
+  width: 50px;
+  font-size: 12px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  padding:0;
+  margin:0;
+}
+.plan-comment  .comment-edit-btns .btn.btn-primary {
+  background: #ff8000;
+  border:1px solid #e47200;
+  color: #fff;
+}
+.plan-comment  .comment-edit-btns .btn.btn-default{
+  margin:0 0 0 2px;
+}
+/* 댓글 저장, 취고 버튼 } */
+/* 코멘트 작업 End*/
+
+
+/* Comment  Start { */
+.plan-go-to-app ,
+.note-go-to-app {
+  margin:0 0 15px 0;
+}
+.m-container .plan-comment {
+  overflow: hidden;
+  width: 100%;
+  margin:8px auto 0;
+  font-size: 1em;
+}
+.m-container .plan-comment .reply-count {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+}
+.m-container .plan-comment .reply-count p {
+  width: 100%;
+  line-height:10px;
+  padding:10px;
+  color: #333;
+  font-size: 14px;
+  font-weight: bold;
+}
+.m-container .plan-comment .reply-count p span {
+  padding:0 0 0 5px;
+  font-size: 12px;
+  color: #666;
+}
+.m-container .plan-comment .input-reply {
+  padding-bottom:10px;
+}
+.m-container .plan-comment .input-reply a{
+  display: block;
+  font-size:12px;
+  color: #999999;
+  padding:0 8px;
+  text-decoration: none;
+  height: 35px;
+  line-height: 35px;
+  background:#eee;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+.m-container .plan-comment ul.comment-list {
+  padding:0;
+  border-top:1px solid #eeeeee;
+}
+.m-container .plan-comment ul.comment-list li {
+  overflow: hidden;
+  position: relative;
+  padding:5px 0;
+}
+.m-container .plan-comment ul.comment-list li:first-child {
+  padding:5px 0;
+  border-top:none;
+}
+.m-container .plan-comment ul.comment-list li div.profile-img {
+  position: absolute;
+  top:5px;
+  left:0;
+  width: 30px;
+}
+.m-container .plan-comment ul.comment-list .comment-contents {
+  position: relative;
+  width: 100%;
+  padding-left:40px;
+  margin:0;
+}
+.m-container .plan-comment ul.comment-list .comment-contents .name-date a.user {
+  color: #666;
+  font-weight: bold;
+}
+.m-container .plan-comment ul.comment-list .comment-contents .time {
+  display: block;
+  position: absolute;
+  top:2px;
+  right:2px;
+  font-size: 9px;
+  color: #bbbbbb;
+  padding-right:20px;
+}
+.m-container .plan-comment ul.comment-list .comment-contents .time a {
+  display: block;
+  position: absolute;
+  top:0px;
+  right:0;
+  width: 15px;
+  height: 15PX;
+}
+.m-container .plan-comment ul.comment-list .comment-contents .time a img{
+  width: 100%;
+  height: 100%;
+}
+.m-container .plan-comment ul.comment-list li div.profile-img a img {
+  width: 30px;
+  height: 30px;
+  margin-top:3px;
+}
+.m-container .plan-comment ul.comment-list .profile-img  a.user {
+  width: 100%;
+  color: #666;
+  font-size: 0.92307692em;
+}
+.m-container .plan-comment ul.comment-list li .reply-image {
+  position: absolute;
+  top:12px;
+  left:4px;
+  width: 20px;
+}
+.m-container .plan-comment ul.comment-list li .reply-image img {
+  width:20px;
+  height:20px;
+}
+.m-container .plan-comment ul.comment-list li.comment-reply div.profile-img {
+  left:29px;
+}
+.m-container .plan-comment ul.comment-list .comment-reply .comment-contents {
+  width: 100%;
+  padding-left:60px;
+  position: relative;
+}
+.m-container .plan-comment ul.comment-list .comment-txt p {
+  line-height: 1.3;
+  padding:0px 0 1px 0;
+  color: #666666;
+}
+/* Comment  End } */
+/*{페이스북 반응 보기 */
+.response-fb {
+  overflow: hidden;
+  width: 100%;
+  margin: 10px auto 0;
+}
+.response-fb .fb-tit {
+  width:100%;
+  height: 25px;
+}
+.response-fb .fb-tit div {
+  float:right;
+  margin-right:10px;
+}
+.response-fb .fb-tit h3{
+  float:left;
+  line-height:25px;
+  padding:0 10px;
+  margin-left:10px;
+  font-size:14px;
+  color: #333333;
+  font-weight: bold;
+  background:url(../../../images/icon-m-respons-facebook.png) no-repeat 0 center;
+  background-size:5px 10px;
+}
+.response-fb .fb-tit p{
+  display: block;
+  position: relative;
+  float:left;
+  text-align: right;
+  margin-left:15px;
+  font-size:11px;
+  color: #999999;
+  font-weight: normal;
+  line-height:25px;
+}
+.response-fb .fb-tit p span {
+  font-weight: bold;
+}
+
+.response-fb .fb-tit p:first-child {
+  margin:0;
+  overflow: hidden;
+}
+.response-fb .fb-tit p::after {
+  display: block;
+  height:25px;
+  vertical-align: top;
+  content:".";
+  position: absolute;
+  top:-2px;
+  left:-9px;
+}
+.response-fb .fb-comment-list {
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+  font-size: 1em;
+  padding: 10px 10px 0 10px;
+}
+
+.response-fb .fb-comment-list  {
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  font-size: 0;
+}
+.response-fb .fb-comment-list ul {
+  list-style-type: none;
+  display: block;
+  margin:0 10px;
+}
+.response-fb .fb-comment-list ul li {
+  display: block;
+  position: relative;
+  padding:5px 0;
+  border-bottom: 1px solid #eee;
+  clear: both;
+}
+.response-fb .fb-comment-list ul li:last-child {
+  border-bottom:none;
+}
+.response-fb .fb-comment-list ul li div {
+  overflow: hidden;
+}
+.response-fb .fb-comment-list ul li .profile-img {
+  display:block;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 30px;
+  height:35px;
+}
+.response-fb .fb-comment-list ul li .profile-img img{
+  width: 30px;
+  height: 30px;
+  margin-top: 3px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+}
+.response-fb .fb-comment-list ul li .comment-contents {
+  position: relative;
+  width:100%;
+  padding-left:40px;
+  margin:0;
+}
+.response-fb .fb-comment-list  .comment-contents .update-date {
+  display: block;
+  position: absolute;
+  top: 1px;
+  right: 0px;
+  font-size: 9px;
+  color: #bbbbbb;
+}
+.response-fb .fb-comment-list ul li .comment-info .name-date {
+  float: left;
+  height: 18px;
+  line-height: 18px;
+}
+.response-fb .fb-comment-list ul li .comment-contents .username {
+  display: inline;
+  margin-right: 5px;
+  color: #666666;
+  font-size: 14px;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: bold;
+}
+.response-fb .fb-comment-list ul li .comment-contents .comment-txt {
+  clear:both;
+}
+.response-fb .fb-comment-list ul li .comment-contents .comment-txt p {
+  overflow: hidden;
+  line-height: 1.3;
+  padding: 0px 0 1px 0;
+  color: #666666;
+  font-size: 16px;
+  word-break: break-all;
+  white-space: pre-wrap;
+  font-weight: 300;
+}
+/*페이스북 반응보기}*/

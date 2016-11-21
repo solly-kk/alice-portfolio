@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>wishbeen-city추천콘텐츠</title>
+  <link rel="stylesheet" href="style/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="style/css/non-responcive.css">
+  <link rel="stylesheet" href="style/css/common.css">
+  <link rel="stylesheet" href="style/css/nav.css">
+  <link rel="stylesheet" href="style/css/main.css">
+  <link rel="stylesheet" href="style/css/main.css">
+  <link rel="stylesheet" href="style/css/footer.css">
+  <script type="text/javascript" src="style/js/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="style/js/pie.js"></script>
+  <link rel="stylesheet" href="style/js/pie.htc" />
+  <script type="text/javascript" src="style/js/PIE_uncompressed.js"></script>
+  <link rel="stylesheet" href="style/js/PIE_uncompressed.htc">
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <!--[if lt IE 9]>
+  <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+<div class="page-container">
+  <!-- {header -->
+  <div class="header">
+    <div class="main-nav-con">
+      <p class="wishbeen-logo"><a href="new-main.html"><img src="images/h1_logo_wishbeen.png" alt="세상의 모든여행 위시빈"></a><span>세상에 모든여행 위시빈</span></p>
+
+      <div class="nav-login-search">
+        <a class="btn-new-plan" href="">일정 만들기</a>
+
+        <div class="login-and-profile">
+          <div style="display: none;">
+            <a id="nav-login-btn" class="nav-btn-login">시작하기</a>
+            <a id="nav-fb-login" class="fb"></a>
+            <a id="nav-ggl-login" class="ggl"></a>
+          </div>
+          <div class="my-menu">
+            <div id="topMenuList" class="dropdown my-nav me">
+              <a href="#" class="my-nav-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="user-img-wrap"><!-- <img ng-src="{{me.thumbnail}}"> -->
+                  <img src="https://d27jb7b1szyj2.cloudfront.net/profile/thumb_1419907257353_1606b881-b19a-4013-84b8-015b4f4a72b8.jpg">
+                </div>
+                <div class="username">
+                  <span class="username-id">루시</span>
+                </div>
+              </a>
+              <div class="dropdown-menu dropdown-new" role="menu" aria-labelledby="dLabel">
+                <div class="my-menu-tri"></div>
+                <ul>
+                  <li>
+                    <a id="myPageInMenu" href="/myPage/user/6d510e46324a4886?active=myNotice" class="my-menu-01">
+                      <span>마이 페이지</span></a>
+                  </li>
+                  <li class="divider"></li>
+                  <li><a id="myNoticeInMenu" href="/myPage/user/6d510e46324a4886?active=myNotice" class="my-menu-02">
+                    <span>알림</span></a>
+                  </li>
+                  <li>
+                    <a id="myPlanInMenu" href="/myPage/user/6d510e46324a4886?active=myPlan" class="my-menu-03">
+                      <span>나의 일정</span></a>
+                  </li>
+                  <li><a id="myScrapInMenu" href="/myPage/user/6d510e46324a4886?active=myScrap" class="my-menu-04">
+                    <span>커스터마이즈 일정</span></a></li>
+                  <li>
+                    <a id="myFavoriteSpotInMenu" href="/myPage/user/6d510e46324a4886?active=myFavorite" class="my-menu-05">
+                      <span>위시보드</span></a></li>
+                  <li>
+                    <a id="mySpotInMenu" href="/myPage/user/6d510e46324a4886?active=mySpot" class="my-menu-06">
+                      <span>내가 만든 명소</span></a></li>
+                  <li class="divider"></li>
+                  <li><a id="userGuideInMenu" href="/userguide" class="my-menu-07">
+                    <span>유저 가이드</span></a></li>
+                  <li class="divider"></li>
+                  <li><a id="nav-logout-btn" class="my-menu-08">
+                    <span>로그아웃</span>
+                  </a></li>
+                </ul>
+              </div>
+            </div>
+            <div id="my-notice-drop-down" class="dropdown notice-num">
+              <a class="dropdown-toggle me-noti " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="bell"></div>
+                <span class="noti-count">0</span>
+              </a>
+              <div class="last-noti-list mynotice dropdown-menu" role="menu" aria-labelledby="dLabel">
+              </div><!--last-noti-list end-->
+            </div>
+          </div>
+        </div><!-- login-and-profile -->
+      </div>
+    </div>
+  </div><!-- header } -->
+</div><!-- page-container -->
+<div class="main-tabs">
+  <div class="tabs-list">
+    <ul>
+      <li><a href="new-city1.html"><span>둘러보기</span></a></li>
+      <li><a href="new-city2.html"><span>추천콘텐츠</span></a></li>
+      <li><a href="new-city3.html"><span>커뮤니티</span></a></li>
+      <li><a href="new-city4.html"><span>여행일정</span></a></li>
+      <li><a href="new-city5.html" class="active"><span>가볼만한 곳</span></a></li>
+      <li><a href="new-city6.html"><span>맛집</span></a></li>
+      <li><a href="new-city5.html"><span>숙소</span></a></li>
+      <li><a href=""><span>최저가 호텔</span></a></li>
+      <li><a href=""><span>항공권 조회</span></a></li>    
+    </ul><!-- e// tabs -->
+  </div><!-- e//tabs-list -->
+
+  <div class="search-box">
+    <div class="inner-box">
+      <div class="first-box">
+        <label for="where"></label>
+        <input type="text" id="where" placeholder="서울"/>
+        <div class="hide">어디에서</div>
+        <div class="search-list" style="display: none">
+          <ul>
+            <li class="search-place"><a href=""><strong>서울</strong><span>대한민국, 아시아</span></a></li>
+            <li class="search-txt"><a href=""><strong>'서울'</strong><span>지역검색</span></a></li>
+          </ul>
+          <ul>
+            <li class="sub-tit"><a href=""><span>추천여행지</span></a></li>
+            <li class="search-place"><a href=""><strong>서울</strong><span>대한민국, 아시아</span></a></li>
+            <li class="search-place"><a href=""><strong>오사카</strong><span>일본 아시아</span></a></li>
+            <li class="search-txt"><a href=""><strong>'서울'</strong><span>지역검색</span></a></li>
+          </ul>
+        </div><!-- e//search-list -->
+      </div><!-- e//first-box -->
+      <div class="second-box">
+        <label for="what"></label>
+        <input type="text" id="what" placeholder="광화"/>
+        <div class="hide">무엇을 하고 싶으세요?</div>
+        <div class="search-list" style="display: none">
+          <ul>
+            <li class="l-type01"><a href=""><span>오사카 둘러보기</span></a></li>
+            <li class="l-type02"><a href=""><span>오사카 추천콘텐츠</span></a></li>
+            <li class="l-type03"><a href=""><span>오사카 커뮤니티</span></a></li>
+            <li class="l-type04"><a href=""><span>오사카 여행일정</span></a></li>
+            <li class="l-type05"><a href=""><span>오사카 가볼만한 곳</span></a></li>
+            <li class="l-type06"><a href=""><span>오사카 맛집</span></a></li>
+            <li class="l-type07"><a href=""><span>오사카 숙소</span></a></li>
+          </ul>
+          <ul>
+            <li class="sub-tit"><a href=""><span>예약하기</span></a></li>
+            <li class="l-type07"><a href=""><span>오사카 최저가호텔 예약하기</span></a></li>
+            <li class="l-type08"><a href=""><span>오사카 항공권 조회하기</span></a></li><!-- 나라를 선택하고나면 디폴트값 -->
+            <li class="search-txt"><a href=""><strong>'광화'</strong><span>검색</span></a></li><!-- 키워드 입력중 -->
+          </ul>
+        </div><!-- e//search-list -->
+      </div><!-- e//second-box -->
+      <a class="btn-main-search" href=""><img src="images/btn-search.png" alt=""/></a>
+    </div><!-- e//inner-box -->
+  </div><!-- e//search-box -->
+</div><!-- e//main-tabs -->
+
+<div class="page-rotation">
+  <a href="">아시아</a><span> &gt; </span>
+  <a href="">한국</a><span> &gt; </span>
+  <a href="">서울</a><span> &gt; </span>
+  <a href="">둘러보기</a>
+</div>
+
+<div id="contents" class="city">
+  <div class="conts-container">
+    <div class="present">
+      <div class="tabs-list">
+        <a class="go-to-map" href="new-city7-map.html">
+          <img src="images/icon-map-click.png" alt=""/>
+        </a>
+        <ul>
+          <li><a href=""><span>전체</span></a></li>
+          <li><a href="" class="active depth2"><span>관광지</span></a>
+            <ul>
+              <li><a href=""><span>랜드마크</span></a></li>
+              <li><a href=""><span>전망대&타워</span></a></li>
+              <li><a href="" class="active"><span>고대유적</span></a></li>
+              <li><a href=""><span>거리</span></a></li>
+              <li><a href=""><span>더보기</span></a></li>
+            </ul>
+          </li>
+          <li><a href=""><span>쇼핑</span></a></li>
+          <li><a href=""><span>즐길거리</span></a></li>
+          <li><a href=""><span>야외활동</span></a></li>
+          <li><a href=""><span>교통</span></a></li>
+        </ul><!-- e// tabs -->
+
+        <div class="new-spot-add">
+          <a href="">
+            <p>찾고싶은 명소가 없으신가요?</p>
+            <p><span>새로운 명소</span>를 직접 등록하세요</p>
+          </a>
+        </div>
+      </div><!-- e//tabs-list -->
+      
+      <div class="conts-box-list">
+        <div class="inner-box">
+          <div class="spots-contents">
+            <span class="spot-img">
+              <a href="" target="_blank"><img src="https://tokyo-img-wishbeen.akamaized.net/spot/thumb_1438075381822_성산일출봉02.JPG" alt="img"></a>
+            </span>
+            <div class="spot-info-box spot-type02">
+              <h4 class="spot-name"><a href="" target="_blank">성산일출봉 (Seongsan Ilchulbong Peak)</a></h4>
+              <span class="spot-state"> 유네스코 세계자연유산</span>
+              <div class="desc">
+                <span class="btn-post" href=""><span>249</span> 개의 포스트</span>
+                <span class="town">한국서귀포시</span>
+              </div><!-- e//desc -->
+              <div class="tag">
+                <a href="">제주도</a>
+                <a href="">성산일출봉</a>
+                <a href="">세계자연유산</a>
+                <a href="">제주아일랜드</a>
+              </div><!-- e//tag -->
+
+              <div class="btn-box">
+                <a class="btn-wish" data-id="98bd26d0552d187b" data-cc="KR">
+                  <span class="count">43</span>
+                  <span class="wish">Wish</span>
+                </a><!-- 버튼을 클릭하면 class="on"이 추가되게 해주세-->
+                <a class="btn-been  on" data-id="98bd26d0552d187b" data-cc="KR">
+                  <span class="count">1</span>
+                  <span class="been">Been</span>
+                </a><!-- 버튼을 클릭하면 class="on"이 추가되게 해주세-->
+              </div><!-- e//btn-box -->
+              <a class="btn-commerce" href="">
+                <span>햄파이브 입장권 할인 쿠폰받기 <img src="images/btn-spot-commerce.png" alt=""/></span>
+              </a>
+            </div><!--e//spot-info-box -->
+            
+            <div class="conts-label">
+              <p class="label-coupon"><span>할인쿠폰</span></p>
+            </div>
+          </div><!-- e// spots-contents-->
+
+          <div class="spots-contents">
+            <span class="spot-img">
+              <a href="" target="_blank"><img src="https://tokyo-img-wishbeen.akamaized.net/spot/thumb_1438075381822_성산일출봉02.JPG" alt="img"></a>
+            </span>
+            <div class="spot-info-box spot-type02">
+              <h4 class="spot-name"><a href="" target="_blank">성산일출봉 (Seongsan Ilchulbong Peak)</a></h4>
+              <span class="spot-state"> 유네스코 세계자연유산</span>
+              <div class="desc">
+                <span class="btn-post" href=""><span>249</span> 개의 포스트</span>
+                <span class="town">한국서귀포시</span>
+              </div><!-- e//desc -->
+              <div class="tag">
+                <a href="">제주도</a>
+                <a href="">성산일출봉</a>
+                <a href="">세계자연유산</a>
+                <a href="">제주아일랜드</a>
+              </div><!-- e//tag -->
+
+              <div class="btn-box">
+                <a class="btn-wish on" data-id="98bd26d0552d187b" data-cc="KR">
+                  <span class="count">43</span>
+                  <span class="wish">Wish</span>
+                </a><!-- 버튼을 클릭하면 class="on"이 추가되게 해주세-->
+                <a class="btn-been" data-id="98bd26d0552d187b" data-cc="KR">
+                  <span class="count">1</span>
+                  <span class="been">Been</span>
+                </a><!-- 버튼을 클릭하면 class="on"이 추가되게 해주세-->
+              </div><!-- e//btn-box -->
+              <a class="btn-commerce" href="">
+                <span>햄파이브 입장권 할인 쿠폰받기 <img src="images/btn-spot-commerce.png" alt=""/></span>
+              </a>
+            </div><!--e//spot-info-box -->
+          </div><!-- e// spots-contents-->
+
+          <div class="spots-contents">
+            <span class="spot-img">
+              <a href="" target="_blank"><img src="https://tokyo-img-wishbeen.akamaized.net/spot/thumb_1438075381822_성산일출봉02.JPG" alt="img"></a>
+            </span>
+            <div class="spot-info-box spot-type02">
+              <h4 class="spot-name"><a href="" target="_blank">성산일출봉 (Seongsan Ilchulbong Peak)</a></h4>
+              <span class="spot-state"> 유네스코 세계자연유산</span>
+              <div class="desc">
+                <span class="btn-post" href=""><span>249</span> 개의 포스트</span>
+                <span class="town">한국서귀포시</span>
+              </div><!-- e//desc -->
+              <div class="tag">
+                <a href="">제주도</a>
+                <a href="">성산일출봉</a>
+                <a href="">세계자연유산</a>
+                <a href="">제주아일랜드</a>
+              </div><!-- e//tag -->
+
+              <div class="btn-box">
+                <a class="btn-wish" data-id="98bd26d0552d187b" data-cc="KR">
+                  <span class="count">43</span>
+                  <span class="wish">Wish</span>
+                </a><!-- 버튼을 클릭하면 class="on"이 추가되게 해주세-->
+                <a class="btn-been" data-id="98bd26d0552d187b" data-cc="KR">
+                  <span class="count">1</span>
+                  <span class="been">Been</span>
+                </a><!-- 버튼을 클릭하면 class="on"이 추가되게 해주세-->
+              </div><!-- e//btn-box -->
+              <a class="btn-commerce" href="">
+                <span>햄파이브 입장권 할인 쿠폰받기 <img src="images/btn-spot-commerce.png" alt=""/></span>
+              </a>
+            </div><!--e//spot-info-box -->
+          </div><!-- e// spots-contents-->
+
+          <div class="spots-contents">
+            <span class="spot-img">
+              <a href="" target="_blank"><img src="https://tokyo-img-wishbeen.akamaized.net/spot/thumb_1438075381822_성산일출봉02.JPG" alt="img"></a>
+            </span>
+            <div class="spot-info-box spot-type02">
+              <h4 class="spot-name"><a href="" target="_blank">성산일출봉 (Seongsan Ilchulbong Peak)</a></h4>
+              <span class="spot-state"> 유네스코 세계자연유산</span>
+              <div class="desc">
+                <span class="btn-post" href=""><span>249</span> 개의 포스트</span>
+                <span class="town">한국서귀포시</span>
+              </div><!-- e//desc -->
+              <div class="tag">
+                <a href="">제주도</a>
+                <a href="">성산일출봉</a>
+                <a href="">세계자연유산</a>
+                <a href="">제주아일랜드</a>
+              </div><!-- e//tag -->
+
+              <div class="btn-box">
+                <a class="btn-wish  on" data-id="98bd26d0552d187b" data-cc="KR">
+                  <span class="count">43</span>
+                  <span class="wish">Wish</span>
+                </a><!-- 버튼을 클릭하면 class="on"이 추가되게 해주세-->
+                <a class="btn-been  on" data-id="98bd26d0552d187b" data-cc="KR">
+                  <span class="count">1</span>
+                  <span class="been">Been</span>
+                </a><!-- 버튼을 클릭하면 class="on"이 추가되게 해주세-->
+              </div><!-- e//btn-box -->
+            </div><!--e//spot-info-box -->
+
+            <div class="conts-label">
+              <p class="label-coupon"><span>할인쿠폰</span></p>
+            </div>
+          </div><!-- e// spots-contents-->
+
+          <div class="spots-contents">
+            <span class="spot-img">
+              <a href="" target="_blank"><img src="https://tokyo-img-wishbeen.akamaized.net/spot/thumb_1438075381822_성산일출봉02.JPG" alt="img"></a>
+            </span>
+            <div class="spot-info-box spot-type02">
+              <h4 class="spot-name"><a href="" target="_blank">성산일출봉 (Seongsan Ilchulbong Peak)</a></h4>
+              <span class="spot-state"> 유네스코 세계자연유산</span>
+              <div class="desc">
+                <span class="btn-post" href=""><span>249</span> 개의 포스트</span>
+                <span class="town">한국서귀포시</span>
+              </div><!-- e//desc -->
+              <div class="tag">
+                <a href="">제주도</a>
+                <a href="">성산일출봉</a>
+                <a href="">세계자연유산</a>
+                <a href="">제주아일랜드</a>
+              </div><!-- e//tag -->
+
+              <div class="btn-box">
+                <a class="btn-wish  on" data-id="98bd26d0552d187b" data-cc="KR">
+                  <span class="count">43</span>
+                  <span class="wish">Wish</span>
+                </a><!-- 버튼을 클릭하면 class="on"이 추가되게 해주세-->
+                <a class="btn-been  on" data-id="98bd26d0552d187b" data-cc="KR">
+                  <span class="count">1</span>
+                  <span class="been">Been</span>
+                </a><!-- 버튼을 클릭하면 class="on"이 추가되게 해주세-->
+              </div><!-- e//btn-box -->
+            </div><!--e//spot-info-box -->
+          </div><!-- e// spots-contents-->
+
+          <div class="paging">
+            <a class="btn-prev" href="">이전</a>
+            <a class="btn-next" href="">다음</a>
+            <ul>
+              <li><a href="" class="active"><span>1</span></a></li><li><a href=""><span>...</span></a></li><li><a href=""><span>2</span></a></li><li><a href=""><span>3</span></a></li><li><a href=""><span>4</span></a></li><li><a href=""><span>...</span></a></li><li><a href=""><span>5</span></a></li>
+            </ul>
+          </div>
+        </div><!-- e//inner-box-->
+      </div><!-- e//conts-box-list -->
+
+    </div>
+  </div>
+</div><!-- e//#contents  -->
+
+<div class="plan-search-top">
+  <a class="btn-top" href="" style="display: none;"><img src="images/btn-search-top.png" alt="go to top"></a>
+</div>
+<div id="footer">
+	<div class="foot-inner">
+	  <div class="footer-wrap">
+	    <div class="footer-top">
+	      <ul class="footer-list">
+	        <li><a href="">주요기능</a></li>
+	        <li><a href="">서비스 소개</a></li>
+	        <li><a href="" target="_blank">위시빈 사용법</a></li>
+	        <li><a href="">이용문의</a></li>
+	        <li><a href="">이용약관</a></li>
+	        <li><a href="">개인정보 취급방침</a></li>
+	        <li><a href="">사이트</a></li>
+	      </ul><!-- footer-list-->
+	
+	      <div class="language">
+	        <div class="language-type01">
+	          <select id="language_select" class="state">
+	            <option value="ko-KR" selected="">한국어</option>
+	            <option value="en-US">English</option>
+	          </select>
+	        </div>
+	        <div class="language-type02">
+	          <select class="currency money">
+	            <option value="">KRW(대한민국)</option>
+	            <option value=""></option>
+	          </select>
+	        </div>
+	      </div><!-- language-->
+	    </div><!-- footer-menu-->
+	  </div><!-- footer-wrap-->
+	  <div class="footer-bottom">
+	   <div class="copyright">
+	     <p>상호명 : (주)투어스크랩<span>|</span>대표 : 박동두<span>|</span>개인정보책임자 : 이지현</p>
+	     <p>사업자등록번호 : 212-86-00908<span>|</span>통신판매업신고번호 : 제 2014-서울용산-00910 호<span>|</span>사업자정보확인</p>
+	     <p>주소: 서울특별시 용산구 한강대로 324 (갈월동) 시가이아빌딩 6층 (주)투어스크랩<span>|</span>대표번호 : 070-4045-977<span>|</span>광고 및 제휴 : support@wishbeen.com</p>
+	     <p></p>
+	     <p>투어스크랩은 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 투어스크랩은 상품·거래정보 및 거래에 대하여 책임을 지지 않습니다.</p>
+	   </div>
+	
+	    <div class="footerlink">
+	      <a href="" class="blog"><img src="images/btn-f-blog.png" alt=""/></a>
+	      <a href="" class="facebook"><img src="images/btn-f-facebook.png" alt=""/></a>
+	      <a href="" class="apps"><img src="images/btn-f-appstore.png" alt=""/></a>
+	      <a href="" class="googlep"><img src="images/btn-f-googleplay.png" alt=""/></a>
+	    </div>
+	  </div><!-- footer-bottom-->
+	</div>
+</div><!-- #footer-->
+
+<div class="plan-search-top"><!-- 위로가기버 -->
+  <a class="btn-top" href="" style="display: block;"><img src="images/btn-top.png" alt="go to top"></a>
+</div>
+
+</body>
+</html>

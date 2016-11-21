@@ -1,0 +1,1806 @@
+/* schedule-left schedule-right */
+#view {
+  padding:70px 0 0 0;
+}
+#view .plan-view-box.top {
+  margin:0 auto 0px;
+}
+#view .plan-view-box.top .tit-img {
+  margin:0 auto;
+}
+.schedule-left {
+  float:left;
+  width:280px;
+  height:100%;
+  overflow: auto;
+}
+.schedule-right {
+  float:right;
+  position: relative;
+  overflow: auto;
+  width:820px;
+  height:100%;
+  min-height:1340px;
+  border-left:1px solid #eee;
+}
+.schedule-left .cont-list {
+  height:50px;
+}
+.schedule-left .cont-list li {
+  float:left;
+  width:140px;
+  height:50px;
+  line-height: 59px;
+}
+.schedule-left .cont-list li a {
+  cursor: pointer;
+  display: inline-block;
+  height:22px;
+  line-height: 22px;
+  padding-left:40px;
+  font-size:12px;
+  font-weight: bold;
+  color:#999;
+  border-left:1px solid #eee;
+  background: url(../../images/icon-checklist.png) no-repeat 12px 0;
+}
+.schedule-left .cont-list li:first-child  a{
+  border:none;
+  background: url(../../images/icon-graph.png) no-repeat 7px 0;
+}
+.spot-list-box {
+  border-top:1px solid #ddd;
+}
+
+/* schedule-left spot-plist */
+.spot-list-in-spots {
+  margin:0 !important;
+  position: relative;
+  overflow: hidden;
+  outline: none;
+  z-index: 5;
+}
+.spot-list-in-spots li {
+  position: relative;
+  width:100%;
+  height:100px;
+  margin:0 0 2px 0;
+  background:#ffffff;
+}
+.spot-list-in-spots .spots-contents {
+  width:100%;
+  height:100px;
+  margin:0;
+  overflow: hidden;
+  background:transparent;
+}
+.spot-list-in-spots .spots-contents a{
+}
+.spot-list-in-spots .spots-contents .spot-img {
+  width:100px;
+  height:100px;
+}
+.spot-list-in-spots .spots-contents .spot-name {
+  width:155px;
+  height:25px;
+  line-height:26px;
+  padding:0 0 0 22px;
+  font-size:12px;
+}
+.spot-list-in-spots .spots-contents .spot-type00 .spot-name a{
+  width:100%;
+}
+.spot-list-in-spots .spots-contents .spot-type00 .spot-name{
+  background:url('../../images/spot-type01-01.png') no-repeat 0 4px; /* 가볼만한 곳*/
+  background-size:18px 18px;
+}
+.spot-list-in-spots .spots-contents .spot-type01 .spot-name{
+  background:url('../../images/spot-type01-02.png') no-repeat 0 0;/* 맛집 */
+  background-size:18px 18px;
+}
+.spot-list-in-spots .spots-contents .spot-type02 .spot-name{
+  background:url('../../images/spot-type01-03.png') no-repeat 0 0;/* 숙소 */
+  background-size:18px 18px;
+}
+.spot-list-in-spots .spots-contents .spot-type-myspot .spot-name{
+  background:url('../../images/spot-type01-etc.png') no-repeat 0 0;/* 마이스팟 */
+  background-size:18px 18px;
+}
+.spot-list-in-spots .spots-contents .spot-type-trans .spot-name{
+  background:url('../../images/spot-type01-trans.png') no-repeat 0 0;/* 교통*/
+  background-size:18px 18px;
+}
+.spot-list-in-spots .spots-contents .spot-type-mytrans .spot-name{
+  background:url('../../images/spot-type01-trans.png') no-repeat 0 0;/* 마이교통*/
+  background-size:18px 18px;
+}
+.spot-list-in-spots .spots-contents .spot-state {
+  font-size:12px;
+  margin:0 0 1px 0;
+}
+.spot-list-in-spots .spots-contents .desc span {
+  font-size: 12px;
+}
+.spot-list-in-spots .spots-contents .spot-info-box {
+  float: none;
+  width: 100%;
+  height: 100%;
+  padding: 5px 5px 5px 110px;
+  margin: 0;
+}
+.spot-list-in-spots .spots-contents .spot-info-box .count-box {
+  left:110px;
+  bottom:5px;
+}
+.spot-list-in-spots .spots-contents .spot-info-box .count-box .btn-post {
+  font-size:12px;
+  font-weight: 300;
+  background:url(../../images/icon-m-post.png) no-repeat 0 2px;
+}
+.spot-list-in-spots .spots-contents .spot-info-box .count-box .btn-post span{
+  font-weight: 500;
+}
+.spot-list-in-spots .spots-contents .conts-label {
+  height:20px;
+  top:10px;
+  left:0;
+  padding:0 5px;
+  border:1px solid #ff8000;
+  background:#ffffff;
+}
+.spot-list-in-spots .spots-contents .conts-label .label-coupon {
+  padding:0;
+  line-height:19px;
+  font-size:12px;
+  background:transparent;
+}
+.spot-list-in-spots .map-spot-info .spot-list-in-spots li {
+  height:111px;
+  padding:0 0 11px 0;
+  background:url(../../images/bg-map-inner-spot.png) no-repeat 100% 100%;
+}
+.spot-list-in-spots .map-spot-info .spot-list-in-spots li .spots-contents {
+  border-bottom:none;
+}
+.spot-list-in-spots li.loading-image {
+  left:0;
+  margin:0 auto;
+  width: 100%;
+  top:0;
+}
+.spot-list-in-spots li:hover ,
+.spot-list-in-spots li:active {
+  background: #eee;
+}
+.spot-list-in-spots li a .spot-img {
+  float:left;
+  width:60px;
+  height:74px;
+  overflow: hidden;
+}
+.spot-list-in-spots li a .spot-img img.spot-top-img {
+  width: 100%;
+  min-height: 74px;
+}
+.spot-list-in-spots li .spot-img .count {
+  position: absolute;
+  bottom:0;
+  left:0;
+  width:60px;
+  height:20px;
+  line-height: 20px;
+  font-size:12px;
+  text-align: center;
+  color:#cccccc;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.spot-list-in-spots li .spot-img .count img{
+  vertical-align: middle;
+  margin-top:-4px;
+  margin-right:3px;
+}
+.spot-list-in-spots li a .spot-info-box {
+  float:left;
+  width:188px;
+  height:74px;
+  padding:4px 0 3px 0;
+  margin:0 10px;
+  background:none !important;
+}
+.spot-list-in-spots li .spot-info-box .spot-name {
+  display: block;
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+  padding: 2px 0 0 22px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.spot-list-in-spots li .spot-info-box .spot-name:before{
+  content: '';
+}
+.spot-list-in-spots li .spot-info-box .spot-state {
+  color: #333;
+  font-size: 12px;
+  margin:0;
+  padding:0;
+}
+.spot-list-in-spots li .spot-info-box span {
+  font-size: 12px;
+  margin:0;
+}
+.spot-list-in-spots li.add-spot-pop {
+  width: 270px;
+  height:auto;
+  min-height: 60px;
+  background:#eeeeee;
+}
+.spot-list-in-spots li.add-spot-pop .spot-info-box {
+  width: 204px;
+  height: 100%;
+  min-height: 60px;
+  padding: 12px 0 0 0;
+  margin:0;
+}
+.spot-list-in-spots li.add-spot-pop .spot-info-box p {
+  line-height:1.4;
+  font-size: 14px;
+  font-weight: 300;
+  color: #333333
+}
+.spot-list-in-spots li.add-spot-pop .spot-info-box p span{
+  font-size: 14px;
+  font-weight: 500;
+  color: #ff8000;
+}
+.spot-list-in-spots li.add-spot-pop a {
+  height: 100%;
+  min-height: 60px;
+  line-height: 16px;
+  color:#999999;
+  cursor: pointer;
+}
+.spot-list-in-spots .spots-contents .spot-type00 .spot-name a{
+  width:100%;
+}
+.spot-list-in-spots .spots-contents .spot-type00 .spot-name{
+  background:url('../../images/spot-type01-01.png') no-repeat 0 4px; /* 가볼만한 곳*/
+  background-size:18px 18px;
+}
+.spot-list-in-spots .spots-contents .spot-type01 .spot-name{
+  background:url('../../images/spot-type01-02.png') no-repeat 0 0;/* 맛집*/
+  background-size:18px 18px;
+}
+.spot-list-in-spots .spots-contents .spot-type02 .spot-name{
+  background:url('../../images/spot-type01-03.png') no-repeat 0 0;/* 숙소*/
+  background-size:18px 18px;
+}
+.spot-list-in-spots .spots-contents .spot-type-myspot .spot-name{
+  background:url('../../images/spot-type01-etc.png') no-repeat 0 0;/* 기타:마이스팟 */
+  background-size:18px 18px;
+}
+.spot-list-in-spots .spots-contents .spot-type-trans .spot-name{
+  background:url('../../images/spot-type01-trans.png') no-repeat 0 0;/* 교통 */
+  background-size:18px 18px;
+}
+.spot-list-in-spots .spots-contents .spot-type-mytrans .spot-name{
+  background:url('../../images/spot-type01-trans.png') no-repeat 0 0;/* 마이교통 */
+  background-size:18px 18px;
+}
+.spot-list-in-spots li.add-spot-pop .spot-img {
+  height: 100%;
+  min-height: 60px;
+  background:none;
+}
+
+.spot-list-in-spots li.loading-image {
+  border:0px;
+}
+.spot-list-in-spots .spot-draggable-info {
+  z-index: 100;
+  position: inherit;
+  border:none !important;
+}
+.spot-list-in-spots li .btn-special-label{
+  display: inline-block;
+  width: 14px !important;
+  height: 14px;
+  position: absolute;
+  left:0;
+  top:5px;
+  background:url(../../images/btn-spot-label.png) no-repeat 0 0;
+  z-index: 1;
+}
+.spot-list-in-spots li .btn-special-label:hover {
+  background:url(../../images/btn-spot-label.png) no-repeat 0 0;
+}
+.spot-draggable-info {
+  position: relative;
+  width: 268px;
+  height:100px;
+  z-index: 1000;
+  overflow: hidden;
+  background:none!important;
+}
+.spot-draggable-info a {
+  display: block;
+  position: relative;
+  width:100%;
+  height:100px;
+  background:#ffffff;
+}
+.spot-draggable-info a .spot-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100px;
+  height:100px;
+  overflow: hidden;
+}
+.spot-draggable-info a .spot-img img.spot-top-img {
+  width: 100%;
+  height:100px;
+}
+.spot-draggable-info a .spot-info-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 5px 5px 5px 110px;
+}
+.spot-draggable-info a .spot-info-box .spot-name {
+  display: block;
+  width: 155px;
+  height: 25px;
+  line-height: 26px;
+  padding: 0 0 0 22px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.spot-draggable-info a .spot-info-box .spot-state {
+  display: inline-block;
+  color: #999;
+  font-size: 12px;
+  margin: 0 0 1px 0;
+  padding:0;
+}
+.spot-draggable-info .spot-info-box span {
+  font-size: 12px;
+  font-weight: 400;
+}
+.spot-draggable-info .spot-info-box.spot-type00 .spot-name{
+  background:url('../../images/spot-type01-01.png') no-repeat 0 4px; /* 가볼만한 곳*/
+  background-size:18px;
+}
+.spot-draggable-info .spot-info-box.spot-type01 .spot-name{
+  background:url('../../images/spot-type01-02.png') no-repeat 0 4px; /* 맛집 */
+  background-size:18px;
+}
+.spot-draggable-info .spot-info-box.spot-type02 .spot-name{
+  background:url('../../images/spot-type01-03.png') no-repeat 0 4px; /* 숙소*/
+  background-size:18px;
+}
+.spot-draggable-info .spot-info-box.spot-type-myspot .spot-name{
+  background:url('../../images/spot-type01-etc.png') no-repeat 0 4px; /* 마이스팟*/
+  background-size:18px;
+}
+.spot-draggable-info .spot-info-box.spot-type-trans .spot-name{
+  background:url('../../images/spot-type01-trans.png') no-repeat 0 4px; /* 마이교통 */
+  background-size:18px;
+}
+.spot-draggable-info .spot-info-box.spot-type-mytrans .spot-name{
+  background:url('../../images/spot-type01-trans.png') no-repeat 0 4px; /* 마이교통 */
+  background-size:18px;
+}
+.spot-draggable-info a .spot-img .count img {
+  vertical-align: middle;
+  margin-top: -4px;
+  margin-right:2px;
+}
+.spot-draggable-info .spot-info-box .count-box {
+  position: absolute;
+  left: 110px;
+  bottom: 5px;
+}
+.spot-draggable-info .spot-info-box .count-box .btn-post {
+  font-size: 12px;
+  font-weight: 300;
+  background: url(../../images/icon-m-post.png) no-repeat 0 2px;
+}
+.spot-draggable-info .btn-special-label {
+  display: inline-block;
+  width: 14px !important;
+  height: 14px;
+  position: absolute;
+  left:0;
+  top:5px;
+  background:url(../../images/btn-spot-label.png) no-repeat 0 0;
+  z-index: 1;
+}
+/* schedule-left spot-plist end */
+/** schedule-wrap {**/
+.schedule-wrap {
+  position: relative;
+  overflow: auto;
+  width: 920px;
+  height: 100%;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  margin:10px 0 0px 0;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0,0,0,.3);
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.3);
+  -moz-box-shadow: 0 1px 1px rgba(0,0,0,.3);
+}
+.schedule-wrap .spot-list-in-spots {
+  width:100%;
+}
+.schedule-wrap .spot-list-in-spots img {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+.schedule-wrap .map-all {
+  position: relative;
+  width:100%;
+  height:400px;
+  overflow: hidden;
+  border-right:1px solid #ddd;
+  border-radius: 4px 4px 0 0;
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  z-index: 1;
+}
+
+.schedule-wrap .map {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 16;
+}
+/** schedule-wrap }**/
+
+/* weekcalendar */
+.schedule-wrap #schedule {
+  border-right:1px solid #ddd;
+}
+.schedule-step .weekcalendar {
+  position: relative;
+  overflow: hidden;
+}
+.schedule-step .weekcalendar table {
+  table-layout: fixed;
+  position: relative;
+  max-width: 100%;
+  min-width: 314px;
+}
+.schedule-step .weekcalendar td {
+  width:285px !important;
+  height:25px;
+  border-left:1px solid #ddd;
+  border-bottom:1px solid #eee;
+  color:#999;
+  vertical-align: top;
+}
+.schedule-step .weekcalendar .cell.active{
+  background-color: #f6f6f6;
+}
+.schedule-step .weekcalendar  tr:nth-child(even) td {
+  border-bottom: 1px solid #ddd;
+}
+
+.schedule-step .weekcalendar td.axis {
+  width:65px !important;
+  text-align: right;
+  border-left:none;
+  vertical-align: top;
+}
+.schedule-step .weekcalendar td.axis span.time-label {
+  padding-right:5px;
+  font-size:10px;
+  color: #bbb;
+}
+.schedule-step .weekcalendar  tr td:last-child{
+  border-right:1px solid #ddd;
+}
+.schedule-step .weekcalendar  tr:last-child td{
+  border-bottom:none;
+}
+.schedule-step .weekcalendar  tr:nth-child(37) td.axis {
+  border-bottom:none;
+}
+.schedule-step .weekcalendar  tr td:nth-child(4) {
+  border-right:none;
+}
+.schedule-step .weekcalendar  tr:last-child td:last-child {
+  border-radius:0;
+}
+/* Map Labels { */
+/* Day labels { */
+.map-labels {
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 27px;
+  color: #666666;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  background: #fff;
+  z-index: 100;
+  cursor: pointer;
+  overflow: visible!important;
+}
+.map-labels.map-day-category-00 {
+  border: 2px solid #2dae00;
+  color: #2dae00;
+}
+.map-labels.map-day-category-01 {
+  border: 2px solid #ffb400;
+  color: #ffb400;
+}
+.map-labels.map-day-category-02 {
+  border: 2px solid #00bff3;
+  color: #00bff3;
+}
+.map-labels.map-day-category-myspot{
+  border: 2px solid #db0008;
+  color: #db0008;
+}
+.map-labels.map-day-category-trans {
+  border: 2px solid #dddddd;
+  color: #dddddd;
+}
+.map-labels.map-day-category-mytrans {
+  border: 2px solid #dddddd;
+  color: #dddddd;
+}
+.map-labels.map-day-category-deactivate {
+  color: #666666;
+}
+/* Day labels } */
+
+/* map-spot-info { */
+.map-spot-info  {
+  width:300px;
+  height:100px;
+}
+.map-spot-info .spots-contents{
+  position: relative;
+  overflow: hidden;
+  width:100%;
+  height:100px;
+  margin:0;
+  padding:0;
+}
+.map-spot-info .spots-contents .spot-state {
+  display: block;
+  width: 100%;
+  margin: 0 0 1px 0;
+  font-size: 12px;
+  font-weight: 300;
+  overflow: hidden;
+  color: #666666;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.map-spot-info .spots-contents .desc {
+  overflow: hidden;
+  height: 25px;
+  line-height: 17px;
+  margin: 0;
+}
+.map-spot-info .spots-contents .count-box {
+  position: absolute;
+  left:110px;
+  bottom:5px;
+}
+.map-spot-info .spots-contents .count-box .btn-post {
+  display: block;
+  width: auto;
+  position: static;
+  float: left;
+  padding: 0 15px 0 20px;
+  color: #999999;
+  font-size: 12px;
+  font-weight: 300;
+  background: url(../../images/icon-m-post.png) no-repeat 0 2px;
+}
+/* map -spot } */
+
+/* All labels {*/
+.map-all-labels{
+  display: block;
+  height: 42px;
+  line-height: 27px;
+  color: #666666;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 100;
+  cursor: pointer;
+}
+.map-all-labels .all-day-box  {
+  height: 28px;
+  padding:0 8px 0 10px;
+  color: #999;
+  border:1px solid #999999;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.5);
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.5);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.5);
+  background: #fff;
+}
+.map-all-labels .bg-arrow{
+  position: relative;
+  width:100%;
+  height:7px;
+  margin:-1px 0 0 1px;
+  background: url(../../images/bg-map-all-labels.png) no-repeat center bottom;
+  z-index: 10;
+}
+.map-all-labels .all-day-box span{
+  padding-left:3px;
+}
+.map-all-labels.map-all-category-00  .all-day-box {
+  border:1px solid #ff0000;
+  color: #ff0000;
+  z-index: 10;
+}
+.map-all-labels.map-all-category-00  .bg-arrow {
+  background: url(../../images/bg-map-all-labels-00.png) no-repeat center bottom;
+}
+.map-all-labels.map-all-category-01 .all-day-box{
+  border: 1px solid #ff8000;
+  color: #ff8000;
+}
+.map-all-labels.map-all-category-01  .bg-arrow {
+  background: url(../../images/bg-map-all-labels-01.png) no-repeat center bottom;
+}
+.map-all-labels.map-all-category-02 .all-day-box{
+  border: 1px solid #39b54a;
+  color: #39b54a;
+}
+.map-all-labels.map-all-category-02 .bg-arrow {
+  background: url(../../images/bg-map-all-labels-02.png) no-repeat center bottom;
+}
+.map-all-labels.map-all-category-03 .all-day-box{
+  border: 1px solid #00aeef;
+  color: #00aeef;
+}
+.map-all-labels.map-all-category-03 .bg-arrow {
+  background: url(../../images/bg-map-all-labels-03.png) no-repeat center bottom;
+}
+.map-all-labels.map-all-category-04 .all-day-box{
+  border: 1px solid #92278f;
+  color: #92278f;
+}
+.map-all-labels.map-all-category-04 .bg-arrow {
+  background: url(../../images/bg-map-all-labels-04.png) no-repeat center bottom;
+}
+
+.round {
+  display: block;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border: 2px solid #999999;
+  border-radius: 10px;
+  overflow: visible!important;
+}
+.round.color00 {
+  border: 2px solid #ff0000;
+}
+.round.color01  {
+  border: 2px solid #ff8000;
+}
+.round.color02 {
+  border: 2px solid #39b54a
+}
+.round.color03 {
+  border: 2px solid #00aeef;
+}
+.round.color04{
+  border: 2px solid #92278f;
+}
+/* All labels }*/
+
+/* Plan marker {*/
+.plan-marker {
+  position: absolute;
+  width: 44px;
+  height:57px;
+  background: url(../../images/plan_marker_02.png) no-repeat center bottom;
+}
+/* Plan marker }*/
+/* Map Labels } */
+
+/* plan view modal */
+.visit-budget-checklist {
+  width: 900px;
+  margin:140px auto 0;
+}
+.plan-modal-pop .modal-header .close {
+  margin-top: 0px;
+}
+.plan-modal-pop .modal-body .static-top {
+  display: block;
+  height:60px;
+  margin:10px 0 0 0;
+}
+/*budget graph modal*/
+.budget-graph-modal {
+  width:1060px;
+  margin:140px auto 0;
+}
+
+/*budget graph pop-up*/
+.budget-graph-modal .modal-body,
+.check-list-modal .modal-body {
+  padding:0 10px;
+}
+.budget-graph-modal .modal-body .static-top {
+  display: block;
+  height:60px;
+  margin:10px 0 0 0;
+}
+.budget-graph ul.graph-list {
+  list-style-type: none;
+  margin:10px;
+  padding: 0;
+  float: left;
+}
+
+.budget-graph .graph-list li {
+  height: 40px;
+  display: inline-block;
+  margin-right: -1px;
+}
+
+.budget-graph .graph-list li a{
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  padding:0 15px;
+  color: #999999;
+  border: 1px solid #cccccc;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  border-radius:3px;
+}
+.budget-graph .graph-list li.active a{
+  color: #ff8000;
+  border:1px solid #ff8000;
+  position: relative;
+}
+.budget-graph .countandcurrency {
+  float: right;
+  display: block;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.budget-graph .countandcurrency span,
+.budget-graph .countandcurrency select {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.budget-graph .countandcurrency span {
+  margin-right: 10px;
+  font-size: 12px;
+  color: #ff8000;
+}
+
+.budget-graph .countandcurrency select {
+  margin-bottom: 0;
+  width: 160px;
+}
+.budget-graph .plan-statistic .chart-content {
+  clear: both;
+  overflow: hidden;
+  border-top:0px solid #fff;
+}
+.budget-graph .chart-content {
+  overflow: hidden;
+  height: 390px;
+}
+.budget-graph .tab-pane.active {
+  display: block;
+  width: 100%;
+}
+.budget-graph .chart-content .tab-pane {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
+  padding:10px 10px;
+}
+
+.budget-graph ul.chart-container {
+  padding:0;
+  margin:0;
+  list-style-type: none;
+}
+
+.budget-graph ul.chart-container li{
+  list-style: none;
+  height: 46px;
+  clear: both;
+}
+
+.budget-graph img.st-cate-icon,
+.chart img.st-cate-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.budget-graph .xaxis,
+.chart .xaxis {
+  display: inline-block;
+  font-size: 13px;
+  color:#999999;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.budget-graph .chart-row {
+  overflow: hidden;
+  display: block;
+  float: left;
+  width: 13%;
+  height:46px;
+  line-height:47px;
+  padding-left:42px;
+  background-size:38px 38px;
+  background-position:left center;
+  background-repeat: no-repeat;
+}
+/* 전체지출 */
+.budget-graph .chart-row.chart-cost-00 { /*입장료*/
+  background-image:url(../../images/chart_cost_01.png);
+}
+.budget-graph .chart-row.chart-cost-01 { /*음식*/
+  background-image:url(../../images/chart_cost_02.png);
+}
+.budget-graph .chart-row.chart-cost-02{ /*교통*/
+  background-image:url(../../images/chart_cost_03.png);
+}
+.budget-graph .chart-row.chart-cost-03 { /*쇼핑*/
+  background-image:url(../../images/chart_cost_04.png);
+}
+.budget-graph .chart-row.chart-cost-04 { /*오락*/
+  background-image:url(../../images/chart_cost_05.png);
+}
+.budget-graph .chart-row.chart-cost-05{ /*기타*/
+  background-image:url(../../images/chart_cost_06.png);
+}
+.budget-graph .chart-row.chart-cost-06 { /*숙박*/
+  background-image:url(../../images/chart_cost_07.png);
+}
+.budget-graph .chart-row.chart-cost-07 { /*항공료*/
+  background-image:url(../../images/chart_cost_08.png);
+}
+/* 일일지출 */
+.budget-graph .chart-row.day-chart {/*일일지출*/
+  background-image:url(../../images/chart_day_01.png);
+}
+/* 방문명소 */
+.budget-graph .chart-row.chart-spot-00 { /*관광지*/
+  background-image:url(../../images/chart_active_01.png);
+}
+.budget-graph .chart-row.chart-spot-01 { /*숙박*/
+  background-image:url(../../images/chart_active_02.png) ;
+}
+.budget-graph .chart-row.chart-spot-02{ /*음식점*/
+  background-image:url(../../images/chart_active_03.png);
+}
+.budget-graph .chart-row.chart-spot-03 { /*쇼핑*/
+  background-image:url(../../images/chart_active_04.png);
+}
+.budget-graph .chart-row.chart-spot-04 { /*오락*/
+  background-image:url(../../images/chart_active_05.png);
+}
+.budget-graph .chart-row.chart-spot-05{ /*액티비티*/
+  background-image:url(../../images/chart_active_06.png);
+}
+.budget-graph .chart-row.chart-spot-06 { /*교통*/
+  background-image:url(../../images/chart_active_07.png);
+}
+
+.budget-graph ul.chart-container li:first-child .chart-stick-text {
+  border-top: 1px solid #dbdbdb;
+}
+
+.budget-graph .chart-stick-text {
+  display: block;
+  float: left;
+  width: 87%;
+  height: 46px;
+  line-height: 47px;
+  border-bottom: 1px solid #dbdbdb;
+  border-left:2px solid #bbbbbb;
+  border-right: 1px solid #dbdbdb;
+}
+
+.budget-graph .chart-text {
+  display:inline-block;
+  color: #999999;
+  font-size: 12px;
+}
+.budget-graph .chart-stick {
+  display: inline-block;
+  max-width: 87%;
+  height: 20px;
+  margin-top:12px;
+  margin-bottom:12px;
+  vertical-align: middle;
+}
+
+#cost-chart .chart-stick.stick-color-07 { /*항공*/
+  background-color: #21c4d9;
+}
+
+#cost-chart .chart-stick.stick-color-06 { /*숙*/
+  background-color: #00bff3;
+}
+
+#cost-chart .chart-stick.stick-color-01 {/*음식*/
+  background-color: #ffb400;
+}
+
+#cost-chart .chart-stick.stick-color-03 {/*쇼*/
+  background-color: #dd2391;
+}
+
+#cost-chart .chart-stick.stick-color-02 { /* 교통 */
+  background-color: #bbbbbb;
+}
+
+#cost-chart .chart-stick.stick-color-00 {/*입장료*/
+  background-color: #605ca8;
+}
+
+#cost-chart .chart-stick.stick-color-04 {/* 오락*/
+  background-color: #88c333;
+}
+
+#cost-chart .chart-stick.stick-color-05 {/*기타*/
+  background-color: #db0008;
+}
+
+
+/*var colors = ['#597BBD','#45A3C8','#F2A531','#A373D4','#1EA196','#8AB349','#5488DB'];*/
+#spot-chart .chart-stick.stick-color-00 {
+  background-color: #597BBD;
+}
+
+#spot-chart .chart-stick.stick-color-01 {
+  background-color: #45A3C8;
+}
+
+#spot-chart .chart-stick.stick-color-02 {
+  background-color: #F2A531;
+}
+
+#spot-chart .chart-stick.stick-color-03 {
+  background-color: #A373D4;
+}
+
+#spot-chart .chart-stick.stick-color-04 {
+  background-color: #1EA196;
+}
+
+#spot-chart .chart-stick.stick-color-05 {
+  background-color: #8AB349;
+}
+
+#spot-chart .chart-stick.stick-color-06 {
+  background-color: #5488DB;
+}
+/* 여행가계부 End */
+/* Check list Start*/
+/* checklist modal*/
+.check-list-modal {
+  width:900px;
+  margin:140px auto 0;
+}
+.checklist {
+  overflow: hidden;
+  background: #FFF;
+  min-height: 408px;
+}
+
+h2.checklist-no-result {
+  text-align: center;
+  padding-top: 130px;
+  margin: 0;
+  height: 330px;
+  color: #ff8000;
+  font-weight: 500;
+}
+/* 체크리스트 없음 Start */
+h2.checklist-no-result img {
+  display: block;
+  margin:0 auto 10px;
+}
+
+.checklist-no-result-bg-en-US {
+  background-image: url('../../images/checklist_no_result_en.png');
+}
+
+.checklist-no-result-bg-ko-KR {
+  background-image: url('../../images/checklist_no_result_ko.png');
+}
+/* 체크리스트 없음 End */
+
+.checklist .checklist-con {
+  overflow: auto;
+  height:408px;
+}
+
+.checklist .checklist-con ul {
+  list-style-type: none;
+  display: block;
+  width: 100%;
+  float: left;
+  padding:10px 0 0 5px;
+  margin:0;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+.checklist .checklist-con ul li {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  float: left;
+  width:280px;
+  min-height: 30px;
+  line-height: 30px;
+  margin: 0px 10px 10px 0px;
+  color: #999;
+}
+
+.checklist .checklist-con ul li.task-li > p{
+  position: relative;
+  width:100%;
+  height: 40px;
+  line-height: 40px;
+  padding-left:35px;
+  background: #f6f6f6;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+
+.checklist .checklist-con ul li.task-li p i {
+  width:19px;
+  height:19px;
+  font-size: 18px;
+  vertical-align: middle;
+  position: absolute;
+  top:10px;
+  left:10px;
+  background:url(../../images/icon-checklist-checkd.png) no-repeat center center;
+}
+.checklist .checklist-con ul li.task-li p i::before {
+  content:"";
+}
+.checklist .checklist-con ul li.expl {
+  display: block;
+  width: 95%;
+  padding: 0 0 0 5px;
+  cursor:default;
+  color:#ff8000;
+  font-size: 16px;
+}
+
+.checklist .checklist-con ul li.expl i {
+  font-size: 20px;
+}
+
+.checklist .checklist-con ul li {
+  cursor: default;
+}
+
+.checklist .checklist-con ul li p.detail-todo-list {
+  padding-right: 10px;
+  padding-left: 10px;
+  background: #f2f2f2;
+  margin-right: 10px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.checklist .checklist-con ul li p.detail-todo-list i {
+  font-size: 18px;
+  line-height: 30px;
+  vertical-align: top;
+
+}
+
+.checklist .task {
+  clear: both;
+  margin: 0;
+  padding: 0 0 0px 36px;
+  position: relative;
+  display: block;
+  max-width: 475px;
+  float: left;
+}
+
+.checklist .task-li {
+  display: block;
+  position: relative;
+  min-width: 216px!important;
+  min-height: 20px;
+  margin: 2px;
+  color: #999999;
+}
+
+.checklist .task .checkbox{
+  background:#fff;
+  border-radius:3px;
+  -webkit-box-shadow:0 2px 3px rgba(0, 0, 0, 0.1);
+  box-shadow:0 2px 3px rgba(0, 0, 0, 0.1);
+  border:1px solid #b9b9b9;
+  border-bottom-color:#999;
+  border-top-color:#ccc;
+  font-weight:bold;
+  position:absolute;
+  left:6px;
+  line-height:16px;
+  overflow:hidden;
+  text-align:center;
+  text-indent:100%;
+  top:6px;
+  height:16px;width:16px;
+  white-space:nowrap;
+  min-height: 0;
+  padding-left: 0;
+  margin-top:0;
+  margin-bottom: 0;
+}
+.checklist .task .checkbox.enabled:hover{
+  background-color:#ddd;
+  -webkit-box-shadow:0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow:0 1px 2px rgba(0, 0, 0, 0.1);
+  color:#939393;
+  cursor:pointer;
+  text-indent:0;
+}
+.checklist .task .checkbox.enabled:active{
+  background-color:#bbb;
+  border:1px solid #777;
+  -webkit-box-shadow:inset 0 3px 9px rgba(0, 0, 0, 0.15);
+  box-shadow:inset 0 3px 9px rgba(0, 0, 0, 0.15);
+  color:#393939;
+  text-indent:0;
+}
+
+.checklist .task .checkbox.disabled{
+  background-color:#ddd;
+}
+.checklist .task .checkbox.disabled:hover{
+  text-indent:-999px
+}
+
+.checklist .task p{
+  min-height:18px;
+  margin-bottom:0;
+}
+
+.checklist .task .my-list {
+  line-height:20px;
+  padding:0;
+  margin:0;
+  background:none !important;
+}
+.checklist .task-li span.close {
+  visibility: hidden;
+  float: left;
+  display: block;
+  width: 20px;
+  height: 20px;
+  line-height: 16px;
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.checklist .task-li:hover span.close {
+  visibility: visible;
+}
+
+.checklist .task p.enabled:hover{
+  color:#111;
+  cursor:pointer;
+}
+
+.checklist .task p:empty{
+  content:'No name';
+  color:#939393;
+}
+
+.checklist .task.complete p.my-list {
+  font-style:italic;
+  text-decoration:line-through;
+}
+
+.checklist .task.complete p {
+  color:#939393;
+}
+
+.checklist .task.complete .checkbox{
+  background-color:#f3f3f3;
+  border:1px solid #b9b9b9;
+  border-bottom-color:#ccc;
+  border-top-color:#999;
+  -webkit-box-shadow:0 1px 0 #fff;
+  box-shadow:0 1px 0 #fff;
+  text-indent:0;
+}
+
+.checklist .task.complete .checkbox:hover{
+  border:1px solid #b9b9b9;
+  border-bottom-color:#ccc;
+  border-top-color:#999;
+}
+
+.checklist .task.complete .checkbox:active{
+  background-color:#bbb;
+  -webkit-box-shadow:inset 0 3px 9px rgba(0, 0, 0, 0.15);
+  box-shadow:inset 0 3px 9px rgba(0, 0, 0, 0.15);
+  border:1px solid #777;
+}
+
+.checklist .task.complete .checkbox.disabled{
+  background-color:#ddd;
+  cursor:pointer;
+}
+.checklist .task.complete .checkbox.disabled:hover{
+  background-color:#f3f3f3;
+  border:1px solid #b9b9b9;
+  border-bottom-color:#ccc;
+  border-top-color:#999;
+  -webkit-box-shadow:0 1px 0 #fff;
+  box-shadow:0 1px 0 #fff;
+  text-indent:0;
+}
+
+.checklist li.new-list {
+  margin-left:10px;
+  padding-top: 5px;
+  clear: left;
+}
+
+.checklist li.new-list .form-control {
+  display: inline-block;
+  width: 210px;
+}
+/* Check list End*/
+
+
+/* plan outline Start */
+.visit-spot {
+  height: 430px;
+  background: #fff;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.plan-outline {
+  position: relative;
+  width:100%;
+  margin:0;
+  padding:0;
+  z-index: 15;
+  height: 420px;
+}
+
+.plan-outline .day {
+  display: inline-block;
+  vertical-align: top;
+  width:31%;
+  margin:1%;
+  padding-bottom: 5px;
+  background: #ffffff;
+  border:1px solid #cccccc;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  color: #999999;
+}
+
+.plan-outline .day .day-title{
+  background:#f1f0ee;
+  display: block;
+  padding:10px;
+  height: 40px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.plan-outline .day h5 {
+  margin:0;
+  float: left;
+  display: block;
+  color: #003b7c;
+  font-weight: bold;
+}
+
+.plan-outline .day .day-title span {
+  float: right;
+  display: block;
+  font-size: 12px;
+}
+
+.plan-outline .day p {
+  clear: both;
+}
+
+.plan-outline .day .day-outline {
+  padding: 0 8px;
+  margin-bottom: 7px;
+  line-height: 15px;
+  font-size: 0;
+}
+
+.plan-outline .day p.no-schedule {
+  display: block;
+  text-align: center;
+  margin:0 0 5px 0;
+  background: #fff;
+  padding:10px 0;
+}
+
+.plan-outline .day p span.time {
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: top;
+  width: 20px;
+  font-size: 13px;
+}
+
+.plan-outline .day p span.outline-ev-name {
+  display: inline-block;
+  vertical-align: top;
+  width: 220px;
+  font-size: 13px;
+}
+
+span.time.blue {
+  color: #597BBD;
+}
+
+span.time.red {
+  color: #DD4B39;
+}
+/* plan outline End */
+/**/
+.modal-tab-menu {
+  height: 36px;
+  line-height: 36px;
+}
+.modal-tab-menu li {
+  float:left;
+  min-width: 120px;
+  text-align: center;
+}
+.modal-tab-menu li a {
+  color: #666;
+  font-size: 14px;
+  text-decoration: none;
+}
+.modal-tab-menu li.active {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-bottom:none;
+  border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+}
+.modal-tab-menu li.active a {
+  color: #ff8000;
+  text-decoration: none;
+}
+
+/** 길찾기 팝업 { **/
+
+.plan-route-detail {
+  display: block;
+  overflow: hidden;
+}
+
+.plan-route-detail .distance-time {
+  font-size: 14px;
+}
+
+ul.plan-route-stops {
+  margin:25px 5px -15px 0px;
+  width: 385px;
+  padding:0;
+  padding-bottom:0px;
+  list-style-type: none;
+  position:relative;
+}
+
+ul.plan-route-stops li {
+  position: relative;
+  width: 310px;
+  margin-left: 45px;
+  padding-left: 15px;
+  background: url("../images/route_inner_line.png") repeat-y 0 0!important;
+  min-height: 90px;
+  display: block;
+}
+
+ul.plan-route-stops.steps li {
+  width:370px;
+  margin-left: 0;
+}
+
+ul.plan-route-stops li:last-child{
+  background: none!important;
+  height: 40px;
+}
+
+ul.plan-route-stops li span.per-time {
+  position: relative;
+  margin-left: -85px;
+  font-weight: bold;
+  font-size: 12px;
+  top: -18px;
+}
+
+ul.plan-route-stops li .route-type {
+  position: absolute;
+  margin-left: -52px;
+  top: 33px;
+}
+
+ul.plan-route-stops li .route-type .icon{
+  width: 34px;
+  height: 34px;
+  display: block;
+  overflow: hidden;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  background-color:#6aa1d2;
+  color: #6aa1d2;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  font-size: 12px;
+}
+
+ul.plan-route-stops li h6 {
+  background: #f1f0ee;
+  border: 1px solid #cccccc;
+  height: 40px;
+  line-height: 38px;
+  padding: 0 7px;
+  overflow: hidden;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  width: 310px;
+  position: relative;
+}
+
+ul.plan-route-stops.steps li h6 {
+  height: auto;
+  line-height: 18px;
+  padding: 10px;
+  margin: 10px 0 5px 0;
+  width: 350px;
+}
+
+ul.plan-route-stops li .stop-spot-name {
+  top: -23px;
+  position: absolute;
+  margin-left: 5px;
+  height: 50px;
+  display: block;
+}
+
+.plan-route-detail .circle,
+ul.route-stops li .circle {
+  position: relative;
+  width: 11px;
+  display: block;
+  height: 11px;
+  background: url('../images/route_inner_circle.png') no-repeat 0 0!important;
+  margin-left: -19px;
+}
+
+
+ul.plan-route-stops li:last-child .circle,
+ul.route-stops li:last-child .circle{
+  background: url("../images/route_inner_marker.png") no-repeat 0 0!important;
+  height: 18px;
+}
+
+
+.plan-route-detail .arrow-left,
+ul.route-stops li .arrow-left {
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  background: url("../images/route_inner_arrow.png") no-repeat 0 0;
+  margin-left: -8px;
+  z-index: 12;
+}
+
+.plan-route-detail .arrow-left {
+  margin-top: 24px;
+}
+
+ul.route-stops li .arrow-left {
+  margin-top: 17px;
+}
+
+.plan-route-stops .vehicle-name {
+  padding: 0;
+  position: relative;
+  top: 18px;
+  left: 8px;
+  display: block;
+  width: 316px;
+  line-height: 15px;
+  color: #999999;
+  font-size:13px;
+  margin:3px 6px 3px 0;
+}
+
+.plan-route-stops.steps .vehicle-name {
+  top:0;
+}
+
+ul.plan-route-stops .timedistance {
+  position: relative;
+  margin-top: 18px;
+  margin-left: 8px;
+  color: #999999;
+  font-size:13px;
+  padding-bottom:20px;
+}
+ul.plan-route-stops .timedistance span{
+  word-break: break-all;
+}
+
+ol.route-steps {
+  margin: 0 0 0 30px;
+  width: 260px;
+  padding:0;
+}
+
+ol.route-steps li {
+  border-bottom: 1px solid #e6e6e6;
+  margin:7px 0;
+  font-size: 12px;
+  width: 250px;
+}
+
+ol.route-steps li span {
+  max-width: 260px;
+}
+
+.edit-right .route {
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  border-radius:3px;
+  cursor: pointer;
+  color: #999;
+  z-index: 0;
+}
+
+ul.plan-route-detail {
+  list-style-type: none;
+  margin:0;
+}
+
+ul.plan-route-detail li {
+  margin:3px;
+  background: #e8f0f7;
+  padding:5px;
+}
+
+ul.plan-route-detail li h6 {
+  margin:2px 0;
+}
+
+ul.plan-route-detail li.vehicle-type img{
+  display: inline-block;
+}
+
+ul.plan-route-detail li span.vehicle-name {
+  padding-top:0;
+}
+
+ul.plan-route-detail li p {
+  margin-bottom: 0;
+}
+
+/** 길찾기 팝업 } **/
+/* map > plan-list {*/
+.map-day-tab {
+  width:25px;
+  height: 400px;
+  position: absolute;
+  top:0;
+  right:0;
+  z-index: 150;
+}
+.map-day-tab.opened {
+  width: 225px;
+}
+.map-day-tab .map-day-tab-open {
+  display: block;
+  float: left;
+  width:25px;
+  height: 40px;
+  margin-top:10px;
+  background: url(../../images/plan-map-tab-close.png) no-repeat 2px 100%;
+}
+
+.map-day-tab.opened  .map-day-tab-open{
+  background: url(../../images/plan-map-tab-open.png) no-repeat 2px 100%;
+}
+
+.map-day-tab .marker-list-con {
+  display: none;
+}
+
+.map-day-tab .marker-list-con ul.marker-list {
+  display: none;
+}
+.map-day-tab.opened .marker-list-con {
+  display: block;
+  float: left;
+  overflow: hidden;
+}
+.map-day-tab.opened  .marker-list-con ul.marker-list {
+  overflow-y:auto;
+  overflow-x:hidden;
+  display: block;
+  width: 200px;
+  height: 400px;
+  padding:13px 10px 10px 10px;
+  border-left:1px solid #ccc;
+  background:rgba(255,255,255,.9);
+  border-radius: 0 10px 0 0;
+  z-index: 150;
+}
+
+.map-day-tab ul.marker-list li .marker-btn {
+  height: 36px;
+  display: block;
+}
+
+.map-day-tab ul.marker-list li .distance {
+  clear: left;
+  position: relative;
+  display: block;
+  height: 34px;
+  line-height: 30px;
+  margin-left: 15px;
+  padding-left:15px;
+  border-left:1px solid #ccc;
+  color: #999;
+}
+
+.map-day-tab ul.marker-list li:first-child .distance{
+  display: none;
+}
+
+.map-day-tab ul.marker-list li a span.index {
+  display: block;
+  position: relative;
+  width: 20%;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  float: left;
+  font-weight: 700;
+  color: #fff;
+  cursor:pointer;
+}
+
+.map-day-tab ul.marker-list li a:hover span.index,
+.map-day-tab ul.marker-list li.selected a span.index {
+  background-position: 0 0;
+}
+
+.map-day-tab ul.marker-list .marker-spot-name,
+.map-day-tab ul.marker-list .marker-btn-group {
+  overflow: hidden;
+  position: relative;
+  height: 36px;
+  cursor: pointer;
+  border-collapse: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+
+.map-day-tab ul.marker-list li span.spot-info {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  top:0;
+  right:0;
+  width:80%;
+  height: 34px;
+  line-height: 34px;
+  padding:0 5px;
+  color: #999;
+  background: #fff;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.map-day-tab ul.marker-list span.spot-tag {
+  height: 40px;
+  width: 40px;
+  border-radius: 4px 0 0 4px;
+  -webkit-border-radius: 4px 0 0 4px;
+  float:left;
+  display: block;
+}
+
+
+.map-day-tab ul.marker-list  .marker-spot-name.event-category-0 {
+  border:1px solid #2dae00;
+  background: #2dae00 url('../images/ev_spot_02.png') no-repeat center center;
+}
+
+.map-day-tab ul.marker-list .marker-spot-name.event-category-1 {
+  border:1px solid #ffb400;
+  background: #ffb400 url('../images/ev_spot_03.png') no-repeat center center;
+}
+
+.map-day-tab ul.marker-list .marker-spot-name.event-category-2 {
+  border:1px solid #00bff3;
+  background: #00bff3 url('../images/ev_spot_04.png') no-repeat center center;
+}
+
+.map-day-tab ul.marker-list .marker-spot-name.event-category-myspot {
+  border:1px solid #db0008;
+  background: #db0008 url('../images/ev_spot_etc.png') no-repeat center center;
+}
+
+.map-day-tab ul.marker-list  .marker-spot-name.event-category-0 .spot-info {
+  color: #2dae00;
+}
+.map-day-tab ul.marker-list  .marker-spot-name.event-category-1 .spot-info {
+  color: #ffb400;
+}
+.map-day-tab ul.marker-list  .marker-spot-name.event-category-2 .spot-info {
+  color: #00bff3;
+}
+.map-day-tab ul.marker-list  .marker-spot-name.event-category-myspot .spot-info {
+  color: #db0008;
+}
+
+#map_area .close-street {
+  position: absolute;
+  top:351px;
+  right:3px;
+  z-index: 500;
+}
+/* map > plan-list }*/

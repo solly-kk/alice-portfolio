@@ -1,0 +1,75 @@
+@CHARSET "UTF-8";
+
+html, body, div, h1, h2,h3,h4,h5, p ,table, tbody , thead, tr ,td, ul, ol ,li {
+  margin:0;
+  padding:0;
+}
+
+ul, ul li {
+  list-style:none;
+}
+
+
+.wishbeen-provision.app {
+  width: 96%;
+  padding:2%;
+}
+.wishbeen-provision.app h2 {
+  line-height: 1.4;
+  font-size: 18px;
+}
+.wishbeen-provision.app h3 {
+  line-height: 1.4;
+  margin:5px 0;
+  padding:0;
+  font-size:16px;
+}
+.wishbeen-provision.app p {
+  line-height: 1.4;
+  padding:0;
+  margin:0;
+  color: #999;
+  font-size:12px;
+}
+.wishbeen-provision.app ul ,
+.wishbeen-provision.app li {
+  list-style-type: none;
+  color: #999;
+}
+.wishbeen-provision.app li {
+  padding:0 0 3px 5px;
+  font-size:12px;
+  line-height: 1.4;
+}
+
+.wishbeen-provision {
+  width: 96%;
+  padding:2%;
+}
+.wishbeen-provision h2 {
+  line-height: 1.4;
+  font-size: 18px;
+}
+.wishbeen-provision h3 {
+  line-height: 1.4;
+  margin:5px 0;
+  padding:0;
+  font-size:16px;
+}
+.wishbeen-provision p {
+  line-height: 1.4;
+  padding:0;
+  margin:0;
+  color: #999;
+  font-size:12px;
+}
+.wishbeen-provision ul ,
+.wishbeen-provision li {
+  list-style-type: none;
+  color: #999;
+}
+.wishbeen-provision li {
+  padding:0 0 3px 5px;
+  font-size:12px;
+  line-height: 1.4;
+}

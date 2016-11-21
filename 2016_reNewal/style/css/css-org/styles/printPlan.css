@@ -1,0 +1,161 @@
+.modal-dialog.printPlan {
+  position:relative;
+  width:830px;
+  height:520px;
+  /*overflow: hidden;*/
+}
+.print-plan-tutorial .modal-dialog {
+
+}
+
+.print-plan-tutorial .modal-content {
+  width:830px;
+  height:520px;
+  overflow: hidden;
+  border-radius: 8px;
+  border:0px;
+  background-color: transparent;
+  z-index: 1;
+}
+
+.print-plan-tutorial .galleria{
+  width: 834px;
+  height: 524px;
+  background: transparent;
+  margin:0 0 0 -2px;
+}
+
+.print-plan-tutorial .galleria-stage { /* modify line 17 of your galleria.classic.css stylesheet */
+  top:0px;
+  left:0px;
+  right:0px;
+  bottom:0px; /* define the bottom spacing, same as top/left/right */
+}
+
+.print-plan-tutorial .galleria-theme-classic {
+  background: transparent;
+}
+
+
+.modal-dialog.printPlan a {
+  cursor: pointer;
+  font-size: 40px;
+  color: #ff8000;
+  background: transparent;
+}
+
+.modal-dialog.printPlan a i {
+  margin-top:160px;
+}
+.modal-dialog.printPlan a i::before {
+  font-size: 100px;
+}
+.modal-dialog.printPlan .nav-left {
+  position:absolute;
+  top:40px;
+  left:-100px;
+  width:15%;
+  height:480px;
+  z-index:50;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+.modal-dialog.printPlan .nav-left:hover {
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.modal-dialog.printPlan .nav-left i {
+  margin-right:10px;
+}
+
+.modal-dialog.printPlan .nav-right {
+  position:absolute;
+  top:40px;
+  right:-100px;
+  width:15%;
+  height:480px;
+  z-index:50;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+
+}
+.modal-dialog.printPlan .nav-right:hover {
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+.modal-dialog.printPlan .nav-right i {
+  margin-left:10px;
+}
+
+.modal-dialog.printPlan a.btn_close {
+  position: absolute;
+  top:0;
+  right:0;
+  width:50px;
+  height:40px;
+  z-index:155;
+  background:none;
+  border:none;
+  color:#fff;
+  cursor: pointer;
+}
+
+.weekcalendar.print .event:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.ev-info-wrap {
+  margin-left: 0px;
+  width: 305px;
+}
+
+.weekcalendar.print .event. ev-info-edit {
+  color:none;
+}
+
+.event.event-category-0  .ev-info-edit{ /*sight*/
+  color:#597bbd!important;
+}
+.event.event-category-1  .ev-info-edit{ /*sleep*/
+  color: #45a3c8!important;
+}
+.event.event-category-2  .ev-info-edit{ /*food*/
+  color: #f2a531!important;
+}
+.event.event-category-3  .ev-info-edit{ /*shopping*/
+  color: #a373d4!important;
+}
+.event.event-category-4  .ev-info-edit{ /*ENT*/
+  color: #1ea196!important;
+}
+.event.event-category-5  .ev-info-edit{ /*Activity*/
+  color: #8ab349!important;
+}
+.event.event-category-6  .ev-info-edit{ /*traffic*/
+  color: #5488db!important;
+}
+.event.event-category-etc  .ev-info-edit,
+.event.event-category- { /*etc*/
+  color: #d65f4c!important;
+}
+
+.route-background {
+  background:#ffffff!important;
+  border:1px solid #cccccc!important;
+  border-radius:5px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  min-height:21px;
+  cursor: pointer;
+}
+
+.weekcalendar {
+  width: inherit;
+}

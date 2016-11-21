@@ -1,0 +1,41 @@
+.modal-dialog {
+  margin: 30px auto!important;
+}
+
+.theme-pl-in .theme-rolling li .theme-rll-txt {
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#80000000',GradientType=0 );
+}
+
+ul.main-list-new li .main-list-hover {
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#b3000000',GradientType=0 );
+}
+
+.m-theme-plan ul.main-list-new li:first-child + li + li,
+.m-theme-plan ul.main-list-new li:first-child + li + li + li + li + li,
+.mb-user-list li:first-child + li + li {
+  margin-right: 0;
+}
+
+/* my page */
+.p-bottom-bar ul.mine li:first-child + li + li + li {
+  margin-right: 0;
+}
+
+/* plan spot list */
+.plan-view-new .plan-spot-info ul.spot-curation-list li {
+  margin: 6px 10px!important;
+}
+
+/* plan table */
+.weekcalendar tbody tr {
+  border-top: 1px solid #dddddd;
+}
+
+td.axis {
+  background: #ffffff;
+}
+
+.weekcalendar tbody tr td:first-child + td,
+.weekcalendar tbody tr td:first-child + td + td + td + td + td {
+  background: #f2f2f2;
+}

@@ -1,0 +1,372 @@
+/* new plan list */
+.recommend-sch {
+  display: block;
+  width:1100px;
+  padding:0;
+  margin:5px auto 0;
+}
+
+.recommend-sch.search {
+  position: relative;
+  width: 1125px;
+  margin:0 auto;
+}
+.recommend-sch.search .plan-loading {
+  position: absolute;
+  bottom:-56px;
+  left:50%;
+}
+.recommend-sch ul {
+  overflow: hidden;
+  width: 100%;
+  margin:0;
+  padding:0;
+}
+
+.recommend-sch li {
+  position: relative;
+  width:350px;
+  float:left;
+  margin:25px 0 0 25px;
+  background:#fff;
+  list-style-type: none;
+  border:1px solid #ddd;
+}
+.recommend-sch li:nth-child(3n+1) {
+  margin:25px 0 0 0;
+}
+
+.recommend-sch.search li:first-child {/*zero result*/
+  margin:0 auto;
+}
+
+.recommend-sch.search li{
+  margin:25px 12px 0 12px;
+  border:1px solid #ddd;
+}
+
+.recommend-sch.search li a{
+  text-decoration: none;
+  position: static;
+  color: #fff;
+}
+
+.recommend-sch .trav-sch {
+  position: relative;
+  height:100%;
+  min-height: 310px;
+}
+.recommend-sch .trav-sch .tit-img-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 120px;
+  width: 100%;
+  background: rgba(0,0,0,.3);
+  z-index: 11;
+}
+.recommend-sch .trav-sch .title-img {
+  width:100%;;
+  height:120px;
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  position: relative;
+}
+.recommend-sch .trav-sch .title-img img{
+  width:100%;
+  min-height: 130px;
+  vertical-align: top;
+  position: absolute;
+}
+.recommend-sch .trav-sch .title-txt {
+  width:100%;
+  position: absolute;
+  top:0;
+  left:0;
+  text-align: left;
+  padding:17px;
+  color:#fff;
+  z-index: 12;
+}
+.recommend-sch .trav-sch .title-txt p {
+  width:315px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 600;
+  font-size:20px;
+  text-align:left;
+  margin:0;
+  padding:0;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+}
+.recommend-sch .trav-sch .title-txt span {
+  position: relative;
+  display:block;
+  float:left;
+  overflow: hidden;
+  max-width:65px;
+  text-align: left;
+  padding:0 7px 0 10px;
+  font-weight:300;
+  font-size:14px;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+}
+.recommend-sch .trav-sch .title-txt span::before {
+  display:block;
+  content:".";
+  width:2px;
+  height:2px;
+  position: absolute;
+  left:0;
+  top:-3px;
+}
+.recommend-sch .trav-sch .title-txt span.state {
+  overflow: hidden;
+  max-width:185px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding:0 7px 0 0;
+}
+.recommend-sch .trav-sch .title-txt span.state::before{
+  content:"";
+  visibility: hidden;
+}
+.recommend-sch .trav-sch .trav-user-info {
+  overflow: hidden;
+  line-height:30px;
+  padding:10px 20px;
+}
+.recommend-sch .trav-sch .trav-user-info .sponsor {
+  float: right;
+  line-height: 34px;
+  font-size: 12px;
+  color: #999999;
+}
+.recommend-sch .trav-sch .trav-user-info .user-name {
+  max-width:235px;
+  line-height:30px;
+  font-weight: bold;
+  font-size:16px;
+  color:#333;
+  margin:0 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.recommend-sch .trav-sch .trav-user-info span {
+  display: block;
+  float:left;
+  line-height:34px;
+  font-size:12px;
+  color:#999;
+}
+.recommend-sch .trav-sch .trav-user-info .user-img {
+  display: block;
+  float: left;
+  overflow: hidden;
+  width:30px;
+  height:30px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+}
+.recommend-sch .trav-sch .trav-user-info .user-img img{
+  width:30px;
+  height:30px;
+}
+.recommend-sch .trav-sch .trav-conts {
+  position: relative;
+  overflow: hidden;
+  padding:0 20px;
+  height:87px;
+}
+.recommend-sch .trav-sch .trav-conts .tit {
+  color:#333;
+  font-size:16px;
+  margin-bottom:5px;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.recommend-sch .trav-sch .trav-conts .long-desc {
+  overflow: hidden;
+  height:58px;
+  line-height:19px;
+  font-size:12px;
+  color:#666;
+  font-weight:300;
+  text-align: justify;
+  word-break: break-all;;
+}
+.recommend-sch .trav-sch .trav-conts .pre-dots {
+  float: right;
+  height: 38px;
+}
+.recommend-sch .trav-sch .trav-conts .dots{
+  float:right;
+  clear:right;
+}
+
+.recommend-sch .trav-sch .trav-conts .hidedots1 {
+  background: white;
+  width: 310px;
+  height: 19px;
+  position: absolute;
+}
+
+.recommend-sch .trav-sch .trav-conts .hidedots2 {
+  background: #ffffff;
+  width: 310px;
+  height: 57px;
+  position: absolute;
+}
+
+.recommend-sch .trav-sch .trav-response {
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 55px;
+  line-height: 20px;
+  padding: 20px 20px 15px;
+}
+.recommend-sch .trav-sch .trav-response span {
+  margin-right:2px;
+  color:#999;
+  font-weight: 300;
+  font-size:12px;
+}
+.recommend-sch .trav-sch .trav-response span img {
+  vertical-align: middle;
+  margin-right:2px;
+  margin-top:-3px;
+  
+}
+
+.recommend-sch .trav-sch .trav-response .r-r span {
+  margin:0 0 0 6px;
+}
+.recommend-sch .recommend-paging {
+  width:100%;
+  height:60px;
+  text-align:center;
+  padding:20px 0 0 0;
+}
+
+.recommend-sch .recommend-paging a {
+  display:inline-block;
+  *zoom:1;
+  width:12px;
+  height:12px;
+  background-color:#dddddd;
+  border-radius:6px;;
+}
+
+.recommend-sch .recommend-paging .active {
+  background-color:#ff8000;
+}
+
+.recommend-sch .recommend-paging a span{
+  text-indent:-999999px;
+  font-size:0;
+  height:0;
+  line-height:0;
+  overflow: hidden;
+}
+
+.recommend-sch a .trav-sch-hover {
+  display: none;
+}
+
+.recommend-sch li:hover .trav-sch-hover {
+  position: absolute;
+  z-index: 20;
+  left: 0;
+  top: 0;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-align:center;
+}
+.recommend-sch .trav-sch-hover .main-list-hover-box {
+  padding:100px 0 0 0;
+  width:100%;
+  height:100%;
+  text-align:center;
+}
+.recommend-sch .trav-sch-hover  .hotels,
+.recommend-sch .trav-sch-hover .spots {
+  font-size: 17px;
+  width: 150px;
+  margin: 0 auto;
+  font-weight: 100;
+}
+.recommend-sch .trav-sch-hover .hotels {
+  margin:5px auto 2px;
+  width: 150px;
+  display: block;
+}
+
+.recommend-sch .trav-sch-hover .spots {
+  display: block;
+  border-bottom:1px solid #888888;
+  padding-bottom: 15px;
+}
+
+.recommend-sch .trav-sch-hover .budget {
+  margin-top: 5px;
+  padding-top: 8px;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.recommend-sch .trav-sch-hover .budget span {
+  font-size: 15px;
+  font-weight: normal;
+}
+/** plan list End **/
+
+/** zero result **/
+ul.main-list li.zero-result {
+  float: none;
+  background: url('../images/zero-result.png') no-repeat center 0;
+  margin: 0 auto;
+  padding-top: 250px;
+  color: #a1a0a0;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  border:0;
+  cursor: default;
+  height:600px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+ul.main-list li.zero-result a {
+  color: #ff8000;
+}
+ul.main-list li.zero-result #create-plan {
+  font-size: 18px;
+}
+ul.main-list li.zero-result p.zero-title {
+  font-size: 22px;
+  line-height: 35px;
+  margin-bottom: 10px;
+  color: #999999;
+  font-weight: bold;
+}
+
+ul.main-list li.zero-result:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}

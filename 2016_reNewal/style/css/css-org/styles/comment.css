@@ -1,0 +1,313 @@
+/* comment */
+
+.plan-comment h4 {
+    margin-left:10px;
+}
+
+.plan-comment {
+    clear: both;
+    background: #FFFFFF;
+    padding:30px;
+    border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+}
+
+/*------------------------------------*\
+	Light Theme Styles Start
+	마이페이지 >  위시보드 > 팝업
+\*------------------------------------*/
+.pagination-centered {
+    text-align: center;
+    padding: 0px 0 0px 5px;
+}
+/*------------------------------------*\
+	Light Theme Styles End
+\*------------------------------------*/
+
+.plan-comment.spot {
+    padding:0;
+    margin-bottom: 0;
+}
+
+ul.spot-comment-type {
+    clear: both;
+    height: 50px;
+    list-style-type: none;
+    margin: 0;
+    padding: 18px 0 0 0;
+    border-bottom: 1px solid #ccc;
+}
+
+ul.spot-comment-type li {
+    display: inline-block;
+    padding: 4px;
+    text-align: center;
+    font-size: 14px;
+}
+
+ul.spot-comment-type li a {
+    color: #ff8000;
+}
+
+ul.spot-comment-type li.active a {
+    color: #666;
+    font-weight: bold;
+}
+ul.spot-comment-type li.active a:hover {
+    text-decoration: none;
+    cursor: default;
+}
+
+ul.spot-comment-type li.mid {
+    width: 2px;
+    padding: 0;
+    height: 15px;
+    vertical-align: middle;
+    display: inline-block;
+    background: #ccc;
+}
+
+
+.plan-comment .comment-write {
+    margin:0;
+    padding: 12px;
+    height: 74px;
+    background: #f6f6f6;
+    border:1px solid #cccccc;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+.plan-comment h5 {
+    padding:10px;
+    margin-top:0;
+    display: block;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 0;
+}
+
+.plan-comment .my-p {
+    width: 50px;
+    float: left;
+    display: block;
+    margin-right:9px;
+}
+.plan-comment .my-p span {
+    width: 50px;
+    height: 20px;
+    overflow: hidden;
+    display: block;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.plan-comment .comment-write .my-p-img {
+    width: 50px;
+    height: 50px;
+    border:1px solid #cccccc;
+    overflow: hidden;
+    display: block;
+}
+
+.plan-comment .comment-write .my-p-img img {
+    width: 50px;
+    min-height: 50px;
+}
+
+.plan-comment .comment-write form {
+    display: block;
+    float: left;
+    height: 50px;
+    margin: 0;
+}
+.plan-comment .comment-write textarea {
+    width:842px;
+    resize:none;
+    height: 50px;
+    float: left;
+    display: block;
+    margin-right: 7px;
+}
+.plan-comment .comment-write textarea.form-control02 {
+    width: 882px !important;
+}
+.plan-comment .comment-write .btn.comment {
+    height: 50px;
+    display: block;
+    float: left;
+    text-align:center;
+}
+.plan-comment.plan-bottom .comment-write .btn.comment {
+    width: 100px;
+}
+.plan-comment ul.comment-list {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    display: block;
+}
+
+.plan-comment ul.comment-list li {
+    padding: 10px;
+    display: block;
+    border-bottom: 1px solid #EEEEEE;
+    clear: both;
+}
+
+.plan-comment ul.comment-list div.c-to-c-li {
+    padding: 10px 0;
+    display: block;
+    clear: both;
+}
+
+.plan-comment ul.comment-list li .reply-image {
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.plan-comment ul.comment-list div.c-to-c-li .comment-edit-mode.c-to-c {
+    display: inline-block;
+    vertical-align: top;
+    padding:0 0 5px 0;
+}
+
+.plan-comment ul.comment-list li .c-to-who {
+    color: #ff8000;
+    font-weight: bold;
+}
+
+.plan-comment ul.comment-list div.c-to-c-li .comment-edit-mode.c-to-c textarea {
+    width: 898px;
+    margin:0 0 10px 0;
+    display: block;
+}
+
+.plan-comment ul.comment-list li div.profile-img,
+.plan-comment ul.comment-list li div.comment-contents {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.plan-comment ul.comment-list li div.profile-img {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.plan-comment ul.comment-list li div.profile-img a.user {
+    width: 50px;
+    height: 50px;
+    display: block;
+    overflow: hidden;
+    border:1px solid #ccc;
+}
+
+.plan-comment ul.comment-list li div.profile-img a img {
+    width: 50px;
+    min-height: 50px;
+}
+
+.plan-comment ul.comment-list .comment-contents {
+    width: 950px;
+    margin-left: 10px;
+    color: #666666;
+}
+
+.plan-comment ul.comment-list .comment-txt {
+    clear: both;
+}
+
+.plan-comment ul.comment-list .comment-txt a {
+    color: #ff8000;
+}
+
+.plan-comment ul.comment-list .comment-txt p {
+    padding: 5px 0 0 0;
+    white-space: pre-wrap;
+    margin: 0;
+    color: #999999;
+    overflow: hidden;
+    word-break: break-all;
+}
+
+.plan-comment ul.comment-list .name-date {
+    float: left;
+    height: 18px;
+    line-height: 18px;
+}
+
+.plan-comment ul.comment-list a.user {
+    font-weight: bold;
+    margin-right: 5px;
+    color: #222222;
+}
+
+.plan-comment ul.comment-list .name-date .update-date {
+    font-size: 12px;
+    color: #CCCCCC;
+    margin-left: 5px;
+}
+
+.plan-comment ul.comment-list .comment-author-info-links a {
+    display: inline-block;
+    vertical-align: top;
+    width: 20px;
+    height: 20px;
+}
+
+.plan-comment ul.comment-list .comment-author-info-links a img {
+    width: 20px;
+    height: 20px;
+}
+
+.plan-comment ul.comment-list .edit-delete-comment {
+    float: right;
+}
+
+.plan-comment ul.comment-list .edit-delete-comment a {
+    color: #999999;
+    margin-left:10px;
+}
+
+.plan-comment ul.comment-list .comment-edit-mode {
+    padding:5px 0;
+    clear: both;
+}
+
+.plan-comment ul.comment-list .comment-edit-mode textarea,
+.plan-comment ul.comment-list .comment-edit-mode button {
+    vertical-align: top;
+}
+
+.plan-comment ul.comment-list .comment-edit-mode .comment-edit-btns {
+    text-align: right;
+}
+
+.plan-comment ul.comment-list .comment-edit-mode textarea {
+    resize:none;
+    margin: 0 0 5px 0;
+}
+
+/* inquiries */
+.in-container {
+    margin: 120px auto;
+    min-height: 500px;
+    width: 840px;
+}
+
+.inqui-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.inqui-con {
+    margin-top: 10px;
+    padding-top:5px;
+    border-top: 1px solid #ddd;
+}

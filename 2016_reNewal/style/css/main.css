@@ -1,0 +1,258 @@
+
+/** zero result **/
+ul.main-list li.zero-result {
+  float: none;
+  background: url('../images/zero-result.png') no-repeat center 0;
+  margin: 0 auto;
+  padding-top: 250px;
+  color: #a1a0a0;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  border:0;
+  cursor: default;
+  height:600px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+ul.main-list li.zero-result a {
+  color: #ff8000;
+}
+ul.main-list li.zero-result #create-plan {
+  font-size: 18px;
+}
+ul.main-list li.zero-result p.zero-title {
+  font-size: 22px;
+  line-height: 35px;
+  margin-bottom: 10px;
+  color: #999999;
+  font-weight: bold;
+}
+
+ul.main-list li.zero-result:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.main-visual {
+  width:100%;
+  height:600px;
+
+}
+
+.slide-and-widget {
+  width:100%;
+  margin-top:25px;
+}
+.slide-and-widget .inner-box {
+  width:1200px;
+  margin:0 auto;
+  min-height:320px;
+}
+.slide-and-widget #slide {
+  float:left;
+  width:800px;
+  position: relative;
+  overflow: hidden;
+  background:#ff8000;
+}
+.slide-and-widget #widget {
+  float:right;
+  width:380px;
+  background:#f6f6f6;
+  border:1px solid #eeeeee;
+}.banner-container .banner-inner-box ul li {
+   float: left;
+   width: 800px;
+   height: 320px;
+ }
+.banner-container .banner-inner-box ul li a img {
+  width: 100%;
+}
+.banner-container .banner-inner-box a.btn-next,
+.banner-container .banner-inner-box a.btn-prev {
+  width: 54px;
+  height: 55px;
+  position: absolute;
+  top: 133px;
+  z-index: 199;
+}
+.banner-container .banner-inner-box a.btn-next {
+  right:20px;
+  background:url(../../images/btn-m-next-type01.png) no-repeat 0 0;
+}
+.banner-container .banner-inner-box a.btn-next:hover,
+.banner-container .banner-inner-box a.btn-next:active {
+  background:url(../../images/btn-m-next-type01-on.png) no-repeat 0 0;
+}
+.banner-container .banner-inner-box a.btn-prev{
+  left:20px;
+  background:url(../../images/btn-m-prev-type01.png) no-repeat 0 0;
+}
+.banner-container .banner-inner-box a.btn-prev:hover,
+.banner-container .banner-inner-box a.btn-prev:active {
+  background:url(../../images/btn-m-prev-type01-on.png) no-repeat 0 0;
+}
+
+/* {메인 시티 */
+.city-container {
+  float:left;
+  width:800px;
+  background:url(../../images/bg-city-cover.png) no-repeat 0 0;
+}
+.city-container .cover-img {
+  position: relative;
+  width:100%;
+  min-height:320px;
+  height:320px;
+}
+.city-container .cover-img img {
+  width:100%;
+  min-height:320px;
+  margin:0 auto;
+}
+.city-container .cover-img .deam {
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,.3);
+}
+.city-container .city-inner {
+  position:relative;
+  width:100%;
+  margin:0 auto;
+}
+.city-container .city {
+  position: absolute;
+  bottom:0px;
+  left:0;
+  width:100%;
+  text-align: center;
+}
+.city-container .city h2{
+  line-height: 100%;
+  padding:0 0 0 25px;
+  font-size: 60px;
+  color: #ffffff;
+  text-align: left;
+}
+.city-container .city .city-info {
+  width:100%;
+  height:205px;
+  padding-top:25px;
+  color: #ffffff;
+  /*background: rgba(0,0,0,.6);*/
+}
+.city-container .city .city-info .desc {
+  width:100%;
+  height:70px;
+  text-align: left;
+  padding:0 25px;
+  font-size:18px;
+  font-weight: 300;
+  word-break: break-all;
+}
+.city-container .city .city-info .weather-box {
+  width:100%;
+  height:120px;
+}
+.city-container .city .city-info .weather-box div {
+  float:left;
+  width:250px;
+  height: 100px;
+  text-align: left;
+  padding:0 0 0 25px;
+  margin:20px 0 0 0;
+}
+.city-container .city .city-info .weather-box .time-box {
+  width:190px;
+}
+.city-container .city .city-info .weather-box .wrap {
+  float: none;
+  width:auto;
+  display: inline-block;
+  text-align: left;
+  margin:0 auto;
+  padding:15px 0 0 80px;
+  /* */
+}
+.city-container .city .city-info .weather-box div p{
+  font-size:18px;
+  text-align: left;
+  word-break: break-all;
+}
+.city-container .city .city-info .weather-box .time-box div{
+  background:url(../../images/bg-city-time.png) no-repeat 0 0
+}
+
+.city-container .city .city-info .weather-box .time-box p {
+  font-weight: normal;
+}
+.city-container .city .city-info .weather-box .exchange .wrap{
+  background:url(../../images/bg-city-exchange01.png) no-repeat 0 0
+}
+.city-container .city .city-info .weather-box .exchange.won .wrap{
+  background:url(../../images/bg-city-exchange02.png) no-repeat 0 0
+}
+.city-container .city .city-info .weather-box .temperature-box {
+}
+.city-container .city .city-info .weather-box .wd01d .wrap{
+  background:url(../../images/wb_01d.png) no-repeat 0 0;
+}/* 맑음 */
+.city-container .city .city-info .weather-box .wd01n .wrap{
+  background:url(../../images/wb_01n.png) no-repeat 0 0;
+}/* 저녁 */
+.city-container .city .city-info .weather-box .wd02d .wrap{
+  background:url(../../images/wb_02d.png) no-repeat 0 0;
+}/* 구름조금  */
+.city-container .city .city-info .weather-box .wd02n .wrap{
+  background:url(../../images/wb_02n.png) no-repeat 0 0;
+}/* 구름조금  */
+.city-container .city .city-info .weather-box .wd03d .wrap{
+  background:url(../../images/wb_03d.png) no-repeat 0 0;
+}/* 구름  */
+.city-container .city .city-info .weather-box .wd03n .wrap{
+  background:url(../../images/wb_03n.png) no-repeat 0 0;
+}/* 구름  */
+.city-container .city .city-info .weather-box .wd04d .wrap{
+  background:url(../../images/wb_04d.png) no-repeat 0 0;
+}/* 흐림  */
+.city-container .city .city-info .weather-box .wd04n .wrap{
+  background:url(../../images/wb_04n.png) no-repeat 0 0;
+}/* 흐림  */
+.city-container .city .city-info .weather-box .wd09d .wrap{
+  background:url(../../images/wb_09d.png) no-repeat 0 0;
+}/* 비 */
+.city-container .city .city-info .weather-box .wd09n .wrap{
+  background:url(../../images/wb_09n.png) no-repeat 0 0;
+}/* 비 */
+.city-container .city .city-info .weather-box .wd10d  .wrap{
+  background:url(../../images/wb_10d.png) no-repeat 0 0;
+}/*  */
+.city-container .city .city-info .weather-box .wd10n  .wrap{
+  background:url(../../images/wb_10n.png) no-repeat 0 0;
+}/* 비온뒤  */
+.city-container .city .city-info .weather-box .wd11d .wrap{
+  background:url(../../images/wb_11d.png) no-repeat 0 0;
+}/*  천둥 */
+.city-container .city .city-info .weather-box .wd11n .wrap{
+  background:url(../../images/wb_11n.png) no-repeat 0 0;
+}/* 천 */
+.city-container .city .city-info .weather-box .wd13d .wrap{
+  background:url(../../images/wb_13d.png) no-repeat 0 0;
+}/* 눈 */
+.city-container .city .city-info .weather-box .wd13n .wrap{
+  background:url(../../images/wb_13n.png) no-repeat 0 0;
+}/* 눈 */
+.city-container .city .city-info .weather-box .wd50d .wrap{
+  background:url(../../images/wb_50d.png) no-repeat 0 0;
+}/* 안개  */
+.city-container .city .city-info .weather-box .wd50n .wrap{
+  background:url(../../images/wb_50n.png) no-repeat 0 0;
+}/* 밤안개 */
+/* 메인 시티 }*/
+

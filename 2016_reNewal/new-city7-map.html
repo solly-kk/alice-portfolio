@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>wishbeen-main</title>
+  <link rel="stylesheet" href="style/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="style/css/non-responcive.css">
+  <link rel="stylesheet" href="style/css/common.css">
+  <link rel="stylesheet" href="style/css/nav.css">
+  <link rel="stylesheet" href="style/css/main.css">
+  <link rel="stylesheet" href="style/css/popups.css">
+  <link rel="stylesheet" href="style/css/footer.css">
+  <script type="text/javascript" src="style/js/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="style/js/pie.js"></script>
+  <link rel="stylesheet" href="style/js/pie.htc" />
+  <script type="text/javascript" src="style/js/PIE_uncompressed.js"></script>
+  <link rel="stylesheet" href="style/js/PIE_uncompressed.htc">
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <!--[if lt IE 9]>
+  <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="modal fade in map" id="" tabindex="-1" role="dialog" aria-labelledby="budgetGraphLabel" aria-hidden="false" style="display: block;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="map-area">
+          <div class="map-wrap" style="height:880px;"><!-- 브라우저 높이에 맞춰서 높이값이 구해져야 합니다-->
+            <div class="map-view" style="background:url(images/temp-direction-map.png) no-repeat 100% 100%;background-size:100% 100%;">
+              <div>
+
+	              <div class="map-spot-info" style="position:absolute;left: 500px;top:110px;" >
+		              <div class="map-spot-inner">
+			              <ul class="spot-list-in-spots">
+				              <li>
+					              <div class="spots-contents">
+			                        <span class="spot-img">
+			                          <a href="" target="_blank"><img src="https://tokyo-img-wishbeen.akamaized.net/spot/thumb_1438075381822_성산일출봉02.JPG" alt="img"></a>
+			                        </span>
+						              <div class="spot-info-box spot-type00">
+							              <h4 class="spot-name"><a href="" target="_blank">성산일출봉 (Seongsan Ilchulbong Peak)</a></h4>
+							              <span class="spot-state"> 유네스코 세계자연유산</span>
+							              <div class="desc">
+								              <span class="town">한국서귀포시</span>
+								              <span class="popular">인기도 4190</span>
+							              </div>
+							              <div class="count-box">
+								              <span class="btn-post"><span>249</span> 개의 포스트</span>
+							              </div>
+						              </div>
+					              </div>
+				              </li>
+			              </ul>
+		              </div>
+	              </div> <!-- 맵 안에뜨는 스팟 인포팝업 -->
+
+								<!-- -->
+	              <div style="position:absolute;left: 500px;top:250px;">
+		              <img src="images/map-spot00_off.png" alt=""/><!-- 명소 -->
+		              <img src="images/map-spot00_on.png" alt=""/><!-- 명소 -->
+
+		              <img src="images/map-spot01_off.png" alt=""/><!-- 맛집 -->
+		              <img src="images/map-spot01_on.png" alt=""/><!-- 맛집 -->
+
+		              <img src="images/map-spot02_off.png" alt=""/><!-- 맛집 -->
+		              <img src="images/map-spot02_on.png" alt=""/><!-- 맛집 -->
+	              </div>
+              </div>
+            </div><!-- e// map-view-->
+            <div id="spot-list">
+              <div class="tabbable">
+                <ul class="spot-search-tabs">
+                  <li class="active search"><a href="" id="spot-search">검색</a></li>
+                  <li class="wishboard"><a href="">위시보드</a></li>
+                </ul>
+                <div class="tab-content spot-search">
+                  <div class="active" id="spot-search-tab1">
+                    <form class="search-spot">
+	                    <div class="state"><input type="text" placeholder="지역"/></div><!-- 지역검색 -->
+	                    <div class="spot"><input type="text" placeholder="명소검색: 에펠탑"/></div><!--명소 검색 -->
+                    </form>
+                 </div><!-- 검색 -->
+
+                  <div class="" id="spot-search-tab2">
+	                  <div class="select-wishboard">
+		                  <select id="scrap-city-selector">
+			                  <option value="">1</option>
+			                  <option value="">2</option>
+			                  <option value="">3</option>
+			                  <option value="">4</option>
+		                  </select>
+	                  </div>
+
+                    <div class="btn-group spot-list-my" data-toggle="buttons">
+                      <label class="spot-list-my-btn active">
+                        <input type="radio" name="options" id="option1" checked="">전체
+                      </label>
+                      <label class="spot-list-my-btn" id="wish-button">
+                        <input type="radio" name="options" id="option2">Wish
+                      </label>
+                      <label class="spot-list-my-btn" id="been-button">
+                        <input type="radio" name="options" id="option3">Been
+                      </label>
+                    </div>
+                  </div>
+                </div><!-- 위시보드 -->
+              </div><!-- tabbable -->
+
+              <ul class="spot-tabs-list">
+                <li class="spot-01 active"><a href=""><span>전체</span></a></li>
+                <li class="spot-02"><a href=""><span></span></a></li>
+                <li class="spot-03"><a href=""><span></span></a></li>
+                <li class="spot-04"><a href=""><span></span></a></li>
+              </ul><!--spot-tabs-list -->
+
+              <div class="select-lower">
+                <div class="row-category depth1">
+                  <select id="row-selecter1">
+                    <option value="" data-i18n="_SubCategory_" class="">관광지</option>
+                    <option value="0"></option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                  </select>
+                </div><!-- row-category -->
+
+
+                <div class="row-category depth2">
+                  <select id="row-selecter2">
+                    <option value="" data-i18n="_SubCategory_" class="">관광지</option>
+                    <option value="0"></option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                  </select>
+                </div><!-- row-category -->
+
+                <div class="spot-list-view"> <!-- 브라우저 높이에 따라서 높이를 계산해서 height값을 넣어주세요 -->
+                  <ul>
+                    <li>
+                      <div class="spots-contents">
+	                      <a href="" target="_blank">
+	                        <span class="spot-img">
+	                          <img src="https://tokyo-img-wishbeen.akamaized.net/spot/thumb_1438075381822_성산일출봉02.JPG" alt="img">
+	                        </span>
+	                        <div class="spot-info-box spot-type00">
+	                          <h4 class="spot-name">성산일출봉 (Seongsan Ilchulbong Peak)</h4>
+	                          <span class="spot-state"> 유네스코 세계자연유산</span>
+	                          <div class="desc">
+	                            <span class="town">한국서귀포시</span>
+	                            <span class="popular">인기도 4190</span>
+	                          </div>
+	                          <div class="count-box">
+		                          <span class="btn-post"><span>249</span> 개의 포스트</span>
+	                          </div>
+	                        </div>
+		                      <div class="conts-label">
+			                      <p class="label-coupon"><span>할인쿠폰</span></p>
+		                      </div>
+	                      </a>
+                      </div>
+                    </li>
+                    <li>
+	                    <div class="spots-contents">
+		                    <a href="" target="_blank">
+	                        <span class="spot-img">
+	                          <img src="https://tokyo-img-wishbeen.akamaized.net/spot/thumb_1438075381822_성산일출봉02.JPG" alt="img">
+	                        </span>
+			                    <div class="spot-info-box spot-type00">
+				                    <h4 class="spot-name">성산일출봉 (Seongsan Ilchulbong Peak)</h4>
+				                    <span class="spot-state"> 유네스코 세계자연유산</span>
+				                    <div class="desc">
+					                    <span class="town">한국서귀포시</span>
+					                    <span class="popular">인기도 4190</span>
+				                    </div>
+				                    <div class="count-box">
+					                    <span class="btn-post"><span>249</span> 개의 포스트</span>
+				                    </div>
+			                    </div>
+			                    <div class="conts-label">
+				                    <p class="label-coupon"><span>할인쿠폰</span></p>
+			                    </div>
+		                    </a>
+	                    </div>
+                    </li>
+	                  <li>
+		                  <div class="spots-contents">
+			                  <a href="" target="_blank">
+	                        <span class="spot-img">
+	                          <img src="https://tokyo-img-wishbeen.akamaized.net/spot/thumb_1438075381822_성산일출봉02.JPG" alt="img">
+	                        </span>
+				                  <div class="spot-info-box spot-type00">
+					                  <h4 class="spot-name">성산일출봉 (Seongsan Ilchulbong Peak)</h4>
+					                  <span class="spot-state"> 유네스코 세계자연유산</span>
+					                  <div class="desc">
+						                  <span class="town">한국서귀포시</span>
+						                  <span class="popular">인기도 4190</span>
+					                  </div>
+					                  <div class="count-box">
+						                  <span class="btn-post"><span>249</span> 개의 포스트</span>
+					                  </div>
+				                  </div>
+				                  <div class="conts-label">
+					                  <p class="label-coupon"><span>할인쿠폰</span></p>
+				                  </div>
+			                  </a>
+		                  </div>
+	                  </li>
+	                  <li>
+		                  <div class="spots-contents">
+			                  <a href="" target="_blank">
+	                        <span class="spot-img">
+	                          <img src="https://tokyo-img-wishbeen.akamaized.net/spot/thumb_1438075381822_성산일출봉02.JPG" alt="img">
+	                        </span>
+				                  <div class="spot-info-box spot-type00">
+					                  <h4 class="spot-name">성산일출봉 (Seongsan Ilchulbong Peak)</h4>
+					                  <span class="spot-state"> 유네스코 세계자연유산</span>
+					                  <div class="desc">
+						                  <span class="town">한국서귀포시</span>
+						                  <span class="popular">인기도 4190</span>
+					                  </div>
+					                  <div class="count-box">
+						                  <span class="btn-post"><span>249</span> 개의 포스트</span>
+					                  </div>
+				                  </div>
+				                  <div class="conts-label">
+					                  <p class="label-coupon"><span>할인쿠폰</span></p>
+				                  </div>
+			                  </a>
+		                  </div>
+	                  </li>
+	                  <li>
+		                  <div class="spots-contents">
+			                  <a href="" target="_blank">
+	                        <span class="spot-img">
+	                          <img src="https://tokyo-img-wishbeen.akamaized.net/spot/thumb_1438075381822_성산일출봉02.JPG" alt="img">
+	                        </span>
+				                  <div class="spot-info-box spot-type00">
+					                  <h4 class="spot-name">성산일출봉 (Seongsan Ilchulbong Peak)</h4>
+					                  <span class="spot-state"> 유네스코 세계자연유산</span>
+					                  <div class="desc">
+						                  <span class="town">한국서귀포시</span>
+						                  <span class="popular">인기도 4190</span>
+					                  </div>
+					                  <div class="count-box">
+						                  <span class="btn-post"><span>249</span> 개의 포스트</span>
+					                  </div>
+				                  </div>
+				                  <div class="conts-label">
+					                  <p class="label-coupon"><span>할인쿠폰</span></p>
+				                  </div>
+			                  </a>
+		                  </div>
+	                  </li>
+	                  <li id="create-new-spot-item" class="add-spot-pop">
+		                  <a href="">
+			                  <span class="spot-img"><img src="images/btn-spot-list-add-new.png" alt=""></span>
+			                  <div class="spot-info-box">
+				                  <p id="have-no-spot">"르메르" 을/를 새로운 여행 명소로 등록하고 파운더가 되어보세요.</p>
+				                  <p id="nospot-category-text" style="display: none;">
+					                  <span>'전체'</span>버튼을 눌러 한번 더 확인하거나 <span>새로운 명소</span>로 등록하세요.
+				                  </p>
+			                  </div>
+		                  </a>
+	                  </li>
+	                  <li class="item-loading">
+		                  <div>
+			                  <div align="center" class="loading-image">
+				                  <div class="load-01">
+					                  <div class="load-02 fa-spin"></div>
+				                  </div>
+			                  </div>
+		                  </div>
+	                  </li>
+                  </ul>
+                </div><!-- e//spot-list-view -->
+              </div>
+            </div><!-- #spot-list -->
+						<div class="btn-box">
+							<a href="" class="search-place"><span>이지역 검색하기</span></a>
+							<a href="" class="btn-close"><img src="images/btn-map-close.png" alt="delete"/></a>
+
+						</div><!-- e//bnt-box-->
+          </div><!-- map-wrap-->
+        </div><!-- map-area -->
+      </div><!-- modal-body -->
+    </div><!-- modal-content -->
+  </div>
+</div>
+</body>
+</html>
