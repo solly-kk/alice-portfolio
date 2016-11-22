@@ -2047,7 +2047,7 @@
 /* plan { */
 .plan .including-travel {
   width: 1200px;
-  margin:0 auto;
+  margin:30px auto 0;
   padding-top:30px;
   border-top:1px solid #ddd;
   float:none;
@@ -2067,6 +2067,7 @@
   color: #666;
 }
 .plan-view-box .including-travel .tit-box .btn-box {
+	width:auto;
   overflow: hidden;
   position: absolute;
   top:0px;
