@@ -356,7 +356,7 @@ form.search-spot .ui-autocomplete li:hover {
 }
 .schedule-wrap ul.spot-tabs {
   list-style-type: none;
-  margin: 0 0 0 10px;
+  margin: 10px 0 0 10px;
   padding: 0;
   height: 30px;
 }
