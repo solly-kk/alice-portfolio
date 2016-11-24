@@ -2533,7 +2533,7 @@ a.go-to-map {
   max-width: 800px;
 }
 .spot-contents .conts-tit-bar .btn {
-  display: inline-block;
+  display: block;
   float:left;
   text-align: left;
   line-height: 1.6;

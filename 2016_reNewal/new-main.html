@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="style/css/main.css">
   <link rel="stylesheet" href="style/css/footer.css">
   <script type="text/javascript" src="style/js/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="style/js/jquery.bxslider.js  "></script>
   <script type="text/javascript" src="style/js/pie.js"></script>
   <link rel="stylesheet" href="style/js/pie.htc" />
   <script type="text/javascript" src="style/js/PIE_uncompressed.js"></script>
@@ -179,12 +180,19 @@
   <a href="">서울</a><span> &gt; </span>
   <a href="">둘러보기</a>
 </div>
+<script>
+$('.bxslider').bxSlider({
+  mode: 'fade',
+  captions: true
+});
+
+</script>
 <div class="slide-and-widget">
   <div class="inner-box">
     <div id="slide">
       <div id="intro_banner_container" class="banner-container">
         <div class="banner-inner-box">
-          <ul class="slider-list-container">
+          <ul class="slider-list-container bxslider">
             <li>
               <a href="" target="_blank"><img src="https://img-wishbeen.akamaized.net/introbanner/1463635237096_160519wb_web_main.jpg" style="" alt=""></a>
             </li>

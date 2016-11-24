@@ -1052,6 +1052,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  border-radius:0;
 }
 .story-conts .spot-wishbeen .spot-information-box .btn-pakage:hover {
   border:none;
@@ -1346,7 +1347,8 @@
   color: #2dae00;
 }
 .ev-info-wrap .ev-info-content.event-category-0 .ev-more {
-  background: 2dae00;
+  background: #2dae00;
+  color: #fff;
 }
 .ev-info-wrap .ev-info-content.event-category-0 .ev-more span {
   color: #fff;
@@ -1363,6 +1365,7 @@
 }
 .ev-info-wrap .ev-info-content.event-category-1 .ev-more {
   background: #ffb400;
+  color: #fff;
 }
 .ev-info-wrap .ev-info-content.event-category-1 .ev-more span {
   color: #fff;
@@ -1379,6 +1382,7 @@
 }
 .ev-info-wrap .ev-info-content.event-category-2 .ev-more {
   background: #00bff3;
+  color: #fff;
 }
 .ev-info-wrap .ev-info-content.event-category-2 .ev-more span {
   color: #fff;
@@ -1395,6 +1399,7 @@
 }
 .ev-info-wrap .ev-info-content.event-category-etc .ev-more {
   background: #db0008;
+  color: #fff;
 }
 .ev-info-wrap .ev-info-content.event-category-etc .ev-more span {
   color: #fff;
@@ -1850,6 +1855,10 @@
   width: 240px;
   margin-left: -120px;
   z-index: 101;
+}
+.day-lebel .btn-all-day .btn-primary{
+	width:100%;
+	text-align:center;
 }
 .day-lebel .day-info-box {
   width: 200px;
